@@ -12,7 +12,7 @@
 - [🎯 QA Generation Types](#-qa-generation-types)
 - [📂 Repository Structure](#-repository-structure)
 - [⚙️ Installation](#️-installation)
-- [▶️ Getting Started](#-getting-started)
+- [▶️ Getting Started](#️-getting-started)
 - [📖 Citation](#-citation)
 - [📄 License](#-license)
 
