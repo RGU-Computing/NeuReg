@@ -163,31 +163,31 @@ NeuReg/
 │   ├── flan_t5_large/
 │   └── results/                       # Final results and logs
 ```
-
+---
 
 ## ▶️ Getting Started
 To reproduce the QA generation process:
 
-### Step 1: Preprocess regulatory text into chunks
+Step 1: Preprocess regulatory text into chunks
 cd data/chunks/
-### Run: chunks.ipynb
+Run: chunks.ipynb
 
-### Step 2: Generate KG triples using EFRO ontology
+Step 2: Generate KG triples using EFRO ontology
 cd data/ontology/
-### Run: KG_Extraction.ipynb
+Run: KG_Extraction.ipynb
 
-### Step 3: Generate QA pairs using zero-, one-, or few-shot prompts
+Step 3: Generate QA pairs using zero-, one-, or few-shot prompts
 cd qa_generation/
-### Run: Zero-shot.ipynb  OR  One-shot.ipynb  OR  Few-shot.ipynb
+Run: Zero-shot.ipynb  OR  One-shot.ipynb  OR  Few-shot.ipynb
 
-### Step 4: Evaluate QA pairs using LLM-based judges
+Step 4: Evaluate QA pairs using LLM-based judges
 cd evaluation/llm_judges/
-### Run: [ModelName].ipynb  (e.g., DeepSeek-R1-Distill-Llama-70B.ipynb)
+Run: [ModelName].ipynb  (e.g., DeepSeek-R1-Distill-Llama-70B.ipynb)
 
-### Step 5 (Optional): Compare LLM vs Human agreement scores
+Step 5 (Optional): Compare LLM vs Human agreement scores
 cd evaluation/llm_vs_human/
-### Run: llm_vs_human_Analysis_results_analysis.ipynb
+Run: llm_vs_human_Analysis_results_analysis.ipynb
 
-### Step 6 (Optional): Fine-tune QA models on generated datasets
+Step 6 (Optional): Fine-tune QA models on generated datasets
 cd fine_tuning/t5_small/  # or flan_t5_large/, etc.
-### Run: t5_small_zero.ipynb  OR  t5_small_one.ipynb  OR  t5_small_few.ipynb 
+Run: t5_small_zero.ipynb  OR  t5_small_one.ipynb  OR  t5_small_few.ipynb 
