@@ -57,6 +57,7 @@ NeuReg offers a reproducible, ontology-grounded QA pipeline designed to improve 
 
 ## 📂 Repository Structure
 
+```text
 NeuReg/
 ├── README.md                          # Overview of the project, contributions, pipeline, and structure
 ├── LICENSE                            # Project license (e.g., MIT, Apache 2.0)
@@ -142,3 +143,4 @@ NeuReg/
 │   ├── flan_t5_large/
 │   └── results/
 ```
+
