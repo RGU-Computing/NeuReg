@@ -18,6 +18,9 @@ NeuReg is a neuro-symbolic QA generation framework that transforms complex regul
 4. **Quality Validation**  
    QA quality is assessed through expert human annotation and automatic evaluation using state-of-the-art LLMs.
 
+   <img width="2726" height="2524" alt="github" src="https://github.com/user-attachments/assets/f38fe709-34aa-4239-8a61-35511edba917" />
+
+
 ---
 
 ## 🚀 Motivation
