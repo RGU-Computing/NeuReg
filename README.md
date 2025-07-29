@@ -39,7 +39,7 @@ Each chunk is mapped to its corresponding KG (based on `chunk_id`). The QA gener
 
 ## 🧠 Model Architecture
 
-![NeuReg Architecture](assets/neuReg_model_diagram.png)
+<img width="2708" height="2324" alt="github" src="https://github.com/user-attachments/assets/1a127c81-b3c5-4718-8d4a-87365e3f04ba" />
 
 **Figure 1**: *NeuReg: Neuro-symbolic framework for regulatory QA generation using ZS, OS, and FS prompting with ontology-guided KG extraction.*
 
