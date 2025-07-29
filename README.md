@@ -222,5 +222,4 @@ GitHub Repository: https://github.com/RGU-Computing/NeuReg
 ## 📄 License
 
 This project is licensed under the MIT License. © 2025 School of Computing, Engineering and Technology, Robert Gordon University, UK.
-
 For full license details, see the [LICENSE](LICENSE) file.
