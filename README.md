@@ -167,7 +167,7 @@ NeuReg/
 
 ## ⚙️ Installation
 
-```bash
+```markdown
 git clone https://github.com/RGU-Computing/NeuReg.git
 cd NeuReg
 pip install -r requirements.txt
