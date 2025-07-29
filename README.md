@@ -215,7 +215,7 @@ cd evaluation/llm_vs_human/
 jupyter notebook llm_vs_human_Analysis_results_analysis.ipynb
 ```
 
-### **Step 6 (Optional): Fine-tune Models**
+### **Step 6 : Fine-tune Models**
 ```bash
 cd fine_tuning/t5_small/  # or flan_t5_base/, flan_t5_large/, etc.
 # Choose based on your dataset:
