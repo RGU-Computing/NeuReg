@@ -1,47 +1,76 @@
 # 🧠 NeuReg: Neuro-Symbolic QA Generation from Regulatory Compliance
 
-NeuReg is a neuro-symbolic QA generation framework that transforms complex regulatory documents into intelligent, explainable QA systems. It integrates ontology-guided knowledge graphs (KGs) with large language models (LLMs) to generate high-quality, semantically grounded question–answer (QA) pairs.
+**NeuReg** is a neuro-symbolic QA generation framework that transforms complex regulatory documents into intelligent and explainable question–answering systems. It integrates ontology-guided knowledge graphs (KGs) with large language models (LLMs) to generate high-quality, semantically grounded QA pairs—combining structured symbolic knowledge with generative language capabilities.
 
 ---
 
 ## 🔄 Pipeline Overview
 
-1. **Ontology-Guided Triple Extraction**  
-   Structured triples are extracted from Education Funding Regulatory (EFR) documents using a domain-specific ontology.
+NeuReg consists of two main stages: **Knowledge Extraction** and **Question Answer Generation**.
 
-2. **KG–Text Pair Formation**  
-   Each triple is aligned with its corresponding text segment to provide contextual grounding.
+### 1️⃣ Ontology-Guided Knowledge Extraction
+- Regulatory text is split into coherent **text chunks**.
+- A domain-specific ontology (EFRO) is used to guide **schema extraction** and **triple generation** using GPT-4.
+- Each output triple is structured as **(subject, predicate, object)** with post-processing and alignment.
 
-3. **Multi-Strategy Prompting**  
-   QA pairs are generated using Zero-Shot (ZS), One-Shot (OS), and Few-Shot (FS) prompting strategies.
+### 2️⃣ Question Answer Generation
+- Each chunk is mapped to its corresponding ontology-guided KG (based on `chunk_id`).
+- QA generation follows four steps:
+  
+  **(a) Question Type Selection**  
+  Questions are categorized into:
+  - **FactQ**: Factual lookups
+  - **RelQ**: Relational reasoning
+  - **CompQ**: Comparative analysis
+  - **InferQ**: Inferential/multi-hop logic
 
-4. **Quality Validation**  
-   QA quality is assessed through expert human annotation and automatic evaluation using state-of-the-art LLMs.
+  **(b) Prompt Augmentation**  
+  Questions are generated using:
+  - **Zero-Shot Prompting**  
+  - **One-Shot Prompting**  
+  - **Few-Shot Prompting**  
 
-   <img width="2726" height="2524" alt="github" src="https://github.com/user-attachments/assets/f38fe709-34aa-4239-8a61-35511edba917" />
+  **(c) QA Filtering**  
+  Candidate QAs are filtered using:
+  - Answer length check
+  - Semantic similarity (cosine similarity < 0.85 with existing questions)
+  - Rejection and retry up to 3 times
 
+  **(d) Validation**  
+  Final QA pairs are validated using:
+  - Human expert annotators  
+  - Automatic scoring from multiple LLM judges
+
+---
+
+## 🧠 Model Architecture
+
+<img width="2708" height="2324" alt="github" src="https://github.com/user-attachments/assets/ab3e2137-b665-43ef-88ee-2f13bb3c6817" />
+
+
+**Figure 1**: *NeuReg: Neuro-symbolic framework for regulatory QA generation using ZS, OS, and FS prompting with ontology-guided KG extraction.*
 
 ---
 
 ## 🚀 Motivation
 
-Access to education funding is governed by complex and evolving policies. These are often communicated in lengthy documents that are difficult for students and staff to interpret. NeuReg addresses this challenge by converting these regulatory documents into structured and queryable QA datasets—bridging the gap between unstructured policy language and structured decision support.
+Access to education funding is governed by complex and evolving regulations. These policies are often communicated through lengthy documents that are difficult for students and institutional staff to interpret. NeuReg addresses this challenge by transforming unstructured regulatory guidance into structured and explainable QA datasets—bridging the gap between dense policy language and actionable decision support.
 
 ---
 
 ## ✨ Key Contributions
 
-### 🧠 A Novel Neuro-Symbolic Framework
+### 🧠 A Novel Neuro-Symbolic Framework  
+NeuReg combines symbolic reasoning from ontology-guided knowledge graphs with the generative power of LLMs. This enables accurate, semantically aligned, and explainable QA generation in high-stakes regulatory domains.
 
-NeuReg combines LLM-based generative reasoning with symbolic structure from ontology-guided KGs, enabling semantically rich and accurate QA generation in high-stakes regulatory domains.
+### 📊 A Domain-Specific Regulatory QA Dataset  
+NeuReg introduces a QA dataset with four well-defined question types—**Factual**, **Relational**, **Comparative**, and **Inferential**—validated through expert human annotation and multi-model LLM judgment.
 
-### 📊 First-of-Its-Kind Regulatory QA Dataset
-
-We present a domain-specific QA dataset covering four distinct question types. It is validated via expert human judgments and automatic scoring by multiple SOTA LLMs.
-
-### 🔬 Empirical Validation & Ablation Studies
-
-Our evaluations isolate the unique contributions of KG and text inputs, demonstrate the effectiveness of different prompting strategies, and quantify model performance through fine-tuned T5/Flan-T5 variants.
+### 🔬 Systematic Evaluation & Ablation Studies  
+The framework includes:
+- Empirical comparison of prompting strategies (ZS, OS, FS)
+- Isolation of KG-only and chunk-only contributions
+- Evaluation of QA generation quality with both fine-tuned T5/FLAN-T5 models and SOTA LLM scoring
 
 ---
 
@@ -49,14 +78,17 @@ Our evaluations isolate the unique contributions of KG and text inputs, demonstr
 
 | Type      | Description |
 |-----------|-------------|
-| **FactQ**   | Direct factual retrieval (e.g., definitions, thresholds, dates) |
-| **RelQ**    | Relational reasoning over KG (e.g., entity-to-entity links) |
-| **CompQ**   | Comparison of policies, programs, or eligibility rules |
-| **InferQ**  | Multi-hop reasoning and inference across KG and text |
+| **FactQ**   | Direct factual lookup (e.g., eligibility dates, age thresholds) |
+| **RelQ**    | Questions requiring entity–entity relationships from the KG |
+| **CompQ**   | Comparisons between multiple entities or regulations |
+| **InferQ**  | Multi-hop reasoning and semantic inference across chunk+KG |
 
 ---
 
-NeuReg offers a reproducible, ontology-grounded QA pipeline designed to improve transparency and interpretability in complex regulatory environments. For code, datasets, evaluation results, and ablation studies, explore the full repository.
+NeuReg offers a reproducible, modular pipeline for ontology-grounded QA generation—enhancing transparency, interpretability, and compliance support in complex regulatory domains.
+
+🔗 Explore the full repository for code, datasets, evaluation metrics, and detailed ablation studies.
+
 
 ## 📂 Repository Structure
 
