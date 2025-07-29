@@ -58,20 +58,87 @@ NeuReg offers a reproducible, ontology-grounded QA pipeline designed to improve 
 ## 📂 Repository Structure
 
 NeuReg/
-├── data/                       # Data processing & ontology construction
-│   ├── chunks/                 # Text chunking pipeline
-│   ├── ontology/               # Knowledge graph extraction
-│   └── ablations/              # Ablation study datasets
-├── qa_generation/              # QA dataset generation
-│   ├── Zero-shot.ipynb         # Zero-shot prompting
-│   ├── One-shot.ipynb          # One-shot prompting
-│   ├── Few-shot.ipynb          # Few-shot prompting
-│   └── outputs/                # Generated datasets & analysis reports
-├── evaluation/                 # Comprehensive evaluation suite
-│   ├── ontology_guided/        # KG-based evaluation
-│   ├── llm_judges/             # 5 LLM evaluators
-│   ├── humans/                 # Human evaluation
-│   └── llm_vs_human/           # Correlation analysis
-├── analysis/                   # Statistical analysis & insights
-├── ablations/                  # Ablation studies (chunks_only/kg_only)
-└── fine_tuning/                # T5 & FLAN-T5 fine-tuning experiments
+├── README.md                          # Overview of the project, contributions, pipeline, and structure
+├── LICENSE                            # Project license (e.g., MIT, Apache 2.0)
+├── requirements.txt                   # Python dependencies for reproducing the results
+
+├── data/
+│   ├── chunks/
+│   │   ├── chunks.csv
+│   │   └── chunks.ipynb
+│   ├── ontology/
+│   │   ├── ontology_schema.json
+│   │   ├── Ontology_Guided_Triples.csv
+│   │   ├── Ontology_Guided_Triples_statistics.json
+│   │   ├── EFRO_Schema_Extraction.ipynb
+│   │   └── KG_Extraction.ipynb
+
+├── qa_generation/
+│   ├── Zero-shot.ipynb
+│   ├── One-shot.ipynb
+│   ├── Few-shot.ipynb
+│   ├── Zero-Shot_qa_dataset.json
+│   ├── One-Shot_qa_dataset.json
+│   ├── Few-Shot_qa_dataset.json
+│   ├── Zero_Shot_QA_analysis_report.json
+│   ├── One_Shot_QA_analysis_report.json
+│   └── Few_Shot_QA_analysis_report.json
+
+├── evaluation/
+│   ├── ontology_guided/
+│   │   ├── Evaluation.ipynb
+│   │   ├── evaluation_results.csv
+│   │   └── evaluation_report.json
+│   ├── llm_judges/
+│   │   ├── DeepSeek-R1-Distill-Llama-70B/
+│   │   │   ├── DeepSeek-R1-Distill-Llama-70B.ipynb
+│   │   │   ├── *_zeroshot_*.csv
+│   │   │   └── *_fewshot_*.csv
+│   │   ├── Gemma-2-27B/
+│   │   ├── LLaMA-3.3-70B/
+│   │   ├── Mixtral-8x22B/
+│   │   └── Qwen3-32B/
+│   ├── humans/
+│   │   ├── Evaluation_Template.pdf
+│   │   ├── Human_based_results_analysis.ipynb
+│   │   └── humans_Analysis_report.csv
+│   └── llm_vs_human/
+│       ├── llm_vs_human_Analysis_results_analysis.ipynb
+│       └── Correlation_llm_vs_human.csv
+
+├── analysis/
+│   ├── Statistical_Analysis.ipynb
+│   ├── Readability_Analysis.csv
+│   ├── Vocabulary_Diversity_Analysis.csv
+│   ├── Length_Distribution_Analysis.csv
+│   ├── LLMs_based_results_analysis.ipynb
+│   └── LLMs_Analysis_report.csv
+
+├── ablations/
+│   ├── chunks_only/
+│   │   ├── chunks_only_qa_dataset.ipynb
+│   │   ├── evaluation/
+│   │   │   ├── chunks_only_evaluation_DeepSeekR1.ipynb
+│   │   │   ├── *.csv
+│   ├── kg_only/
+│   │   ├── KG_only_qa_dataset.ipynb
+│   │   ├── evaluation/
+│   │   │   ├── KG_only_evaluation_DeepSeekR1.ipynb
+│   │   │   ├── *.csv
+│   ├── Ablation_1_chunks_only_qa_dataset.json
+│   ├── Ablation_1_chunks_only_analysis_report.json
+│   ├── Ablation_2_kg_only_qa_dataset.json
+│   ├── Ablation_2_kg_only_analysis_report.json
+
+├── fine_tuning/
+│   ├── t5_small/
+│   │   ├── t5_small_zero.ipynb
+│   │   ├── t5_small_one.ipynb
+│   │   └── t5_small_few.ipynb
+│   ├── t5_base/
+│   ├── t5_large/
+│   ├── flan_t5_small/
+│   ├── flan_t5_base/
+│   ├── flan_t5_large/
+│   └── results/
+```
