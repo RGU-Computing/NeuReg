@@ -175,45 +175,37 @@ pip install -r requirements.txt
 ---
 
 ## ▶️ Getting Started
-
+```bash
 To reproduce the NeuReg QA generation pipeline:
 
 ### **Step 1: Preprocess Regulatory Text**
-```bash
 cd data/chunks/
 jupyter notebook chunks.ipynb
-```
+
 ### **Step 2: Generate Ontology-Guided KG Triples**
-```bash
 cd data/ontology/
 jupyter notebook EFRO_Schema_Extraction.ipynb  # Extract EFRO ontology
 jupyter notebook KG_Extraction.ipynb           # Generate KG triples
-```
+
 ### **Step 3: Generate QA Pairs**
 Choose your prompting strategy:
-```bash
 cd qa_generation/
 # Choose one of the following:
 jupyter notebook Zero-shot.ipynb   # Zero-shot prompting
 jupyter notebook One-shot.ipynb    # One-shot prompting  
 jupyter notebook Few-shot.ipynb    # Few-shot prompting
-```
 
 ### **Step 4: Evaluate QA Quality**
-```bash
 cd evaluation/llm_judges/[ModelName]/
 # Example:
 cd evaluation/llm_judges/DeepSeek-R1-Distill-Llama-70B/
 jupyter notebook DeepSeek-R1-Distill-Llama-70B.ipynb
-```
 
 ### **Step 5 (Optional): Analyze LLM vs Human Agreement**
-```bash
 cd evaluation/llm_vs_human/
 jupyter notebook llm_vs_human_Analysis_results_analysis.ipynb
-```
+
 ### *Step 6 (Optional): Fine-tune Models**
-```bash
 cd fine_tuning/t5_small/  # or flan_t5_base/, flan_t5_large/, etc.
 # Choose based on your dataset:
 jupyter notebook t5_small_zero.ipynb   # Zero-shot dataset
