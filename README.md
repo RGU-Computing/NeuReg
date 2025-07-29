@@ -54,3 +54,91 @@ Our evaluations isolate the unique contributions of KG and text inputs, demonstr
 ---
 
 NeuReg offers a reproducible, ontology-grounded QA pipeline designed to improve transparency and interpretability in complex regulatory environments. For code, datasets, evaluation results, and ablation studies, explore the full repository.
+
+## 📂 Repository Structure
+
+NeuReg/
+│
+├── README.md                          # Overview of the project, contributions, pipeline, and structure
+├── LICENSE                            # Project license (e.g., MIT, Apache 2.0)
+├── requirements.txt                   # Python dependencies for reproducing the results
+│
+├── data/                              # Preprocessing and knowledge graph construction
+│   ├── chunks/                        # Extracting regulatory text chunks
+│   │   ├── chunks.csv                 # Final cleaned chunk dataset
+│   │   └── chunks.ipynb               # Chunk extraction notebook
+│   ├── ontology/                      # Ontology schema and KG triples
+│   │   ├── ontology_schema.json       # Extracted domain ontology in JSON
+│   │   ├── Ontology_Guided_Triples.csv          # Ontology-guided KG triples
+│   │   ├── Ontology_Guided_Triples_statistics.json  # Stats on generated triples
+│   │   ├── EFRO_Schema_Extraction.ipynb         # Extract ontology schema from guidance
+│   │   └── KG_Extraction.ipynb                  # Generate KG using ontology + chunks
+│
+├── qa_generation/                     # QA dataset generation using prompting
+│   ├── Zero-shot.ipynb                # Zero-shot QA generation
+│   ├── One-shot.ipynb                 # One-shot QA generation
+│   ├── Few-shot.ipynb                 # Few-shot QA generation
+│   ├── Zero-Shot_qa_dataset.json      # Output QA dataset (zero-shot)
+│   ├── One-Shot_qa_dataset.json       # Output QA dataset (one-shot)
+│   ├── Few-Shot_qa_dataset.json       # Output QA dataset (few-shot)
+│   ├── Zero_Shot_QA_analysis_report.json  # Analysis report (zero-shot)
+│   ├── One_Shot_QA_analysis_report.json   # Analysis report (one-shot)
+│   └── Few_Shot_QA_analysis_report.json   # Analysis report (few-shot)
+│
+├── evaluation/                        # Evaluation modules for QA datasets
+│   ├── ontology_guided/               # KG triples validation
+│   │   ├── Evaluation.ipynb
+│   │   ├── evaluation_results.csv
+│   │   └── evaluation_report.json
+│   ├── llm_judges/                    # LLM-based QA scoring (5 models)
+│   │   ├── DeepSeek-R1-Distill-Llama-70B/
+│   │   │   ├── DeepSeek-R1-Distill-Llama-70B.ipynb
+│   │   │   ├── *_zeroshot_*.csv
+│   │   │   └── *_fewshot_*.csv
+│   │   ├── Gemma-2-27B/
+│   │   ├── LLaMA-3.3-70B/
+│   │   ├── Mixtral-8x22B/
+│   │   └── Qwen3-32B/
+│   ├── humans/                        # Human-based QA evaluation
+│   │   ├── Evaluation_Template.pdf (or .csv)
+│   │   ├── Human_based_results_analysis.ipynb
+│   │   └── humans_Analysis_report.csv
+│   └── llm_vs_human/                 # Correlation between LLM and human scores
+│       ├── llm_vs_human_Analysis_results_analysis.ipynb
+│       └── Correlation_llm_vs_human.csv
+│
+├── analysis/                          # Dataset-level quality statistics
+│   ├── Statistical_Analysis.ipynb     # Combined stats for QA datasets
+│   ├── Readability_Analysis.csv       # Readability scores (e.g., Flesch, FKGL)
+│   ├── Vocabulary_Diversity_Analysis.csv
+│   ├── Length_Distribution_Analysis.csv
+│   ├── LLMs_based_results_analysis.ipynb  # Mean, majority, etc. from LLM evaluations
+│   └── LLMs_Analysis_report.csv
+│
+├── ablations/                         # QA generation and evaluation using partial inputs
+│   ├── chunks_only/                   # QA generation using only chunks (no KG)
+│   │   ├── chunks_only_qa_dataset.ipynb
+│   │   ├── evaluation/
+│   │   │   ├── chunks_only_evaluation_DeepSeekR1.ipynb
+│   │   │   ├── *.csv
+│   ├── kg_only/                       # QA generation using only KG triples (no text)
+│   │   ├── KG_only_qa_dataset.ipynb
+│   │   ├── evaluation/
+│   │   │   ├── KG_only_evaluation_DeepSeekR1.ipynb
+│   │   │   ├── *.csv
+│   ├── Ablation_1_chunks_only_qa_dataset.json      # Final dataset (chunks only)
+│   ├── Ablation_1_chunks_only_analysis_report.json # Evaluation report (chunks only)
+│   ├── Ablation_2_kg_only_qa_dataset.json          # Final dataset (KG only)
+│   ├── Ablation_2_kg_only_analysis_report.json     # Evaluation report (KG only)
+│
+├── fine_tuning/                       # Fine-tuning of LLMs on generated QA datasets
+│   ├── t5_small/
+│   │   ├── t5_small_zero.ipynb
+│   │   ├── t5_small_one.ipynb
+│   │   └── t5_small_few.ipynb
+│   ├── t5_base/
+│   ├── t5_large/
+│   ├── flan_t5_small/
+│   ├── flan_t5_base/
+│   ├── flan_t5_large/
+│   └── results/                       # Aggregated fine-tuning evaluation logs/results
