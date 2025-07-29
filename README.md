@@ -75,6 +75,14 @@ We conduct controlled ablation studies to quantify the individual contributions 
 
 ---
 
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/RGU-Computing/NeuReg.git
+cd NeuReg
+pip install -r requirements.txt
+```
+---
 ## 📂 Repository Structure
 
 ```text
