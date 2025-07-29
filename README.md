@@ -173,8 +173,10 @@ To reproduce the NeuReg QA generation pipeline:
 ```bash
 cd data/chunks/
 jupyter notebook chunks.ipynb
-
+```
+```bash
 ### **Step 2: Generate Ontology-Guided KG Triples**
 cd data/ontology/
 jupyter notebook EFRO_Schema_Extraction.ipynb  # Extract EFRO ontology
 jupyter notebook KG_Extraction.ipynb           # Generate KG triples
+```
