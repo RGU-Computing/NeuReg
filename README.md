@@ -213,5 +213,8 @@ jupyter notebook t5_small_one.ipynb    # One-shot dataset
 jupyter notebook t5_small_few.ipynb    # Few-shot dataset
 ```
 
+## 📄 License
 
+This project is licensed under the MIT License. © 2025 School of Computing, Engineering and Technology, Robert Gordon University, UK.
 
+For full license details, see the [LICENSE](LICENSE) file.
