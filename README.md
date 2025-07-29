@@ -167,7 +167,7 @@ NeuReg/
 
 ## ⚙️ Installation
 
-```markdown
+```bash
 git clone https://github.com/RGU-Computing/NeuReg.git
 cd NeuReg
 pip install -r requirements.txt
@@ -175,7 +175,7 @@ pip install -r requirements.txt
 ---
 
 ## ▶️ Getting Started
-```bash
+```markdown
 To reproduce the NeuReg QA generation pipeline:
 
 ### **Step 1: Preprocess Regulatory Text**
