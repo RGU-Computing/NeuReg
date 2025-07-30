@@ -1,20 +1,14 @@
 # 🤖 QA Generation Framework Overview
 
-This contains prompting strategies to generate high-quality, semantically grounded question-answer (QA) pairs from educational funding regulation documents using Ontology guided knowledge graphs.
+Each strategy follows a structured template that integrates regulatory text chunks with ontology-guided KG triples to ensure factual grounding and semantic alignment. All prompts include a task type specification, task description, generation instructions, and diversity requirements to encourage varied question patterns and broad entity coverage.
+
 
 ---
 
 ## 🤖 Zero-Shot QA Generation Prompt
 
-In zero-shot QA generation, the model receives no prior examples or demonstrations to imitate. Instead, it relies entirely on:
+No exemplars are provided. The model is guided solely by the standard template inputs, task type, description, generation instructions, diversity requirements, regulatory text chunk, and aligned KG triples to generate policy-aligned QA pairs. This strategy evaluates the model’s ability to produce high-quality questions without in-context demonstrations.
 
-- A structured task description specifying the question type  
-- Prompt instructions tailored to that type (factual, relational, comparative, inferential)  
-- Diversity constraints to encourage variation across generated questions  
-- A regulatory text chunk  
-- Its corresponding ontology-guided knowledge graph (KG) triples  
-
-This strategy evaluates the model’s capacity to generate policy-aligned, diverse questions without prior examples, testing its generalization and semantic alignment abilities using only instructional guidance and contextual input.
 
 ---
 
@@ -80,11 +74,7 @@ This task requires generating `{N}` diverse, high-quality questions aligned with
 
 ## 🧠 One-Shot QA Generation Prompt
 
-In One-Shot prompting, the model is provided with a single exemplar QA for each question type (Factual, Relationship, Comparative, Inferential). Each exemplar includes:
-
-- A shared regulatory context  
-- Ontology-guided KG triples extracted from that context  
-- A well-formed  question aligned with the chunk + KG  
+For each question type (FactQ, RelQ, CompQ, InferQ), we manually construct a single exemplar using a shared regulatory text chunk and its aligned KG triples. The prompt presents this exemplar, comprising a context, KG triples, and a question, followed by the target text chunk and its corresponding KG triples. This lightweight scaffolding helps guide the model toward consistent, semantically grounded QA generation while maintaining flexibility in phrasing and content.
 
 ---
  ### Shared Exemplar
@@ -170,13 +160,7 @@ REQUIRED OUTPUT FORMAT:
 
 ## 🧠 Few-Shot QA Generation Prompt
 
-In Few-Shot prompting, the model is provided with **multiple exemplars** across all question types. Each exemplar includes:
-
-- A unique regulatory context chunk  
-- Ontology-guided KG triples  
-- QA pairs for each of the four question types  
-
-This design helps internalize diverse reasoning strategies and enables the model to generate semantically rich, diverse QA pairs.
+Multiple exemplars are provided to strengthen task grounding and support pattern generalisation. The prompt includes **twelve** manually constructed exemplars, one for each question type across three regulatory chunks, each consisting of a context, KG triples, and a question. These are followed by the target context and its aligned KG triples. This setup enables the model to internalise diverse reasoning strategies and generate semantically rich, varied QA pairs.
 
 ---
 
