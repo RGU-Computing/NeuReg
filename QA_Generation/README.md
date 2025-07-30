@@ -30,7 +30,7 @@ DIVERSITY REQUIREMENTS:
 - Make each question distinctly different from others
 
 INSTRUCTIONS:
-{QUESTION_TYPE_SPECIFIC_PROMPT}
+{QUESTION_TYPE-SPECIFIC_PROMPT}
 
 CONTEXT TEXT:
 {context[:1200]}{"..." if len(context) > 1200 else ""}
@@ -40,16 +40,16 @@ ONTOLOGY-GUIDED KNOWLEDGE GRAPH TRIPLES:
 
 REQUIRED OUTPUT FORMAT:
 [
-  {
+  {{
     "id": "1",
     "question": "Your detailed question here?",
     "answer": "Your comprehensive answer here.",
     "type": "{question_type}",
-    "qa_metadata": {
+    "qa_metadata": {{
       "mentioned_entities": ["entity1", "entity2"],
       "mentioned_relationships": ["relationship1", "relationship2"]
-    }
-  }
+    }}
+  }}
 ]
 
 Generate exactly {N} DIVERSE, high-quality {question_type} questions.
