@@ -199,6 +199,7 @@ Exemplar KG Triples:
 
 Exemplar_Questions:
 ```json
+{
 QuestionType.FACTUAL: {
                 "question": "What must institutions assume about EEA students who were resident in the UK before 1 January 2022?"
             },
@@ -211,6 +212,7 @@ QuestionType.FACTUAL: {
             QuestionType.INFERENTIAL: {
                 "question": "Why might institutions be discouraged from enrolling students who are likely to leave the UK permanently during their study programme?"
             }
+}
 ```
 
 2: Exemplar Context (Excerpt):
