@@ -236,6 +236,7 @@ Exemplar KG Triples:
 
 Exemplar_Questions:
 ```json
+{
 "FACTUAL": {
                 "question": "Which students are usually eligible for funding throughout the duration of their study programme?"
             },
@@ -251,6 +252,8 @@ Exemplar_Questions:
         }
 
 ```
+---
+
  #### 3: Exemplar Context (Excerpt): 
 
 "context": "For the Prince's Trust Team Programme, the institution overhead rate (management fee) should be no more than a maximum of 15 per cent of the total ESFA funding. Any figure above 15 per cent will require prior approval from ESFA in collaboration with the Prince's Trust. For the purpose of the condition of funding, ESFA recognise that the Team Programme will support young people to progress towards General Certificate of Secondary Education standard and has been approved as a stepping stone towards a General Certificate of Secondary Education in these subjects.",
@@ -267,7 +270,20 @@ Exemplar KG Triples:
 
 Exemplar_Questions:
 ```json
-
+{
+"FACTUAL": {
+                "question": "What is the maximum management fee allowed for the Prince's Trust Team Programme without requiring ESFA approval?"
+            },
+"RELATIONSHIP": {
+                "question": "How is the Prince's Trust involved in the approval process when the management fee exceeds 15%?"
+            },
+"COMPARATIVE": {
+                "question": "How does the recognition of the Team Programme differ from a full General Certificate of Secondary Education?"
+            },
+"INFERENTIAL": {
+                "question": "Why might ESFA recognize the Team Programme as a stepping stone towards GCSE standard?"
+            }
+        }
 ```
 ---
 
