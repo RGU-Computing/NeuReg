@@ -1,6 +1,35 @@
-## 📊 Knowledge Graph Summary
+# 📈 Chunk & Triple Statistics
+The following statistics summarise the structure and textual complexity of the extracted knowledge graph:
+
+## 🧩 Chunk-Level Statistics
+These reflect how RDF triples are distributed across document segments:
+
+| Metric                 | Value |
+| ---------------------- | ----- |
+| Total Chunks           | 150   |
+| Mean Triples per Chunk | 12.43 |
+| Std. Deviation         | 4.10  |
+| Minimum                | 5     |
+| 25th Percentile        | 10    |
+| Median                 | 12    |
+| 75th Percentile        | 14    |
+| Maximum                | 29    |
+
+----
+
+# 📊 Knowledge Graph Summary
 
 The dataset has been processed into a structured knowledge graph representation, extracted from educational funding regulations. Below is a summary of key statistics:
+
+## 📏 Triple Component Lengths (Avg. Character Count)
+These values describe the average textual size of each RDF triple component:
+
+| Component | Average Length |
+| --------- | -------------- |
+| Subject   | 17.16 chars    |
+| Predicate | 14.73 chars    |
+| Object    | 22.50 chars    |
+
 
 ## 🧩 General Graph Statistics
 Total Triples: 1,865
@@ -19,6 +48,8 @@ Min Triples per Chunk: 5
 
 Max Triples per Chunk: 29
 
+----
+
 ## 📚 Frequent Subjects (Top Entities)
 
 
@@ -35,6 +66,7 @@ Max Triples per Chunk: 29
 | `provider`           | 14    |
 | `funding_element`    | 13    |
 
+----
 ## 🔁 Frequent Predicates (Top Relations)
 
 | Predicate                     | Count |
@@ -50,6 +82,7 @@ Max Triples per Chunk: 29
 | `corresponds_to_learning_aim` | 26    |
 | `is_member_of`                | 26    |
 
+----
 ## 🧵 Frequent Objects (Top Values)
 
 | Object                        | Count |
@@ -65,28 +98,24 @@ Max Triples per Chunk: 29
 | `institutions`                | 8     |
 | `false`                       | 8     |
 
-
+----
 ## 📐 Statistical Summary of Triples per Chunk
 Count (Chunks): 150
 
 Mean: 12.43
-
 Standard Deviation: 4.10
-
 Min: 5
-
 25% Percentile: 10
-
 Median (50%): 12
-
 75% Percentile: 14
-
 Max: 29
 
+----
 ## 🔠 Token Length (avg. character count)
 Subject Length: 17.16
 
 Predicate Length: 14.73
 
 Object Length: 22.50
+
 
