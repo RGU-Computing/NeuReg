@@ -2,15 +2,10 @@
 In zero-shot QA generation, the model is not provided with any exemplar QAs or demonstrations. Instead, it relies entirely on:
 
 A structured task description specifying the question type
-
 Prompt instructions tailored to that type (factual, relational, comparative, inferential)
-
 Diversity constraints to encourage variation across generated questions
-
-A regulatory text chunk (up to 1200 characters)
-
+A regulatory text chunk 
 Its corresponding ontology-guided knowledge graph (KG) triples)
-
 This strategy evaluates the model’s capacity to generate policy-aligned, diverse questions without prior examples, testing its generalization and semantic alignment abilities using only instructional guidance and contextual input.
 
 ---
