@@ -11,45 +11,68 @@ This strategy evaluates the model’s capacity to generate policy-aligned, diver
 ---
 ### 🧠 Zero-Shot Prompt Template
 
-ZERO-SHOT QA GENERATION TASK
+#### 🤖 ZERO-SHOT QA GENERATION TASK
 
-TASK TYPE: {QUESTION_TYPE}
+**TASK TYPE:** `{QUESTION_TYPE}`
+
+This task requires generating `{N}` diverse, high-quality questions aligned with the selected task type (`{QUESTION_TYPE}`), based on both the regulatory **context** and its corresponding **ontology-guided knowledge graph (KG) triples**.
+
+---
+
+#### 🎯 Task Description
 
 {TASK_DESCRIPTION}
 
-DIVERSITY REQUIREMENTS:
-- Each question must be UNIQUE and ask about DIFFERENT aspects
-- Use VARIED question starters and phrasing patterns
-- Focus on DIFFERENT entities, relationships, or information types
-- Avoid repetitive structures or similar wordings
-- Make each question distinctly different from others
+---
 
-INSTRUCTIONS:
+#### 🔁 Diversity Requirements
+
+- Each question must be **unique** and ask about **different aspects**
+- Use **varied** question starters and phrasing patterns
+- Focus on **different entities, relationships, or information types**
+- Avoid **repetitive structures** or similar wording
+- Make each question **distinctly different** from others
+
+---
+
+#### 📝 Instructions
+
 {QUESTION_TYPE-SPECIFIC_PROMPT}
 
-CONTEXT TEXT:
-{context[:1200]}{"..." if len(context) > 1200 else ""}
+---
 
-ONTOLOGY-GUIDED KNOWLEDGE GRAPH TRIPLES:
-{triple_text}
+#### 📄 Context Text
 
-REQUIRED OUTPUT FORMAT:
+
+
+---
+
+
+---
+
+#### 🧠 Ontology-Guided Knowledge Graph Triples
+
+
+---
+
+### 🧾 Required Output Format (JSON)
+
+```json
 [
-  {{
+  {
     "id": "1",
     "question": "Your detailed question here?",
     "answer": "Your comprehensive answer here.",
     "type": "{question_type}",
-    "qa_metadata": {{
+    "qa_metadata": {
       "mentioned_entities": ["entity1", "entity2"],
       "mentioned_relationships": ["relationship1", "relationship2"]
-    }}
-  }}
+    }
+  }
 ]
 
-Generate exactly {N} DIVERSE, high-quality {question_type} questions.
+Please generate exactly {N} diverse, high-quality {question_type} questions using the provided instructions, context, and triples.
 
----
 ### 🔍 Supported Question Types & Task Descriptions
 
 | Type             | Description                                                                                                                                                                                                                                                                                                                                                                              |
