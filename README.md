@@ -84,7 +84,7 @@ NeuReg/
 ├── requirements.txt                   # Python dependencies for reproducing the results
 
 ├── data/                              # Preprocessing and knowledge graph construction
-│   ├──  README.md                      # Overview of chunk & triple-level statistics
+│   ├── README.md                      # Overview of chunk & triple-level statistics
 │   ├── chunks/                        # Extracting regulatory text chunks
 │   │   ├── chunks.csv                 # chunk dataset
 │   │   └── chunks.ipynb               # Chunk extraction notebook
@@ -95,7 +95,8 @@ NeuReg/
 │   │   ├── EFRO_Schema_Extraction.ipynb           # Extract ontology schema from guidance
 │   │   └── KG_Extraction.ipynb                    # Generate KG using ontology + chunks
 
-├── qa_generation/                     # QA dataset generation using prompting
+├── qa_generation/                      # QA dataset generation using prompting
+│   ├── README.md                      
 │   ├── Zero-shot.ipynb                # Zero-shot QA generation
 │   ├── One-shot.ipynb                 # One-shot QA generation
 │   ├── Few-shot.ipynb                 # Few-shot QA generation
@@ -107,6 +108,7 @@ NeuReg/
 │   └── Few_Shot_QA_analysis_report.json   # Analysis report (few-shot)
 
 ├── evaluation/                        # Evaluation modules for QA datasets
+│   ├── README.md 
 │   ├── ontology_guided/               # KG triples validation
 │   │   ├── Evaluation.ipynb
 │   │   ├── evaluation_results.csv
@@ -129,6 +131,7 @@ NeuReg/
 │       └── Correlation_llm_vs_human.csv
 
 ├── analysis/                          # Statistical analysis & insights
+│   ├── README.md 
 │   ├── Statistical_Analysis.ipynb
 │   ├── Readability_Analysis.csv       # FKGL, Flesch, etc.
 │   ├── Vocabulary_Diversity_Analysis.csv
@@ -137,6 +140,7 @@ NeuReg/
 │   └── LLMs_Analysis_report.csv
 
 ├── ablations/                         # Ablation studies (chunks_only/kg_only)
+│   ├── README.md 
 │   ├── chunks_only/                   # QA from chunks only (no KG)
 │   │   ├── chunks_only_qa_dataset.ipynb
 │   │   ├── evaluation/
@@ -153,6 +157,7 @@ NeuReg/
 │   ├── Ablation_2_kg_only_analysis_report.json     # Evaluation report
 
 ├── fine_tuning/                       # Fine-tuning experiments on QA datasets
+│   ├── README.md 
 │   ├── t5_small/
 │   │   ├── t5_small_zero.ipynb
 │   │   ├── t5_small_one.ipynb
