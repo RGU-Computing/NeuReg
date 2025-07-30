@@ -200,19 +200,20 @@ Exemplar KG Triples:
 Exemplar_Questions:
 ```json
 {
-FACTUAL: {
-                "question": "What must institutions assume about EEA students who were resident in the UK before 1 January 2022?"
-            },
-RELATIONSHIP: {
-                "question": "How is a student's likelihood of permanent departure related to their eligibility for funding?"
-            },
-COMPARATIVE: {
-                "question": "How does the institution's responsibility differ before and after a student is enrolled in a study programme?"
-            },
-INFERENTIAL: {
-                "question": "Why might institutions be discouraged from enrolling students who are likely to leave the UK permanently during their study programme?"
-            }
+  "FACTUAL": {
+    "question": "What must institutions assume about EEA students who were resident in the UK before 1 January 2022?"
+  },
+  "RELATIONSHIP": {
+    "question": "How is a student's likelihood of permanent departure related to their eligibility for funding?"
+  },
+  "COMPARATIVE": {
+    "question": "How does the institution's responsibility differ before and after a student is enrolled in a study programme?"
+  },
+  "INFERENTIAL": {
+    "question": "Why might institutions be discouraged from enrolling students who are likely to leave the UK permanently during their study programme?"
+  }
 }
+
 ```
 
 2: Exemplar Context (Excerpt):
