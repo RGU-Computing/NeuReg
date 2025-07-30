@@ -111,20 +111,21 @@ Exemplar KG Triples:
 
 Exemplar_Questions:
 
-```json
-        QuestionType.FACTUAL: {
-            "question": "What types of institutions can claim ESFA young people's funding for electively home educated (EHE) children?"
-        },
-        QuestionType.RELATIONSHIP: {
-            "question": "How is a full Level 2 qualification related to eligibility for Level 3 ESFA-funded programmes for compulsory school-age students?"
-        }, 
-        QuestionType.COMPARATIVE: {
-            "question": "How does ESFA funding eligibility differ between individual and groups of students arriving in the UK during school year 11?"
-        },
-        QuestionType.INFERENTIAL: {
-            "question": "Based on the information provided, what is the underlying reason ESFA distinguishes between individual and groups of students when considering funding for those arriving in the UK during school year 11?"
-        }
-```
+{
+  "Factual": {
+    "question": "What types of institutions can claim ESFA young people's funding for electively home educated (EHE) children?"
+  },
+  "Relationship": {
+    "question": "How is a full Level 2 qualification related to eligibility for Level 3 ESFA-funded programmes for compulsory school-age students?"
+  },
+  "Comparative": {
+    "question": "How does ESFA funding eligibility differ between individual and groups of students arriving in the UK during school year 11?"
+  },
+  "Inferential": {
+    "question": "Based on the information provided, what is the underlying reason ESFA distinguishes between individual and groups of students when considering funding for those arriving in the UK during school year 11?"
+  }
+}
+
 ---
 
 ### 🧠 One-Shot Prompt Template
