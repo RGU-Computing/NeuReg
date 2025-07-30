@@ -2,6 +2,16 @@
 pydantic>=1.10.0
 ftfy>=6.1.1
 fitz  # PyMuPDF, ensure installed via pip install pymupdf
+uuid
+re
+enum
+dataclass
+OrderedDict
+List, Dict, Tuple, Optional
+sys
+os
+logging
+json
 unstructured>=0.10.0  # for PDF parsing (partition_pdf)
 
 # Core Dependencies
