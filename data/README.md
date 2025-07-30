@@ -1,3 +1,55 @@
+# 🧠 Ontology-Guided Knowledge Graph Construction
+
+This project begins by using GPT-4 Turbo to extract triples from educational funding regulatory (EFR) documents, guided by a domain-specific ontology. The extracted knowledge graph is structured, compact, and aligned with the Educational funding regulation ontology (**EFRO**).
+
+🔗 **EFRO Ontology File**:  
+[EFRO.rdf on GitHub](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO.rdf)
+
+---
+
+## 💬 Prompt for EFRO guided KG Extraction
+
+> You are a knowledge extraction model that converts EFR text into triples.  
+>
+> Below is a text chunk from an EFR document:  
+>
+> ```
+> {text_chunk}
+> ```
+>
+> Use the ontology schema below to guide your extraction:
+>
+> ```
+> {ontology_schema}
+> ```
+>
+> ---
+>
+> **Example:**
+>
+> Text:  
+> Institutions must assume that EEA students have the right to remain in the UK. Once a student is enrolled, the institution is expected to take all reasonable steps to ensure that the student can complete their programme.
+>
+> Triples:
+> ```
+> (institution, has_assumption, eea_students_right_to_remain)  
+> (student, is_enrolled_in, study_programme)  
+> (institution, has_legal_duty, ensure_student_completion)  
+> (institution, provides_support, student)  
+> ```
+>
+> ---
+>
+> Now, extract all triples from the provided chunk in the format:  
+> `(subject, predicate, object)`
+>
+> **Guidelines:**
+> - Do not use full sentences or long descriptions as object values.  
+> - Normalize object values into short, meaningful phrases or identifiers  
+>   (e.g., `GDPR_compliance`, `funding_16_19`, `right_to_remain`).
+
+---
+
 # 📈 Chunk & Triple Statistics
 The following statistics summarise the structure and textual complexity of the extracted knowledge graph:
 
@@ -17,7 +69,7 @@ These reflect how RDF triples are distributed across document segments:
 
 ---
 
-# 📊 Knowledge Graph Summary
+## 📊 Knowledge Graph Summary
 
 The dataset has been processed into a structured knowledge graph extracted from educational funding regulations. Below is a summary of key statistics:
 
