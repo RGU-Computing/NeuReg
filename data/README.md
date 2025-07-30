@@ -15,14 +15,14 @@ These reflect how RDF triples are distributed across document segments:
 | 75th Percentile        | 14    |
 | Maximum                | 29    |
 
-----
+---
 
 # 📊 Knowledge Graph Summary
 
-The dataset has been processed into a structured knowledge graph representation, extracted from educational funding regulations. Below is a summary of key statistics:
+The dataset has been processed into a structured knowledge graph extracted from educational funding regulations. Below is a summary of key statistics:
 
 ## 📏 Triple Component Lengths (Avg. Character Count)
-These values describe the average textual size of each RDF triple component:
+These values describe the average character length of each RDF triple component:
 
 | Component | Average Length |
 | --------- | -------------- |
@@ -30,28 +30,20 @@ These values describe the average textual size of each RDF triple component:
 | Predicate | 14.73 chars    |
 | Object    | 22.50 chars    |
 
-
 ## 🧩 General Graph Statistics
-Total Triples: 1,865
 
-Unique Chunks (Document Segments): 150
+- **Total Triples**: 1,865  
+- **Unique Chunks**: 150  
+- **Unique Subjects**: 784  
+- **Unique Predicates**: 533  
+- **Unique Objects**: 1,475  
+- **Average Triples per Chunk**: 12.43  
+- **Min Triples per Chunk**: 5  
+- **Max Triples per Chunk**: 29  
 
-Unique Subjects: 784
-
-Unique Predicates: 533
-
-Unique Objects: 1,475
-
-Average Triples per Chunk: 12.43
-
-Min Triples per Chunk: 5
-
-Max Triples per Chunk: 29
-
-----
+---
 
 ## 📚 Frequent Subjects (Top Entities)
-
 
 | Subject              | Count |
 | -------------------- | ----- |
@@ -66,7 +58,8 @@ Max Triples per Chunk: 29
 | `provider`           | 14    |
 | `funding_element`    | 13    |
 
-----
+---
+
 ## 🔁 Frequent Predicates (Top Relations)
 
 | Predicate                     | Count |
@@ -82,7 +75,8 @@ Max Triples per Chunk: 29
 | `corresponds_to_learning_aim` | 26    |
 | `is_member_of`                | 26    |
 
-----
+---
+
 ## 🧵 Frequent Objects (Top Values)
 
 | Object                        | Count |
@@ -98,24 +92,25 @@ Max Triples per Chunk: 29
 | `institutions`                | 8     |
 | `false`                       | 8     |
 
-----
+---
+
 ## 📐 Statistical Summary of Triples per Chunk
-Count (Chunks): 150
 
-Mean: 12.43
-Standard Deviation: 4.10
-Min: 5
-25% Percentile: 10
-Median (50%): 12
-75% Percentile: 14
-Max: 29
+| Metric        | Value |
+|---------------|-------|
+| Count         | 150   |
+| Mean          | 12.43 |
+| Std. Dev.     | 4.10  |
+| Min           | 5     |
+| 25% Percentile| 10    |
+| Median (50%)  | 12    |
+| 75% Percentile| 14    |
+| Max           | 29    |
 
-----
-## 🔠 Token Length (avg. character count)
-Subject Length: 17.16
+---
 
-Predicate Length: 14.73
+## 🔠 Token Length (Avg. Character Count)
 
-Object Length: 22.50
-
-
+- **Subject Length**: 17.16  
+- **Predicate Length**: 14.73  
+- **Object Length**: 22.50
