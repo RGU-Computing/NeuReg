@@ -1,0 +1,377 @@
+{
+  "ontology_file": "Ontologies_Guided_Kg_Extraction/EFRO/EFRO.rdf",
+  "extraction_timestamp": "unknown",
+  "classes": [
+    "Learning",
+    "FundingElement",
+    "Reason",
+    "FundingImpact",
+    "EducationalEntity",
+    "ResearchGroup",
+    "KnowledgeGrouping",
+    "Activity",
+    "Programme",
+    "FundingRegulations",
+    "Evidence",
+    "Obligation",
+    "TimeRelated",
+    "ComplianceCriterion"
+  ],
+  "object_properties": [
+    "hasServiceType",
+    "hasProgressionType",
+    "enrolledIn",
+    "hasAimStatus",
+    "givernedBy",
+    "supportsLearning",
+    "hasWithdrawalProcess",
+    "includes",
+    "evaluates",
+    "progressedTo",
+    "hasOnlineAccount",
+    "hasGroupType",
+    "requires",
+    "hasApplicationType",
+    "hasFundingImpact",
+    "hasPeriodTotal",
+    "tracksProgress",
+    "progressedFrom",
+    "hasPlannedHours",
+    "hasFundingElement",
+    "hasReplacementActivity",
+    "hasWithdrawalReason",
+    "hasLegalDuty",
+    "supportsActivity",
+    "hasClassRegister",
+    "hasWeeklyLimit",
+    "hasEnrollee",
+    "modifies",
+    "correspondsToLearningAim",
+    "hasLearningMode",
+    "hasCompletionStatus",
+    "hasAssociatedDocument",
+    "belongsTo",
+    "hasAttendanceEvidence",
+    "isReasonFor",
+    "performs",
+    "isTimePeriodOf",
+    "hasParticipationStatus",
+    "isFundedBy",
+    "forProgramme",
+    "isDocumentationRequiredBy",
+    "hasWithdrawnFromProgramme",
+    "participatesIn",
+    "requiresDocumentation",
+    "hasFunding",
+    "providesAssistance",
+    "defines",
+    "hasProgressionActivity",
+    "withdrawnFrom",
+    "hasPlannedHoursManagement",
+    "hasReason",
+    "resultsIn",
+    "isStatusOf",
+    "hasParticipant",
+    "hasAchievementStatus",
+    "hasFundingStartStatus",
+    "hasLearningAim",
+    "hasStatus",
+    "hasInfrastructureType",
+    "resultsInStatus",
+    "isReplacementActivityOf",
+    "verifies",
+    "hasFundingCondition",
+    "hasTimePeriod",
+    "hasFundedStudent",
+    "hasTerm",
+    "hasDocumentation",
+    "hasProgression",
+    "relatedToFundingStatus",
+    "isStatusResultingFrom",
+    "resets",
+    "hasAttendanceRecord",
+    "hasAssessmentRecord",
+    "providesService"
+  ],
+  "data_properties": [
+    "hasIdentifier",
+    "hasMetFundingCriteria",
+    "hasDate",
+    "hasFundingValue",
+    "isCountedAsPlannedHours",
+    "hasDegreeSuffix",
+    "hasStatusValue",
+    "assistanceType",
+    "hasWithdrawalFromProgrammeDate",
+    "canBeUsedAsWithdrawalDate",
+    "progressedInWeek",
+    "hasOriginalPlannedHours",
+    "hasRegistrationDeadline",
+    "hasAimReference",
+    "isCountedAsGuidedLearning",
+    "hasTemporalValue",
+    "hasDescription",
+    "isValidLearningActivity",
+    "hasHoursValue",
+    "hasReference",
+    "hasAdjustedPlannedHours",
+    "hasDurationValue"
+  ],
+  "all_properties": [
+    "hasIdentifier",
+    "hasServiceType",
+    "hasMetFundingCriteria",
+    "hasProgressionType",
+    "givernedBy",
+    "hasWithdrawalProcess",
+    "progressedTo",
+    "hasDate",
+    "includes",
+    "evaluates",
+    "hasOnlineAccount",
+    "hasApplicationType",
+    "hasPeriodTotal",
+    "tracksProgress",
+    "progressedFrom",
+    "hasReplacementActivity",
+    "hasWithdrawalReason",
+    "hasLegalDuty",
+    "hasWithdrawalFromProgrammeDate",
+    "progressedInWeek",
+    "hasWeeklyLimit",
+    "hasEnrollee",
+    "modifies",
+    "correspondsToLearningAim",
+    "hasRegistrationDeadline",
+    "hasCompletionStatus",
+    "hasAttendanceEvidence",
+    "hasParticipationStatus",
+    "isFundedBy",
+    "hasAimReference",
+    "isDocumentationRequiredBy",
+    "hasWithdrawnFromProgramme",
+    "participatesIn",
+    "hasFunding",
+    "providesAssistance",
+    "hasProgressionActivity",
+    "isCountedAsGuidedLearning",
+    "withdrawnFrom",
+    "hasPlannedHoursManagement",
+    "hasReason",
+    "resultsIn",
+    "isStatusOf",
+    "hasTemporalValue",
+    "hasAchievementStatus",
+    "isValidLearningActivity",
+    "hasFundingStartStatus",
+    "hasStatus",
+    "hasInfrastructureType",
+    "resultsInStatus",
+    "isReplacementActivityOf",
+    "hasTimePeriod",
+    "hasReference",
+    "hasDocumentation",
+    "isStatusResultingFrom",
+    "resets",
+    "hasAttendanceRecord",
+    "providesService",
+    "hasDurationValue",
+    "enrolledIn",
+    "hasAimStatus",
+    "supportsLearning",
+    "hasGroupType",
+    "hasFundingValue",
+    "requires",
+    "hasFundingImpact",
+    "hasPlannedHours",
+    "hasFundingElement",
+    "isCountedAsPlannedHours",
+    "hasDegreeSuffix",
+    "hasStatusValue",
+    "assistanceType",
+    "canBeUsedAsWithdrawalDate",
+    "supportsActivity",
+    "hasClassRegister",
+    "hasOriginalPlannedHours",
+    "hasLearningMode",
+    "hasAssociatedDocument",
+    "belongsTo",
+    "isTimePeriodOf",
+    "isReasonFor",
+    "performs",
+    "forProgramme",
+    "requiresDocumentation",
+    "defines",
+    "hasParticipant",
+    "hasDescription",
+    "hasLearningAim",
+    "verifies",
+    "hasFundingCondition",
+    "hasFundedStudent",
+    "hasTerm",
+    "hasHoursValue",
+    "hasAdjustedPlannedHours",
+    "hasProgression",
+    "relatedToFundingStatus",
+    "hasAssessmentRecord"
+  ],
+  "property_domains": {
+    "isTimePeriodOf": [
+      "TimeRelated"
+    ],
+    "hasDurationValue": [
+      "TimeRelated"
+    ],
+    "hasTemporalValue": [
+      "TimeRelated"
+    ],
+    "defines": [
+      "FundingElement"
+    ],
+    "evaluates": [
+      "FundingElement"
+    ],
+    "hasFundingCondition": [
+      "FundingElement"
+    ],
+    "isFundedBy": [
+      "FundingElement"
+    ],
+    "requires": [
+      "FundingElement"
+    ],
+    "hasFundingValue": [
+      "FundingElement"
+    ],
+    "givernedBy": [
+      "FundingRegulations"
+    ],
+    "hasAssociatedDocument": [
+      "Obligation"
+    ],
+    "requiresDocumentation": [
+      "Obligation"
+    ],
+    "hasReference": [
+      "Obligation"
+    ],
+    "hasLearningMode": [
+      "Learning"
+    ],
+    "hasPlannedHoursManagement": [
+      "Learning"
+    ],
+    "hasDocumentation": [
+      "Reason"
+    ],
+    "isReasonFor": [
+      "Reason"
+    ],
+    "resultsInStatus": [
+      "Reason"
+    ],
+    "hasFundingImpact": [
+      "Activity"
+    ],
+    "hasParticipant": [
+      "Activity"
+    ],
+    "hasReason": [
+      "Activity"
+    ],
+    "resets": [
+      "Activity"
+    ],
+    "resultsIn": [
+      "Activity"
+    ],
+    "assistanceType": [
+      "Activity"
+    ],
+    "canBeUsedAsWithdrawalDate": [
+      "Activity"
+    ],
+    "isCountedAsGuidedLearning": [
+      "Activity"
+    ],
+    "isCountedAsPlannedHours": [
+      "Activity"
+    ],
+    "hasLegalDuty": [
+      "EducationalEntity"
+    ],
+    "includes": [
+      "EducationalEntity"
+    ],
+    "providesAssistance": [
+      "EducationalEntity"
+    ]
+  },
+  "property_ranges": {
+    "evaluates": [
+      "Activity"
+    ],
+    "isReasonFor": [
+      "Activity"
+    ],
+    "participatesIn": [
+      "Activity"
+    ],
+    "providesAssistance": [
+      "Activity"
+    ],
+    "providesService": [
+      "Activity"
+    ],
+    "supportsActivity": [
+      "Activity"
+    ],
+    "defines": [
+      "FundingImpact"
+    ],
+    "hasFundingImpact": [
+      "FundingImpact"
+    ],
+    "hasLegalDuty": [
+      "Obligation"
+    ],
+    "isDocumentationRequiredBy": [
+      "Obligation"
+    ],
+    "givernedBy": [
+      "FundingElement"
+    ],
+    "hasFunding": [
+      "FundingElement"
+    ],
+    "hasFundingElement": [
+      "FundingElement"
+    ],
+    "modifies": [
+      "FundingElement"
+    ],
+    "hasReason": [
+      "Reason"
+    ],
+    "isStatusResultingFrom": [
+      "Reason"
+    ],
+    "hasTimePeriod": [
+      "TimeRelated"
+    ],
+    "requires": [
+      "Evidence"
+    ],
+    "supportsLearning": [
+      "Learning"
+    ]
+  },
+  "class_hierarchy": {},
+  "schema_string": "Ontology Classes:\n- Activity, ComplianceCriterion, EducationalEntity, Evidence, FundingElement, FundingImpact, FundingRegulations, KnowledgeGrouping, Learning, Obligation, Programme, Reason, ResearchGroup, TimeRelated\n\nOntology Relationships:\n- assistanceType\n- belongsTo\n- canBeUsedAsWithdrawalDate\n- correspondsToLearningAim\n- defines (FundingElement -> FundingImpact)\n- enrolledIn\n- evaluates (FundingElement -> Activity)\n- forProgramme\n- givernedBy (FundingRegulations -> FundingElement)\n- hasAchievementStatus\n- hasAdjustedPlannedHours\n- hasAimReference\n- hasAimStatus\n- hasApplicationType\n- hasAssessmentRecord\n- hasAssociatedDocument\n- hasAttendanceEvidence\n- hasAttendanceRecord\n- hasClassRegister\n- hasCompletionStatus\n- hasDate\n- hasDegreeSuffix\n- hasDescription\n- hasDocumentation\n- hasDurationValue\n- hasEnrollee\n- hasFundedStudent\n- hasFunding\n- hasFundingCondition\n- hasFundingElement\n- hasFundingImpact (Activity -> FundingImpact)\n- hasFundingStartStatus\n- hasFundingValue\n- hasGroupType\n- hasHoursValue\n- hasIdentifier\n- hasInfrastructureType\n- hasLearningAim\n- hasLearningMode\n- hasLegalDuty (EducationalEntity -> Obligation)\n- hasMetFundingCriteria\n- hasOnlineAccount\n- hasOriginalPlannedHours\n- hasParticipant\n- hasParticipationStatus\n- hasPeriodTotal\n- hasPlannedHours\n- hasPlannedHoursManagement\n- hasProgression\n- hasProgressionActivity\n- hasProgressionType\n- hasReason (Activity -> Reason)\n- hasReference\n- hasRegistrationDeadline\n- hasReplacementActivity\n- hasServiceType\n- hasStatus\n- hasStatusValue\n- hasTemporalValue\n- hasTerm\n- hasTimePeriod\n- hasWeeklyLimit\n- hasWithdrawalFromProgrammeDate\n- hasWithdrawalProcess\n- hasWithdrawalReason\n- hasWithdrawnFromProgramme\n- includes\n- isCountedAsGuidedLearning\n- isCountedAsPlannedHours\n- isDocumentationRequiredBy\n- isFundedBy\n- isReasonFor (Reason -> Activity)\n- isReplacementActivityOf\n- isStatusOf\n- isStatusResultingFrom\n- isTimePeriodOf\n- isValidLearningActivity\n- modifies\n- participatesIn\n- performs\n- progressedFrom\n- progressedInWeek\n- progressedTo\n- providesAssistance (EducationalEntity -> Activity)\n- providesService\n- relatedToFundingStatus\n- requires (FundingElement -> Evidence)\n- requiresDocumentation\n- resets\n- resultsIn\n- resultsInStatus\n- supportsActivity\n- supportsLearning\n- tracksProgress\n- verifies\n- withdrawnFrom",
+  "statistics": {
+    "total_classes": 14,
+    "total_properties": 96,
+    "object_properties": 74,
+    "data_properties": 22
+  }
+}
