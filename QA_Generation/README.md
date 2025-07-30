@@ -17,13 +17,11 @@ This strategy evaluates the model’s capacity to generate policy-aligned, diver
 
 This task requires generating `{N}` diverse, high-quality questions aligned with the selected task type (`{QUESTION_TYPE}`), based on both the regulatory **context** and its corresponding **ontology-guided knowledge graph (KG) triples**.
 
----
 
 #### 🎯 Task Description
 
 {TASK_DESCRIPTION}
 
----
 
 #### 🔁 Diversity Requirements
 
@@ -33,25 +31,22 @@ This task requires generating `{N}` diverse, high-quality questions aligned with
 - Avoid **repetitive structures** or similar wording
 - Make each question **distinctly different** from others
 
----
 
 #### 📝 Instructions
 
 {QUESTION_TYPE-SPECIFIC_PROMPT}
 
----
 
 #### 📄 Context Text
 
 {context}
 
----
 
 #### 🧠 Ontology-Guided Knowledge Graph Triples
 
 {triple_text}
 
----
+
 
 ### 🧾 Required Output Format (JSON)
 
