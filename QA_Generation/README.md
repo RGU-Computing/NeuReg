@@ -77,3 +77,96 @@ Please generate exactly {N} diverse, high-quality {question_type} questions usin
 | **Relationship** | Generate `{n}` questions about **specific relationships or interactions** between entities in the context. <br> Focus on how different entities, organizations, processes, or concepts **connect, influence**, or **depend on each other** through the knowledge graph. <br> Each question should mention **at least two entities** and explore their connection via a relationship.     |
 | **Comparative**  | Generate `{n}` questions comparing different **aspects, entities, or concepts** from the context. <br> These questions should highlight **differences**, **similarities**, or **contrasts** between funding types, eligibility requirements, processes, or organizational structures. <br> Use the knowledge graph to identify **comparable elements**.                                  |
 | **Inferential**  | Generate `{n}` questions that require **reasoning, analysis, or synthesis** based on the context and the knowledge graph. <br> These questions combine multiple pieces of information to draw conclusions, predict outcomes, or identify implications. <br> They should involve **multiple knowledge graph triples** and go beyond surface-level retrieval.                              |
+
+----
+
+## 🧠 One-Shot QA Generation Prompt
+
+In One-Shot prompting, the model is provided with a single exemplar QA for each question type (Factual, Relationship, Comparative, Inferential). The exemplar consists of:
+A shared regulatory context
+Ontology-guided KG triples extracted from that context
+A well-formed QA pair aligned with the KG
+The exemplar is shown before the model is prompted with a target context + KG, encouraging it to generalize the QA generation task from a single in-context demonstration.
+This strategy helps guide the model toward semantically aligned, consistent QA generation while preserving phrasing flexibility and encouraging high-quality, context-sensitive outputs.
+
+----
+### 🧪 Exemplar Setup (Shared Demonstration for All Question Types)
+
+##### 📄 Exemplar Context
+ESFA funds children who are currently electively home educated (EHE) who attend general further education (Further Education) and sixth form colleges. EHE children who attend schools and academies are not eligible for ESFA young people's funding. You can find more information in the Funding rates and formula guide. Colleges may claim ESFA young people's funding for children of compulsory school age who have completed their statutory education, have achieved qualifications at least equivalent to a full level 2, and who want to enrol on a level 3 course. Colleges do not need to seek approval from ESFA, as we will count these students for lagged funding purposes. This advice also applies to schools and academies placing students in their sixth forms earlier than usual. In exceptional circumstances, for example, students arriving in the UK for the first time during school year 11, ESFA will consider provision for individual students of compulsory school age to be eligible for ESFA young people's funding in colleges. Groups of students would not be eligible for funding, since by inference such circumstances are unlikely to be exceptional.
+
+##### 🧠 Exemplar Knowledge Graph Triples
+
+        ("esfa", "funds", "ehe_children_further_education"),
+        ("ehe_children_further_education", "enrolled_in", "further_education_colleges"),
+        ("ehe_children_further_education", "enrolled_in", "sixth_form_colleges"),
+        ("ehe_children_schools_academies", "not_eligible_for", "esfa_young_people_funding"),
+        ("funding_rates_and_formula_guide", "provides_information_on", "esfa_funding_details"),
+        ("colleges", "can_claim", "esfa_young_people_funding"),
+        ("esfa_young_people_funding", "for_programme", "level_3_course"),
+        ("children_compulsory_school_age", "has_achievement_status", "full_level_2_qualification"),
+        ("esfa", "does_not_require_approval_from", "colleges_for_lagged_funding"),
+        ("schools_and_academies", "applies_same_advice_as", "colleges_for_early_sixth_form_placement"),
+        ("esfa", "considers_funding_eligibility_for", "individual_students_compulsory_school_age"),
+        ("individual_students_compulsory_school_age", "has_reason", "arriving_in_uk_during_school_year_11"),
+        ("groups_of_students", "not_eligible_for", "esfa_young_people_funding_due_to_non_exceptional_circumstances")
+
+###  🧠 One-Shot Prompt Template
+
+ONE-SHOT QA GENERATION TASK
+
+TASK TYPE: {QUESTION_TYPE}
+
+{TASK_DESCRIPTION}
+
+EXEMPLAR DEMONSTRATION:
+
+EXAMPLE CONTEXT:
+{EXEMPLAR_CONTEXT}
+
+EXAMPLE KNOWLEDGE GRAPH TRIPLES:
+{EXEMPLAR_KG}
+
+EXAMPLE {QUESTION_TYPE} QUESTION:
+{EXEMPLAR_QUESTION}
+
+---
+
+NOW GENERATE FOR target CONTEXT:
+
+TARGET CONTEXT:
+{CONTEXT_TEXT}
+
+TARGET KNOWLEDGE GRAPH TRIPLES:
+{TRIPLE_TEXT}
+
+GENERATION INSTRUCTIONS:
+{GENERATION_GUIDANCE}
+
+DIVERSITY REQUIREMENTS:
+- Each question must be UNIQUE and ask about DIFFERENT aspects  
+- Use VARIED question starters and phrasing patterns  
+- Focus on DIFFERENT entities, relationships, or information types  
+- Avoid repetitive structures or similar wordings  
+- Make each question distinctly different from others and from the exemplar  
+
+REQUIRED OUTPUT FORMAT:
+```json
+[
+  {
+    "id": "1",
+    "question": "Your detailed question here?",
+    "answer": "Your comprehensive answer here.",
+    "type": "{question_type}",
+    "qa_metadata": {
+      "mentioned_entities": ["entity1", "entity2"],
+      "mentioned_relationships": ["relationship1", "relationship2"]
+    }
+  }
+]
+```
+
+Generate {N} {question_type} questions using the provided context and triples, inspired by the exemplar above.
+
+
+
