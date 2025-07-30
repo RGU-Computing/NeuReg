@@ -84,6 +84,7 @@ NeuReg/
 ├── requirements.txt                   # Python dependencies for reproducing the results
 
 ├── data/                              # Preprocessing and knowledge graph construction
+│   ├──  README.md                      # Overview of chunk & triple-level statistics
 │   ├── chunks/                        # Extracting regulatory text chunks
 │   │   ├── chunks.csv                 # Final cleaned chunk dataset
 │   │   └── chunks.ipynb               # Chunk extraction notebook
