@@ -1,0 +1,79 @@
+{
+  "report_metadata": {
+    "generation_date": "2025-07-11T18:17:08.810430",
+    "dataset_analyzed": "One-Shot_qa_dataset.json",
+    "report_type": "One_Shot_QA_Analysis",
+    "approach": "Exemplar-guided generation with essential quality filtering"
+  },
+  "executive_summary": {
+    "total_qa_attempts": 2228,
+    "final_questions_generated": 1080,
+    "overall_acceptance_rate": "48.5%",
+    "avg_relevance_score": "0.795",
+    "api_efficiency": "0.9 QA pairs per API call"
+  },
+  "detailed_analysis": {
+    "total_qa_attempts": 2228,
+    "final_dataset_queries": 1080,
+    "decision_distribution": {
+      "accepted_count": 1080,
+      "rejected_count": 1148,
+      "acceptance_rate": 48.473967684021545
+    },
+    "detailed_filtering_breakdown": {
+      "accepted": 1080,
+      "rejected_length": 216,
+      "rejected_duplicate": 932,
+      "rejected_parsing": 0
+    },
+    "question_type_distribution": {
+      "factual": 281,
+      "comparative": 275,
+      "inferential": 269,
+      "relationship": 255
+    },
+    "quality_statistics": {
+      "avg_relevance_score": 0.7945529504506676,
+      "min_relevance_score": 0.6020162582397461,
+      "max_relevance_score": 0.9076713085174561,
+      "std_relevance_score": 0.04272418862321046,
+      "avg_question_length": 19.840740740740742,
+      "avg_answer_length": 59.36666666666667,
+      "avg_context_similarity": 0.8052210265287647,
+      "avg_triple_similarity": 0.7785508363335221
+    },
+    "generation_efficiency": {
+      "api_calls": 1216,
+      "qa_per_api_call": 0.8881578947368421,
+      "acceptance_rate": 48.473967684021545
+    },
+    "exemplar_effectiveness": {
+      "source_context_length": 1151,
+      "num_exemplar_triples": 13,
+      "exemplar_question_types": [
+        "factual",
+        "relationship",
+        "comparative",
+        "inferential"
+      ]
+    }
+  },
+  "one_shot_approach": {
+    "method": "Exemplar-guided generation using high-quality template questions",
+    "exemplar_source": "Manually constructed regulatory text with KG triples",
+    "question_types_covered": [
+      "factual",
+      "relationship",
+      "comparative",
+      "inferential"
+    ],
+    "filtering_approach": "Essential quality filters: length requirements + duplicate detection"
+  },
+  "advantages_of_one_shot": [
+    "Provides consistent quality patterns through exemplar guidance",
+    "Maintains structural coherence across question types",
+    "Reduces variability in question formulation",
+    "Enables better domain-specific language patterns",
+    "Balances guidance with generation flexibility"
+  ]
+}

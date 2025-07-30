@@ -1,0 +1,103 @@
+{
+  "report_metadata": {
+    "generation_date": "2025-07-12T20:13:52.216571",
+    "dataset_analyzed": "Few-Shot_qa_dataset.json",
+    "report_type": "Few_Shot_QA_Analysis",
+    "approach": "Multi-exemplar guided generation with essential quality filtering"
+  },
+  "executive_summary": {
+    "total_qa_attempts": 2154,
+    "final_questions_generated": 1107,
+    "overall_acceptance_rate": "51.4%",
+    "avg_relevance_score": "0.793",
+    "api_efficiency": "0.9 QA pairs per API call"
+  },
+  "detailed_analysis": {
+    "total_qa_attempts": 2154,
+    "final_dataset_queries": 1107,
+    "decision_distribution": {
+      "accepted_count": 1107,
+      "rejected_count": 1047,
+      "acceptance_rate": 51.392757660167135
+    },
+    "detailed_filtering_breakdown": {
+      "accepted": 1107,
+      "rejected_length": 189,
+      "rejected_duplicate": 858,
+      "rejected_parsing": 0
+    },
+    "question_type_distribution": {
+      "factual": 281,
+      "relationship": 290,
+      "comparative": 265,
+      "inferential": 271
+    },
+    "quality_statistics": {
+      "avg_relevance_score": 0.7931165373853014,
+      "min_relevance_score": 0.6001513481140137,
+      "max_relevance_score": 0.9012331724166871,
+      "std_relevance_score": 0.045406218791610005,
+      "avg_question_length": 20.648599819331526,
+      "avg_answer_length": 63.85094850948509,
+      "avg_context_similarity": 0.8025628237866451,
+      "avg_triple_similarity": 0.7789471077832857
+    },
+    "generation_efficiency": {
+      "api_calls": 1174,
+      "qa_per_api_call": 0.9429301533219762,
+      "acceptance_rate": 51.392757660167135
+    },
+    "exemplar_effectiveness": {
+      "num_exemplars": 3,
+      "exemplar_contexts_length": [
+        788,
+        631,
+        565
+      ],
+      "exemplar_triples_count": [
+        8,
+        10,
+        7
+      ],
+      "pattern_diversity": "Multiple contexts covering different policy aspects",
+      "question_type_coverage": [
+        "factual",
+        "relationship",
+        "comparative",
+        "inferential"
+      ]
+    },
+    "pattern_diversity_analysis": {
+      "num_exemplars_used": 3,
+      "pattern_coverage": "Multiple regulatory contexts with diverse structures",
+      "learning_approach": "Few-shot pattern recognition from varied examples"
+    }
+  },
+  "few_shot_approach": {
+    "method": "Multi-exemplar guided generation using diverse high-quality template questions",
+    "exemplar_sources": "Multiple manually constructed regulatory texts with KG triples",
+    "pattern_diversity": "Varied contexts covering different policy aspects and structures",
+    "question_types_covered": [
+      "factual",
+      "relationship",
+      "comparative",
+      "inferential"
+    ],
+    "filtering_approach": "Essential quality filters: length requirements + duplicate detection"
+  },
+  "advantages_of_few_shot": [
+    "Provides diverse pattern recognition through multiple exemplars",
+    "Enables learning from varied question structures and approaches",
+    "Reduces over-fitting to single exemplar patterns",
+    "Improves generalization across different contexts",
+    "Maintains quality while increasing structural variety",
+    "Better coverage of domain-specific language patterns",
+    "Enhanced robustness through pattern diversity"
+  ],
+  "pattern_learning_insights": {
+    "exemplar_diversity": "Used 3 diverse exemplars",
+    "structural_variety": "Multiple question formulation approaches learned",
+    "domain_adaptation": "Better adaptation to regulatory language patterns",
+    "quality_consistency": "Maintained quality across diverse pattern types"
+  }
+}

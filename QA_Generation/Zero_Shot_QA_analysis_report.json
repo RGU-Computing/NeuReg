@@ -1,0 +1,58 @@
+{
+  "report_metadata": {
+    "Generation_date": "2025-07-10T19:31:06.333313",
+    "Dataset_analyzed": "Zero-Shot_qa_dataset.json",
+    "Report_type": "QA_analysis",
+    "System_enhancements": [
+      "Statistical consistency between generation and analysis",
+      "Duplicate detection",
+      "Centralised statistics tracking",
+      "Memory management for embeddings",
+      "Error handling"
+    ]
+  },
+  "executive_summary": {
+    "total_qa_attempts": 1944,
+    "final_questions_generated": 1127,
+    "overall_acceptance_rate": "58.0%",
+    "avg_relevance_score": "0.799",
+    "api_efficiency": "1.1 QA pairs per API call"
+  },
+  "detailed_analysis": {
+    "total_qa_attempts": 1944,
+    "final_dataset_queries": 1127,
+    "decision_distribution": {
+      "accepted_count": 1127,
+      "rejected_count": 817,
+      "acceptance_rate": 57.97325102880658
+    },
+    "detailed_filtering_breakdown": {
+      "accepted": 1127,
+      "rejected_length": 1,
+      "rejected_duplicate": 816,
+      "rejected_parsing": 0
+    },
+    "question_type_distribution": {
+      "factual": 305,
+      "relationship": 277,
+      "comparative": 270,
+      "inferential": 275
+    },
+    "quality_statistics": {
+      "avg_relevance_score": 0.7993316317196959,
+      "min_relevance_score": 0.6277496337890625,
+      "max_relevance_score": 0.9133061766624451,
+      "std_relevance_score": 0.04343166803463798,
+      "avg_question_length": 24.535936113575865,
+      "avg_answer_length": 72.29281277728482,
+      "avg_context_similarity": 0.8131796141694686,
+      "avg_triple_similarity": 0.7785596580450368
+    },
+    "generation_efficiency": {
+      "api_calls": 1053,
+      "qa_per_api_call": 1.070275403608737,
+      "acceptance_rate": 57.97325102880658
+    }
+  },
+  "filtering_approach": "Essential quality filters only: length requirements + duplicate detection"
+}
