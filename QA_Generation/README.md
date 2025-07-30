@@ -309,7 +309,7 @@ TARGET KNOWLEDGE GRAPH TRIPLES:
 
 GENERATION INSTRUCTIONS: {GENERATION_GUIDANCE}
 
-#### 🔁 Diversity Requirements
+🔁 Diversity Requirements
 
 [ ... ]
 
