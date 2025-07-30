@@ -1,6 +1,6 @@
-# 🧠 Ontology-Guided QA Generation using Large Language Models
+# 🤖 QA Generation Framework Overview
 
-This repository contains prompting strategies to generate high-quality, semantically grounded question-answer (QA) pairs from educational funding regulation documents using domain-aligned knowledge graphs.
+This contains prompting strategies to generate high-quality, semantically grounded question-answer (QA) pairs from educational funding regulation documents using Ontology guided knowledge graphs.
 
 ---
 
@@ -84,9 +84,30 @@ In One-Shot prompting, the model is provided with a single exemplar QA for each 
 
 - A shared regulatory context  
 - Ontology-guided KG triples extracted from that context  
-- A well-formed QA pair aligned with the KG  
+- A well-formed  question aligned with the chunk + KG  
 
-The exemplar is shown before the model is prompted with a target context and KG, encouraging it to generalize the QA generation task from a single in-context demonstration.
+---
+ ### Shared Exemplar
+
+ Exemplar Context (Excerpt):
+
+ "ESFA funds children who are currently electively home educated (EHE) who attend general further education (Further Education) and sixth form colleges. EHE children who attend schools and academies are not eligible for ESFA young people's funding. You can find more information in the Funding rates and formula guide. Colleges may claim ESFA young people's funding for children of compulsory school age who have completed their statutory education, have achieved qualifications at least equivalent to a full level 2, and who want to enrol on a level 3 course. Colleges do not need to seek approval from ESFA, as we will count these students for lagged funding purposes. This advice also applies to schools and academies placing students in their sixth forms earlier than usual. In exceptional circumstances, for example, students arriving in the UK for the first time during school year 11, ESFA will consider provision for individual students of compulsory school age to be eligible for ESFA young people's funding in colleges. Groups of students would not be eligible for funding, since by inference such circumstances are unlikely to be exceptional."
+
+Exemplar KG Triples:
+
+        ("esfa", "funds", "ehe_children_further_education"),
+        ("ehe_children_further_education", "enrolled_in", "further_education_colleges"),
+        ("ehe_children_further_education", "enrolled_in", "sixth_form_colleges"),
+        ("ehe_children_schools_academies", "not_eligible_for", "esfa_young_people_funding"),
+        ("funding_rates_and_formula_guide", "provides_information_on", "esfa_funding_details"),
+        ("colleges", "can_claim", "esfa_young_people_funding"),
+        ("esfa_young_people_funding", "for_programme", "level_3_course"),
+        ("children_compulsory_school_age", "has_achievement_status", "full_level_2_qualification"),
+        ("esfa", "does_not_require_approval_from", "colleges_for_lagged_funding"),
+        ("schools_and_academies", "applies_same_advice_as", "colleges_for_early_sixth_form_placement"),
+        ("esfa", "considers_funding_eligibility_for", "individual_students_compulsory_school_age"),
+        ("individual_students_compulsory_school_age", "has_reason", "arriving_in_uk_during_school_year_11"),
+        ("groups_of_students", "not_eligible_for", "esfa_young_people_funding_due_to_non_exceptional_circumstances")
 
 ---
 
@@ -121,11 +142,7 @@ TARGET KNOWLEDGE GRAPH TRIPLES:
 GENERATION INSTRUCTIONS: {GENERATION_GUIDANCE}
 
 DIVERSITY REQUIREMENTS:
-- Each question must be UNIQUE and ask about DIFFERENT aspects  
-- Use VARIED question starters and phrasing patterns  
-- Focus on DIFFERENT entities, relationships, or information types  
-- Avoid repetitive structures or similar wordings  
-- Make each question distinctly different from others and from the exemplar  
+[ ... ] 
 
 REQUIRED OUTPUT FORMAT:
 [ ... ]
@@ -167,13 +184,9 @@ TARGET KNOWLEDGE GRAPH TRIPLES:
 
 GENERATION INSTRUCTIONS: {GENERATION_GUIDANCE}
 
-ENHANCED DIVERSITY REQUIREMENTS:
-- Study the patterns from ALL examples above
-- Each question must be UNIQUE and ask about DIFFERENT aspects
-- Use VARIED question starters and phrasing patterns inspired by the examples
-- Focus on DIFFERENT entities, relationships, or information types
-- Avoid repetitive structures or similar wordings
-- Make each question distinctly different from others and from ALL exemplars
+#### 🔁 Diversity Requirements
+
+[ ... ]
 
 REQUIRED OUTPUT FORMAT:
 [ ... ]
