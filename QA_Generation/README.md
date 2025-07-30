@@ -43,9 +43,13 @@ This task requires generating `{N}` diverse, high-quality questions aligned with
 
 #### 📄 Context Text
 
+{context}
+
 ---
 
 #### 🧠 Ontology-Guided Knowledge Graph Triples
+
+{triple_text}
 
 ---
 
@@ -64,6 +68,7 @@ This task requires generating `{N}` diverse, high-quality questions aligned with
     }
   }
 ]
+```
 
 Please generate exactly {N} diverse, high-quality {question_type} questions using the provided instructions, context, and triples.
 ```
