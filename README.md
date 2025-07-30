@@ -24,7 +24,7 @@ NeuReg consists of two main stages: **Knowledge Extraction** and **Question Answ
 
 ### 1️⃣ Ontology-Guided Knowledge Extraction
 - Regulatory text is split into coherent **text chunks**.
-- A domain-specific Educational funding regulation ontotlogy (EFRO) is used to guide **schema extraction** and **triple generation** using GPT-4.
+- A domain-specific [Educational Funding Regulation Ontology (EFRO)](https://rgu-computing.github.io/EFRO/EFRO/docs/index-en.html) is used to guide **schema extraction** and **triple generation** using GPT-4.
 - Each output triple is structured as **(subject, predicate, object)** with post-processing and alignment.
 
 ### 2️⃣ Question Answer Generation
