@@ -111,20 +111,20 @@ Exemplar KG Triples:
 
 Exemplar_Questions:
 ```json
-{
-  "Factual": {
+
+  "FACTUAL": {
     "question": "What types of institutions can claim ESFA young people's funding for electively home educated (EHE) children?"
   },
-  "Relationship": {
+  "RELATIONSHIP": {
     "question": "How is a full Level 2 qualification related to eligibility for Level 3 ESFA-funded programmes for compulsory school-age students?"
   },
-  "Comparative": {
+  "COMPARATIVE": {
     "question": "How does ESFA funding eligibility differ between individual and groups of students arriving in the UK during school year 11?"
   },
-  "Inferential": {
+  "INFERENTIAL": {
     "question": "Based on the information provided, what is the underlying reason ESFA distinguishes between individual and groups of students when considering funding for those arriving in the UK during school year 11?"
   }
-}
+
 
 ```
 ---
@@ -199,7 +199,7 @@ Exemplar KG Triples:
 
 Exemplar_Questions:
 ```json
-{
+
   "FACTUAL": {
     "question": "What must institutions assume about EEA students who were resident in the UK before 1 January 2022?"
   },
@@ -212,7 +212,7 @@ Exemplar_Questions:
   "INFERENTIAL": {
     "question": "Why might institutions be discouraged from enrolling students who are likely to leave the UK permanently during their study programme?"
   }
-}
+
 
 ```
 ---
@@ -236,7 +236,7 @@ Exemplar KG Triples:
 
 Exemplar_Questions:
 ```json
-{
+
 "FACTUAL": {
                 "question": "Which students are usually eligible for funding throughout the duration of their study programme?"
             },
@@ -249,7 +249,7 @@ Exemplar_Questions:
 "INFERENTIAL": {
                 "question": "What does the policy imply about ESFA's approach to students who begin their programme ineligible for funding?"
             }
-        }
+    
 
 ```
 ---
@@ -270,7 +270,7 @@ Exemplar KG Triples:
 
 Exemplar_Questions:
 ```json
-{
+
 "FACTUAL": {
                 "question": "What is the maximum management fee allowed for the Prince's Trust Team Programme without requiring ESFA approval?"
             },
@@ -283,7 +283,7 @@ Exemplar_Questions:
 "INFERENTIAL": {
                 "question": "Why might ESFA recognize the Team Programme as a stepping stone towards GCSE standard?"
             }
-        }
+
 ```
 ---
 
