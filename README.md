@@ -223,8 +223,6 @@ jupyter notebook t5_small_zero.ipynb   # Zero-shot dataset
 jupyter notebook t5_small_one.ipynb    # One-shot dataset
 jupyter notebook t5_small_few.ipynb    # Few-shot dataset
 ```
-
-> **💡 Note**: All outputs are pre-generated in the repository for immediate exploration without running the full pipeline!
 ---
 
 ### 📖 Citation
