@@ -2,7 +2,7 @@
 
 This project begins by using GPT-4 Turbo to extract triples from educational funding regulatory (EFR) documents, guided by a domain-specific ontology. The extracted knowledge graph is structured, compact, and aligned with the Educational funding regulation ontology (**EFRO**).
 
-🔗 **EFRO Ontology File**:  [EFRO.rdf on GitHub](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO.rdf)
+🔗 **EFR Ontology File**:  [EFRO.rdf on GitHub](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO.rdf)
 
 ---
 
