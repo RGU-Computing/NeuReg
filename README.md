@@ -86,10 +86,10 @@ NeuReg/
 ├── data/                              # Preprocessing and knowledge graph construction
 │   ├──  README.md                      # Overview of chunk & triple-level statistics
 │   ├── chunks/                        # Extracting regulatory text chunks
-│   │   ├── chunks.csv                 # Final cleaned chunk dataset
+│   │   ├── chunks.csv                 # chunk dataset
 │   │   └── chunks.ipynb               # Chunk extraction notebook
 │   ├── ontology/                      # Ontology schema and KG triples
-│   │   ├── ontology_schema.json       # Extracted domain ontology in JSON
+│   │   ├── ontology_schema.json       # Extracted ontology schema in JSON
 │   │   ├── Ontology_Guided_Triples.csv           # Ontology-guided KG triples
 │   │   ├── Ontology_Guided_Triples_statistics.json  # Stats on generated triples
 │   │   ├── EFRO_Schema_Extraction.ipynb           # Extract ontology schema from guidance
