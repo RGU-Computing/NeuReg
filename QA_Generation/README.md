@@ -197,6 +197,22 @@ Exemplar KG Triples:
             ("eea_student", "has_status", "resident_in_uk_before_20220101"),
             ("institution", "provides_assistance", "student_completion_support")
 
+Exemplar_Questions:
+```json
+QuestionType.FACTUAL: {
+                "question": "What must institutions assume about EEA students who were resident in the UK before 1 January 2022?"
+            },
+            QuestionType.RELATIONSHIP: {
+                "question": "How is a student's likelihood of permanent departure related to their eligibility for funding?"
+            },
+            QuestionType.COMPARATIVE: {
+                "question": "How does the institution's responsibility differ before and after a student is enrolled in a study programme?"
+            },
+            QuestionType.INFERENTIAL: {
+                "question": "Why might institutions be discouraged from enrolling students who are likely to leave the UK permanently during their study programme?"
+            }
+```
+
 2: Exemplar Context (Excerpt):
 
 "Students who are attending programmes of more than one term's duration, and are eligible for funding at the start of their programme, will usually be eligible for funding for the whole duration of their study programme as well as subsequent funded study programmes studied immediately end-on to their initial funded programme. This includes students studying consecutive study programmes with no break in studies other than normal holiday periods. Similarly, students who are not eligible for funding at the start of their study programme are very unlikely to become eligible for funding during the period of their study programme.",
@@ -214,6 +230,8 @@ Exemplar KG Triples:
             ("student", "has_funding_start_status", "not_eligible_at_programme_start"),
             ("student", "related_to_funding_status", "unlikely_to_become_eligible_during_programme")
 
+Exemplar_Questions:
+
 3: Exemplar Context (Excerpt): 
 
 "context": "For the Prince's Trust Team Programme, the institution overhead rate (management fee) should be no more than a maximum of 15 per cent of the total ESFA funding. Any figure above 15 per cent will require prior approval from ESFA in collaboration with the Prince's Trust. For the purpose of the condition of funding, ESFA recognise that the Team Programme will support young people to progress towards General Certificate of Secondary Education standard and has been approved as a stepping stone towards a General Certificate of Secondary Education in these subjects.",
@@ -227,6 +245,9 @@ Exemplar KG Triples:
             ("esfa", "recognizes", "princes_trust_team_programme_as_stepping_stone"),
             ("princes_trust_team_programme", "supports_learning", "general_certificate_of_secondary_education_standard"),
             ("princes_trust_team_programme", "has_progression", "general_certificate_of_secondary_education")
+
+Exemplar_Questions:
+
 ---
 
 ### 🧠 Few-Shot Prompt Template
