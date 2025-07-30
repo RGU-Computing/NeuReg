@@ -2,8 +2,7 @@
 
 This project begins by using GPT-4 Turbo to extract triples from educational funding regulatory (EFR) documents, guided by a domain-specific ontology. The extracted knowledge graph is structured, compact, and aligned with the Educational funding regulation ontology (**EFRO**).
 
-🔗 **EFRO Ontology File**:  
-[EFRO.rdf on GitHub](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO.rdf)
+🔗 **EFRO Ontology File**:  [EFRO.rdf on GitHub](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO.rdf)
 
 ---
 
@@ -54,7 +53,7 @@ This project begins by using GPT-4 Turbo to extract triples from educational fun
 The following statistics summarise the structure and textual complexity of the extracted knowledge graph:
 
 ## 🧩 Chunk-Level Statistics
-These reflect how RDF triples are distributed across document segments:
+These reflect how triples are distributed across document segments:
 
 | Metric                 | Value |
 | ---------------------- | ----- |
@@ -74,7 +73,7 @@ These reflect how RDF triples are distributed across document segments:
 The dataset has been processed into a structured knowledge graph extracted from educational funding regulations. Below is a summary of key statistics:
 
 ## 📏 Triple Component Lengths (Avg. Character Count)
-These values describe the average character length of each RDF triple component:
+These values describe the average character length of each triple component:
 
 | Component | Average Length |
 | --------- | -------------- |
