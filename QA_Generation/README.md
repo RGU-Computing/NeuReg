@@ -89,7 +89,7 @@ In One-Shot prompting, the model is provided with a single exemplar QA for each 
 ---
  ### Shared Exemplar
 
- Exemplar Context (Excerpt):
+  ####  Exemplar Context (Excerpt):
 
  "ESFA funds children who are currently electively home educated (EHE) who attend general further education (Further Education) and sixth form colleges. EHE children who attend schools and academies are not eligible for ESFA young people's funding. You can find more information in the Funding rates and formula guide. Colleges may claim ESFA young people's funding for children of compulsory school age who have completed their statutory education, have achieved qualifications at least equivalent to a full level 2, and who want to enrol on a level 3 course. Colleges do not need to seek approval from ESFA, as we will count these students for lagged funding purposes. This advice also applies to schools and academies placing students in their sixth forms earlier than usual. In exceptional circumstances, for example, students arriving in the UK for the first time during school year 11, ESFA will consider provision for individual students of compulsory school age to be eligible for ESFA young people's funding in colleges. Groups of students would not be eligible for funding, since by inference such circumstances are unlikely to be exceptional."
 
@@ -182,7 +182,7 @@ This design helps internalize diverse reasoning strategies and enables the model
 
  ### Shared Exemplar
 
-1: Exemplar Context (Excerpt):
+ #### 1: Exemplar Context (Excerpt):
 
 "In determining student eligibility, institutions must also satisfy themselves that there is a reasonable likelihood that the student will be able to complete their study programme before seeking funding for the student. This should include the practicality of providing a place for a student who may be unable to complete their programme if they are likely to leave the country permanently during their study programme. For the purposes of this paragraph, institutions must assume that all European Economic Area students resident in the UK before 1 January 2022 have the legal right to remain in the UK for the duration of their study programme. Once a student is enrolled, the institution is expected to take all reasonable steps to ensure that the student can complete their programme."
 
@@ -217,7 +217,7 @@ Exemplar_Questions:
 ```
 ---
 
-2: Exemplar Context (Excerpt):
+ #### 2: Exemplar Context (Excerpt):
 
 "Students who are attending programmes of more than one term's duration, and are eligible for funding at the start of their programme, will usually be eligible for funding for the whole duration of their study programme as well as subsequent funded study programmes studied immediately end-on to their initial funded programme. This includes students studying consecutive study programmes with no break in studies other than normal holiday periods. Similarly, students who are not eligible for funding at the start of their study programme are very unlikely to become eligible for funding during the period of their study programme.",
 
@@ -235,8 +235,23 @@ Exemplar KG Triples:
             ("student", "related_to_funding_status", "unlikely_to_become_eligible_during_programme")
 
 Exemplar_Questions:
+```json
+"FACTUAL": {
+                "question": "Which students are usually eligible for funding throughout the duration of their study programme?"
+            },
+"RELATIONSHIP": {
+                "question": "How does the start-of-programme funding status relate to a student's funding eligibility during their studies?"
+            },
+"COMPARATIVE": {
+                "question": "What is the difference in funding eligibility between students with and without a break between consecutive study programmes?"
+            },
+"INFERENTIAL": {
+                "question": "What does the policy imply about ESFA's approach to students who begin their programme ineligible for funding?"
+            }
+        }
 
-3: Exemplar Context (Excerpt): 
+```
+ #### 3: Exemplar Context (Excerpt): 
 
 "context": "For the Prince's Trust Team Programme, the institution overhead rate (management fee) should be no more than a maximum of 15 per cent of the total ESFA funding. Any figure above 15 per cent will require prior approval from ESFA in collaboration with the Prince's Trust. For the purpose of the condition of funding, ESFA recognise that the Team Programme will support young people to progress towards General Certificate of Secondary Education standard and has been approved as a stepping stone towards a General Certificate of Secondary Education in these subjects.",
 
@@ -251,7 +266,9 @@ Exemplar KG Triples:
             ("princes_trust_team_programme", "has_progression", "general_certificate_of_secondary_education")
 
 Exemplar_Questions:
+```json
 
+```
 ---
 
 ### 🧠 Few-Shot Prompt Template
