@@ -40,7 +40,7 @@ This layer compares extracted triples with the source chunk text to identify:
 ⚠️ False Negatives (FN): Facts from the text not captured in the triples
 
 ##### 🔸 Prompt for False Positives
-
+```text
 TASK: Identify FALSE POSITIVE triples - triples that are incorrectly extracted from the text.
 
 ORIGINAL TEXT:
@@ -62,9 +62,10 @@ INSTRUCTIONS:
 OUTPUT FORMAT:
 List each false positive triple exactly as shown above, one per line.
 If no false positives, respond with "NONE"
+```text
 
 ##### 🔸 Prompt for False Negatives
-
+```text
 TASK: Identify FALSE NEGATIVE facts - important facts present in the original text but missing from extracted triples.
 
 ORIGINAL TEXT:
@@ -84,14 +85,14 @@ INSTRUCTIONS:
 OUTPUT FORMAT:
 List each missing fact as a potential triple, one per line.
 If no missing facts, respond with "NONE"
-
+```text
 
 #### 🔹 Layer 2: Ontology Alignment Check
 
 This layer checks whether extracted triples align with the domain ontology using LLM reasoning.
 
 ##### 🔸 Prompt for Ontology Alignment
-
+```text
 TASK: Judge if the QUESTION (original text) and ANSWER (extracted triples) align well with the ONTOLOGY.
 
 ONTOLOGY:
@@ -115,7 +116,7 @@ OUTPUT FORMAT (exactly as specified):
 (your judgment: Pass/Not Pass, confidence score)
 
 Where confidence score is between 0.0 and 1.0
-
+```text
 
 ---
 
