@@ -32,8 +32,11 @@ The evaluation process is divided into two validation layers:
 
 #### 🔹 Layer 1: Triple Validation via LLM (DeepSeek-R1)
 This layer compares extracted triples with the source chunk text to identify:
+
 ✅ True Positives (TP): Correctly extracted triples
+
 ❌ False Positives (FP): Triples that do not exist in the original text
+
 ⚠️ False Negatives (FN): Facts from the text not captured in the triples
 
 ##### 🔸 Prompt for False Positives
@@ -132,5 +135,7 @@ API_KEY = "Put your api key here"
 
 ### 📈 Outputs
 After running the script, you will obtain:
+
 ✅ evaluation_results.csv: F1, Precision, Recall, TP, FP, FN, alignment results for each chunk
+
 ✅ evaluation_report.json: Full summary and top/bottom performing chunks
