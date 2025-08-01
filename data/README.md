@@ -4,7 +4,7 @@ This project begins by using GPT-4 Turbo to extract triples from educational fun
 
 🔗 **EFR Ontology File**:  [EFRO.rdf on GitHub](https://github.com/RGU-Computing/EFRO/tree/main)
 
-   **EFR Ontology URL**:  (http://www.w3id.org/efro/efro)
+   **EFR Ontology URL**:  http://www.w3id.org/efro/efro
    
 ---
 
