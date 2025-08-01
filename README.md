@@ -80,7 +80,7 @@ We conduct controlled ablation studies to quantify the individual contributions 
 ```text
 NeuReg/
 ├── README.md                          # Overview of the project, contributions, pipeline, and structure
-├── LICENSE                            # Project license (e.g., MIT, Apache 2.0)
+├── LICENSE                            # Project license (MIT)
 ├── requirements.txt                   # Python dependencies for reproducing the results
 
 ├── data/                              # Preprocessing and knowledge graph construction
@@ -157,7 +157,7 @@ NeuReg/
 │   ├── LLM vs Human/                          # Correlation between LLM and human scores
 │   │   ├── README.md
 │   │   ├── LLM vs Human.ipynb                 # Notebook to compare LLM vs human scores
-│   │   └── human_llm_comparison_results.csv   # Agreement metrics (e.g. EM, f1)
+│   │   └── human_llm_comparison_results.csv   #  EM,f1
 
 ├── analysis/                          # Statistical analysis & insights
 │   ├── README.md 
