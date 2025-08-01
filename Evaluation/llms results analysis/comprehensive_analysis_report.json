@@ -1,0 +1,1203 @@
+{
+  "metadata": {
+    "analysis_timestamp": "2025-08-01T18:31:47.821294",
+    "total_models": 5,
+    "total_shot_types": 3,
+    "total_question_types": 4,
+    "total_records": 16559,
+    "metrics_evaluated": [
+      "Relevance",
+      "Accuracy",
+      "Completeness",
+      "Fluency",
+      "KG_Alignment"
+    ],
+    "num_judges": 5
+  },
+  "data_loading": {
+    "files_loaded": [
+      {
+        "filename": "mixtral-8x22b-instruct-v0.1_zeroshot_evaluation_results.csv",
+        "model": "Mixtral-8x22B",
+        "shot_type": "Zero-Shot",
+        "records": 1127
+      },
+      {
+        "filename": "mixtral-8x22b-instruct-v0.1_oneshot_evaluation_results.csv",
+        "model": "Mixtral-8x22B",
+        "shot_type": "One-Shot",
+        "records": 1080
+      },
+      {
+        "filename": "mixtral-8x22b-instruct-v0.1_fewshot_evaluation_results.csv",
+        "model": "Mixtral-8x22B",
+        "shot_type": "Few-Shot",
+        "records": 1107
+      },
+      {
+        "filename": "Llama_3.3_70B_zeroshot_evaluation_results.csv",
+        "model": "Llama-3.3-70B",
+        "shot_type": "Zero-Shot",
+        "records": 1127
+      },
+      {
+        "filename": "Llama_3.3_70B_oneshot_evaluation_results.csv",
+        "model": "Llama-3.3-70B",
+        "shot_type": "One-Shot",
+        "records": 1080
+      },
+      {
+        "filename": "Llama_3.3_70B_fewshot_evaluation_results.csv",
+        "model": "Llama-3.3-70B",
+        "shot_type": "Few-Shot",
+        "records": 1107
+      },
+      {
+        "filename": "DeepSeek_R1_Distill_Llama_70B_zeroshot_evaluation_results.csv",
+        "model": "DeepSeek-R1",
+        "shot_type": "Zero-Shot",
+        "records": 1127
+      },
+      {
+        "filename": "DeepSeek_R1_Distill_Llama_70B_oneshot_evaluation_results.csv",
+        "model": "DeepSeek-R1",
+        "shot_type": "One-Shot",
+        "records": 1080
+      },
+      {
+        "filename": "DeepSeek_R1_Distill_Llama_70B_fewshot_evaluation_results.csv",
+        "model": "DeepSeek-R1",
+        "shot_type": "Few-Shot",
+        "records": 1107
+      },
+      {
+        "filename": "Qwen3_32B_zeroshot_evaluation_results.csv",
+        "model": "Qwen3-32B",
+        "shot_type": "Zero-Shot",
+        "records": 1124
+      },
+      {
+        "filename": "Qwen3_32B_oneshot_evaluation_results.csv",
+        "model": "Qwen3-32B",
+        "shot_type": "One-Shot",
+        "records": 1077
+      },
+      {
+        "filename": "Qwen3_32B_fewshot_evaluation_results.csv",
+        "model": "Qwen3-32B",
+        "shot_type": "Few-Shot",
+        "records": 1102
+      },
+      {
+        "filename": "gemma-2-27b-it_zeroshot_evaluation_results.csv",
+        "model": "Gemma-2-27B-IT",
+        "shot_type": "Zero-Shot",
+        "records": 1127
+      },
+      {
+        "filename": "gemma-2-27b-it_oneshot_evaluation_results.csv",
+        "model": "Gemma-2-27B-IT",
+        "shot_type": "One-Shot",
+        "records": 1080
+      },
+      {
+        "filename": "gemma-2-27b-it_fewshot_evaluation_results.csv",
+        "model": "Gemma-2-27B-IT",
+        "shot_type": "Few-Shot",
+        "records": 1107
+      }
+    ],
+    "files_failed": [],
+    "total_records": 16559
+  },
+  "majority_vote_analysis": {
+    "model_distribution": {
+      "4": 11,
+      "5": 3303
+    },
+    "total_qa_ids": 3314,
+    "valid_qa_ids": 3303,
+    "agreement_by_metric": {
+      "Relevance": {
+        "full_agreement": 2118,
+        "majority_exists": 1172,
+        "no_majority": 13
+      },
+      "Accuracy": {
+        "full_agreement": 1452,
+        "majority_exists": 1824,
+        "no_majority": 27
+      },
+      "Completeness": {
+        "full_agreement": 164,
+        "majority_exists": 2664,
+        "no_majority": 475
+      },
+      "Fluency": {
+        "full_agreement": 2721,
+        "majority_exists": 582,
+        "no_majority": 0
+      },
+      "KG_Alignment": {
+        "full_agreement": 1376,
+        "majority_exists": 1793,
+        "no_majority": 134
+      }
+    },
+    "agreement_by_qa": {
+      "all_metrics_majority": 2744,
+      "some_metrics_majority": 559,
+      "no_metrics_majority": 0
+    },
+    "total_majority_vote_pairs": 3303,
+    "model_agreement_stats": {
+      "Mixtral-8x22B": {
+        "agreements": 15336,
+        "total": 16515,
+        "percentage": 92.86103542234332
+      },
+      "Llama-3.3-70B": {
+        "agreements": 10553,
+        "total": 16515,
+        "percentage": 63.89948531637904
+      },
+      "DeepSeek-R1": {
+        "agreements": 14994,
+        "total": 16515,
+        "percentage": 90.79019073569482
+      },
+      "Qwen3-32B": {
+        "agreements": 14713,
+        "total": 16515,
+        "percentage": 89.0887072358462
+      },
+      "Gemma-2-27B-IT": {
+        "agreements": 13070,
+        "total": 16515,
+        "percentage": 79.14017559794127
+      }
+    }
+  },
+  "overall_metrics": {
+    "Relevance": {
+      "mean": 4.90893169877408,
+      "std": 0.3079912633442604,
+      "mean_pct": 98.17863397548162
+    },
+    "Accuracy": {
+      "mean": 4.789600821305634,
+      "std": 0.43135987391959274,
+      "mean_pct": 95.79201642611268
+    },
+    "Completeness": {
+      "mean": 4.441089437767981,
+      "std": 0.6679866985264041,
+      "mean_pct": 88.82178875535962
+    },
+    "Fluency": {
+      "mean": 4.961289932966967,
+      "std": 0.1947782593110853,
+      "mean_pct": 99.22579865933933
+    },
+    "KG_Alignment": {
+      "mean": 4.7429796485295,
+      "std": 0.5086592476595247,
+      "mean_pct": 94.85959297059001
+    },
+    "Overall_Score": {
+      "mean": 4.768778307868833,
+      "std": 0.3395764100338756,
+      "mean_pct": 95.37556615737665
+    }
+  },
+  "score_distribution": {
+    "statistics": {
+      "mean": 4.768778307868833,
+      "std": 0.3395764100338756,
+      "min": 2.0,
+      "max": 5.0
+    },
+    "ranges": {
+      "1.0-2.0": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "2.0-3.0": {
+        "count": 15,
+        "percentage": 0.09058518026450872
+      },
+      "3.0-4.0": {
+        "count": 599,
+        "percentage": 3.6173681985627146
+      },
+      "4.0-5.0": {
+        "count": 15945,
+        "percentage": 96.29204662117277
+      }
+    }
+  },
+  "shot_type_analysis": {
+    "Few-Shot": {
+      "count": 5530,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.906329113924051,
+          "std": 0.3106241073203714,
+          "mean_pct": 98.12658227848102
+        },
+        "Accuracy": {
+          "mean": 4.790054249547921,
+          "std": 0.4276678595656588,
+          "mean_pct": 95.8010849909584
+        },
+        "Completeness": {
+          "mean": 4.428571428571429,
+          "std": 0.6665245436705102,
+          "mean_pct": 88.57142857142858
+        },
+        "Fluency": {
+          "mean": 4.9641952983725135,
+          "std": 0.1887171325030209,
+          "mean_pct": 99.28390596745027
+        },
+        "KG_Alignment": {
+          "mean": 4.730560578661844,
+          "std": 0.5199119362465584,
+          "mean_pct": 94.61121157323689
+        }
+      },
+      "overall": {
+        "mean": 4.763942133815552,
+        "std": 0.338255410899609,
+        "pct": 95.27884267631104
+      }
+    },
+    "One-Shot": {
+      "count": 5397,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.912173429683158,
+          "std": 0.30451574338116355,
+          "mean_pct": 98.24346859366315
+        },
+        "Accuracy": {
+          "mean": 4.802853437094682,
+          "std": 0.4231610143697449,
+          "mean_pct": 96.05706874189363
+        },
+        "Completeness": {
+          "mean": 4.433203631647212,
+          "std": 0.6800081090641606,
+          "mean_pct": 88.66407263294424
+        },
+        "Fluency": {
+          "mean": 4.962942375393737,
+          "std": 0.18989896023895975,
+          "mean_pct": 99.25884750787475
+        },
+        "KG_Alignment": {
+          "mean": 4.747081712062257,
+          "std": 0.5151101807629361,
+          "mean_pct": 94.94163424124513
+        }
+      },
+      "overall": {
+        "mean": 4.771650917176209,
+        "std": 0.3401539436756097,
+        "pct": 95.43301834352418
+      }
+    },
+    "Zero-Shot": {
+      "count": 5632,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.908380681818182,
+          "std": 0.3087329045646088,
+          "mean_pct": 98.16761363636364
+        },
+        "Accuracy": {
+          "mean": 4.776455965909091,
+          "std": 0.442293882753618,
+          "mean_pct": 95.52911931818183
+        },
+        "Completeness": {
+          "mean": 4.4609375,
+          "std": 0.6573770617493082,
+          "mean_pct": 89.21875
+        },
+        "Fluency": {
+          "mean": 4.956853693181818,
+          "std": 0.20494484162633037,
+          "mean_pct": 99.13707386363637
+        },
+        "KG_Alignment": {
+          "mean": 4.7512428977272725,
+          "std": 0.4908126444815133,
+          "mean_pct": 95.02485795454545
+        }
+      },
+      "overall": {
+        "mean": 4.7707741477272725,
+        "std": 0.3403252032335364,
+        "pct": 95.41548295454545
+      }
+    }
+  },
+  "question_type_analysis": {
+    "comparative": {
+      "count": 4049,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.862929118300815,
+          "std": 0.3614740014435262,
+          "mean_pct": 97.2585823660163
+        },
+        "Accuracy": {
+          "mean": 4.717214126944925,
+          "std": 0.4671020572163287,
+          "mean_pct": 94.34428253889851
+        },
+        "Completeness": {
+          "mean": 4.444307236354655,
+          "std": 0.6890037062045173,
+          "mean_pct": 88.88614472709311
+        },
+        "Fluency": {
+          "mean": 4.933563842924179,
+          "std": 0.2500635659042297,
+          "mean_pct": 98.67127685848358
+        },
+        "KG_Alignment": {
+          "mean": 4.685848357619165,
+          "std": 0.5298405473867059,
+          "mean_pct": 93.71696715238332
+        }
+      },
+      "overall": {
+        "mean": 4.728772536428748,
+        "std": 0.38376708273511706,
+        "pct": 94.57545072857496
+      }
+    },
+    "factual": {
+      "count": 4330,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.964434180138568,
+          "std": 0.2141467426394368,
+          "mean_pct": 99.28868360277136
+        },
+        "Accuracy": {
+          "mean": 4.908083140877598,
+          "std": 0.3229201946045833,
+          "mean_pct": 98.16166281755197
+        },
+        "Completeness": {
+          "mean": 4.531177829099307,
+          "std": 0.6434435743864306,
+          "mean_pct": 90.62355658198614
+        },
+        "Fluency": {
+          "mean": 4.980369515011548,
+          "std": 0.13874283648831914,
+          "mean_pct": 99.60739030023096
+        },
+        "KG_Alignment": {
+          "mean": 4.849884526558891,
+          "std": 0.43053495447311924,
+          "mean_pct": 96.99769053117781
+        }
+      },
+      "overall": {
+        "mean": 4.846789838337182,
+        "std": 0.2691500695405319,
+        "pct": 96.93579676674364
+      }
+    },
+    "inferential": {
+      "count": 4072,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.8821218074656185,
+          "std": 0.337393038295437,
+          "mean_pct": 97.64243614931237
+        },
+        "Accuracy": {
+          "mean": 4.714145383104126,
+          "std": 0.4762255456296884,
+          "mean_pct": 94.28290766208252
+        },
+        "Completeness": {
+          "mean": 4.417239685658153,
+          "std": 0.657909153645273,
+          "mean_pct": 88.34479371316306
+        },
+        "Fluency": {
+          "mean": 4.971512770137524,
+          "std": 0.17218485702990446,
+          "mean_pct": 99.43025540275048
+        },
+        "KG_Alignment": {
+          "mean": 4.661836935166994,
+          "std": 0.551755079121199,
+          "mean_pct": 93.23673870333987
+        }
+      },
+      "overall": {
+        "mean": 4.729371316306484,
+        "std": 0.3573446623438696,
+        "pct": 94.58742632612967
+      }
+    },
+    "relationship": {
+      "count": 4108,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.922346640701071,
+          "std": 0.2936834319700504,
+          "mean_pct": 98.44693281402141
+        },
+        "Accuracy": {
+          "mean": 4.810856864654333,
+          "std": 0.41754665793194534,
+          "mean_pct": 96.21713729308667
+        },
+        "Completeness": {
+          "mean": 4.366601752677702,
+          "std": 0.6715002084444561,
+          "mean_pct": 87.33203505355404
+        },
+        "Fluency": {
+          "mean": 4.958373904576436,
+          "std": 0.2009727607611087,
+          "mean_pct": 99.16747809152872
+        },
+        "KG_Alignment": {
+          "mean": 4.767039922103213,
+          "std": 0.49689986210651144,
+          "mean_pct": 95.34079844206425
+        }
+      },
+      "overall": {
+        "mean": 4.76504381694255,
+        "std": 0.32749958118877953,
+        "pct": 95.300876338851
+      }
+    }
+  },
+  "interaction_matrix": {
+    "comparative": {
+      "Few-Shot": {
+        "score": 4.742792452830188,
+        "percentage": 94.85584905660376
+      },
+      "One-Shot": {
+        "score": 4.71863173216885,
+        "percentage": 94.37263464337701
+      },
+      "Zero-Shot": {
+        "score": 4.725333333333333,
+        "percentage": 94.50666666666667
+      }
+    },
+    "factual": {
+      "Few-Shot": {
+        "score": 4.849287749287749,
+        "percentage": 96.98575498575497
+      },
+      "One-Shot": {
+        "score": 4.856307911617961,
+        "percentage": 97.12615823235922
+      },
+      "Zero-Shot": {
+        "score": 4.835718975705844,
+        "percentage": 96.71437951411687
+      }
+    },
+    "inferential": {
+      "Few-Shot": {
+        "score": 4.710798816568047,
+        "percentage": 94.21597633136095
+      },
+      "One-Shot": {
+        "score": 4.7189591078066915,
+        "percentage": 94.37918215613384
+      },
+      "Zero-Shot": {
+        "score": 4.757818181818182,
+        "percentage": 95.15636363636364
+      }
+    },
+    "relationship": {
+      "Few-Shot": {
+        "score": 4.750172532781228,
+        "percentage": 95.00345065562456
+      },
+      "One-Shot": {
+        "score": 4.79121568627451,
+        "percentage": 95.82431372549021
+      },
+      "Zero-Shot": {
+        "score": 4.756502890173411,
+        "percentage": 95.13005780346822
+      }
+    }
+  },
+  "individual_model_analysis": {
+    "DeepSeek-R1": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.989136994568497,
+          "std": 0.18189143729323023,
+          "mean_pct": 99.78273989136994
+        },
+        "Accuracy": {
+          "mean": 4.971937235968618,
+          "std": 0.19220405174793534,
+          "mean_pct": 99.43874471937235
+        },
+        "Completeness": {
+          "mean": 4.593844296922148,
+          "std": 0.5930766735723585,
+          "mean_pct": 91.87688593844297
+        },
+        "Fluency": {
+          "mean": 4.998491249245625,
+          "std": 0.038819185226282915,
+          "mean_pct": 99.96982498491249
+        },
+        "KG_Alignment": {
+          "mean": 4.882317441158721,
+          "std": 0.3854052641612453,
+          "mean_pct": 97.6463488231744
+        },
+        "Overall_Score": {
+          "mean": 4.887145443572722,
+          "std": 0.19969218381133033,
+          "mean_pct": 97.74290887145443
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.922962962962962,
+          "percentage": 98.45925925925924,
+          "count": 810
+        },
+        "factual": {
+          "mean": 4.876816608996538,
+          "percentage": 97.53633217993077,
+          "count": 867
+        },
+        "inferential": {
+          "mean": 4.898895705521473,
+          "percentage": 97.97791411042945,
+          "count": 815
+        },
+        "relationship": {
+          "mean": 4.851094890510949,
+          "percentage": 97.02189781021899,
+          "count": 822
+        }
+      },
+      "by_shot_type": {
+        "Few-Shot": {
+          "mean": 4.8845528455284555,
+          "percentage": 97.6910569105691,
+          "count": 1107
+        },
+        "One-Shot": {
+          "mean": 4.879074074074074,
+          "percentage": 97.58148148148148,
+          "count": 1080
+        },
+        "Zero-Shot": {
+          "mean": 4.897426796805679,
+          "percentage": 97.94853593611357,
+          "count": 1127
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "Few-Shot": {
+            "score": 4.932075471698113,
+            "percentage": 98.64150943396226
+          },
+          "One-Shot": {
+            "score": 4.904,
+            "percentage": 98.08
+          },
+          "Zero-Shot": {
+            "score": 4.933333333333334,
+            "percentage": 98.66666666666667
+          }
+        },
+        "factual": {
+          "Few-Shot": {
+            "score": 4.859786476868327,
+            "percentage": 97.19572953736653
+          },
+          "One-Shot": {
+            "score": 4.8782918149466195,
+            "percentage": 97.56583629893238
+          },
+          "Zero-Shot": {
+            "score": 4.8911475409836065,
+            "percentage": 97.82295081967213
+          }
+        },
+        "inferential": {
+          "Few-Shot": {
+            "score": 4.8966789667896675,
+            "percentage": 97.93357933579335
+          },
+          "One-Shot": {
+            "score": 4.89368029739777,
+            "percentage": 97.8736059479554
+          },
+          "Zero-Shot": {
+            "score": 4.906181818181818,
+            "percentage": 98.12363636363636
+          }
+        },
+        "relationship": {
+          "Few-Shot": {
+            "score": 4.853793103448275,
+            "percentage": 97.0758620689655
+          },
+          "One-Shot": {
+            "score": 4.837647058823529,
+            "percentage": 96.75294117647057
+          },
+          "Zero-Shot": {
+            "score": 4.860649819494585,
+            "percentage": 97.21299638989169
+          }
+        }
+      }
+    },
+    "Gemma-2-27B-IT": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.936934218467109,
+          "std": 0.2778791067451442,
+          "mean_pct": 98.7386843693422
+        },
+        "Accuracy": {
+          "mean": 4.557332528666264,
+          "std": 0.521093494769214,
+          "mean_pct": 91.14665057332529
+        },
+        "Completeness": {
+          "mean": 4.333735666867834,
+          "std": 0.5919492967729151,
+          "mean_pct": 86.67471333735668
+        },
+        "Fluency": {
+          "mean": 4.984610742305371,
+          "std": 0.12311377692971247,
+          "mean_pct": 99.69221484610742
+        },
+        "KG_Alignment": {
+          "mean": 4.578756789378395,
+          "std": 0.5819356518718162,
+          "mean_pct": 91.5751357875679
+        },
+        "Overall_Score": {
+          "mean": 4.678273989136994,
+          "std": 0.33417649398644356,
+          "mean_pct": 93.56547978273989
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.5898765432098765,
+          "percentage": 91.79753086419753,
+          "count": 810
+        },
+        "factual": {
+          "mean": 4.835063437139562,
+          "percentage": 96.70126874279123,
+          "count": 867
+        },
+        "inferential": {
+          "mean": 4.588466257668712,
+          "percentage": 91.76932515337424,
+          "count": 815
+        },
+        "relationship": {
+          "mean": 4.689051094890511,
+          "percentage": 93.7810218978102,
+          "count": 822
+        }
+      },
+      "by_shot_type": {
+        "Few-Shot": {
+          "mean": 4.668654019873532,
+          "percentage": 93.37308039747064,
+          "count": 1107
+        },
+        "One-Shot": {
+          "mean": 4.703148148148148,
+          "percentage": 94.06296296296294,
+          "count": 1080
+        },
+        "Zero-Shot": {
+          "mean": 4.66388642413487,
+          "percentage": 93.2777284826974,
+          "count": 1127
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "Few-Shot": {
+            "score": 4.603018867924528,
+            "percentage": 92.06037735849057
+          },
+          "One-Shot": {
+            "score": 4.588363636363636,
+            "percentage": 91.76727272727273
+          },
+          "Zero-Shot": {
+            "score": 4.578518518518519,
+            "percentage": 91.57037037037037
+          }
+        },
+        "factual": {
+          "Few-Shot": {
+            "score": 4.846975088967971,
+            "percentage": 96.93950177935943
+          },
+          "One-Shot": {
+            "score": 4.880427046263345,
+            "percentage": 97.60854092526691
+          },
+          "Zero-Shot": {
+            "score": 4.782295081967213,
+            "percentage": 95.64590163934426
+          }
+        },
+        "inferential": {
+          "Few-Shot": {
+            "score": 4.567527675276753,
+            "percentage": 91.35055350553506
+          },
+          "One-Shot": {
+            "score": 4.578438661710037,
+            "percentage": 91.56877323420073
+          },
+          "Zero-Shot": {
+            "score": 4.618909090909091,
+            "percentage": 92.37818181818183
+          }
+        },
+        "relationship": {
+          "Few-Shot": {
+            "score": 4.650344827586206,
+            "percentage": 93.00689655172413
+          },
+          "One-Shot": {
+            "score": 4.76313725490196,
+            "percentage": 95.2627450980392
+          },
+          "Zero-Shot": {
+            "score": 4.661371841155235,
+            "percentage": 93.22743682310471
+          }
+        }
+      }
+    },
+    "Llama-3.3-70B": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.652685576342789,
+          "std": 0.4818596065888641,
+          "mean_pct": 93.05371152685578
+        },
+        "Accuracy": {
+          "mean": 4.585093542546772,
+          "std": 0.5066725376106368,
+          "mean_pct": 91.70187085093544
+        },
+        "Completeness": {
+          "mean": 3.8129149064574532,
+          "std": 0.512449077812544,
+          "mean_pct": 76.25829812914905
+        },
+        "Fluency": {
+          "mean": 4.835546167773084,
+          "std": 0.37074282855497653,
+          "mean_pct": 96.71092335546169
+        },
+        "KG_Alignment": {
+          "mean": 4.595353047676523,
+          "std": 0.5184109426929946,
+          "mean_pct": 91.90706095353048
+        },
+        "Overall_Score": {
+          "mean": 4.496318648159324,
+          "std": 0.4079999465517317,
+          "mean_pct": 89.92637296318648
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.329876543209877,
+          "percentage": 86.59753086419754,
+          "count": 810
+        },
+        "factual": {
+          "mean": 4.70311418685121,
+          "percentage": 94.06228373702422,
+          "count": 867
+        },
+        "inferential": {
+          "mean": 4.405644171779141,
+          "percentage": 88.11288343558282,
+          "count": 815
+        },
+        "relationship": {
+          "mean": 4.532116788321167,
+          "percentage": 90.64233576642333,
+          "count": 822
+        }
+      },
+      "by_shot_type": {
+        "Few-Shot": {
+          "mean": 4.486720867208672,
+          "percentage": 89.73441734417345,
+          "count": 1107
+        },
+        "One-Shot": {
+          "mean": 4.513888888888889,
+          "percentage": 90.27777777777779,
+          "count": 1080
+        },
+        "Zero-Shot": {
+          "mean": 4.488908606921029,
+          "percentage": 89.77817213842059,
+          "count": 1127
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "Few-Shot": {
+            "score": 4.352452830188679,
+            "percentage": 87.04905660377358
+          },
+          "One-Shot": {
+            "score": 4.325818181818182,
+            "percentage": 86.51636363636364
+          },
+          "Zero-Shot": {
+            "score": 4.311851851851852,
+            "percentage": 86.23703703703704
+          }
+        },
+        "factual": {
+          "Few-Shot": {
+            "score": 4.733096085409253,
+            "percentage": 94.66192170818506
+          },
+          "One-Shot": {
+            "score": 4.7266903914590745,
+            "percentage": 94.5338078291815
+          },
+          "Zero-Shot": {
+            "score": 4.653770491803278,
+            "percentage": 93.07540983606556
+          }
+        },
+        "inferential": {
+          "Few-Shot": {
+            "score": 4.35350553505535,
+            "percentage": 87.07011070110701
+          },
+          "One-Shot": {
+            "score": 4.388847583643122,
+            "percentage": 87.77695167286245
+          },
+          "Zero-Shot": {
+            "score": 4.473454545454546,
+            "percentage": 89.46909090909092
+          }
+        },
+        "relationship": {
+          "Few-Shot": {
+            "score": 4.495172413793103,
+            "percentage": 89.90344827586206
+          },
+          "One-Shot": {
+            "score": 4.614117647058823,
+            "percentage": 92.28235294117646
+          },
+          "Zero-Shot": {
+            "score": 4.495306859205776,
+            "percentage": 89.90613718411552
+          }
+        }
+      }
+    },
+    "Mixtral-8x22B": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.981291490645745,
+          "std": 0.15229413018482282,
+          "mean_pct": 99.6258298129149
+        },
+        "Accuracy": {
+          "mean": 4.965298732649367,
+          "std": 0.2092123372772867,
+          "mean_pct": 99.30597465298735
+        },
+        "Completeness": {
+          "mean": 4.858177429088714,
+          "std": 0.3779875027965412,
+          "mean_pct": 97.16354858177428
+        },
+        "Fluency": {
+          "mean": 5.0,
+          "std": 0.0,
+          "mean_pct": 100.0
+        },
+        "KG_Alignment": {
+          "mean": 4.911888955944478,
+          "std": 0.31859162945931374,
+          "mean_pct": 98.23777911888956
+        },
+        "Overall_Score": {
+          "mean": 4.94333132166566,
+          "std": 0.17131936153519983,
+          "mean_pct": 98.8666264333132
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.9316049382716045,
+          "percentage": 98.63209876543209,
+          "count": 810
+        },
+        "factual": {
+          "mean": 4.967012687427912,
+          "percentage": 99.34025374855825,
+          "count": 867
+        },
+        "inferential": {
+          "mean": 4.9268711656441715,
+          "percentage": 98.53742331288343,
+          "count": 815
+        },
+        "relationship": {
+          "mean": 4.946228710462288,
+          "percentage": 98.92457420924575,
+          "count": 822
+        }
+      },
+      "by_shot_type": {
+        "Few-Shot": {
+          "mean": 4.938211382113821,
+          "percentage": 98.76422764227642,
+          "count": 1107
+        },
+        "One-Shot": {
+          "mean": 4.940185185185186,
+          "percentage": 98.80370370370372,
+          "count": 1080
+        },
+        "Zero-Shot": {
+          "mean": 4.951375332741792,
+          "percentage": 99.02750665483583,
+          "count": 1127
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "Few-Shot": {
+            "score": 4.936603773584906,
+            "percentage": 98.73207547169812
+          },
+          "One-Shot": {
+            "score": 4.935272727272728,
+            "percentage": 98.70545454545456
+          },
+          "Zero-Shot": {
+            "score": 4.922962962962963,
+            "percentage": 98.45925925925926
+          }
+        },
+        "factual": {
+          "Few-Shot": {
+            "score": 4.954448398576512,
+            "percentage": 99.08896797153025
+          },
+          "One-Shot": {
+            "score": 4.9708185053380785,
+            "percentage": 99.41637010676156
+          },
+          "Zero-Shot": {
+            "score": 4.975081967213115,
+            "percentage": 99.5016393442623
+          }
+        },
+        "inferential": {
+          "Few-Shot": {
+            "score": 4.91070110701107,
+            "percentage": 98.21402214022139
+          },
+          "One-Shot": {
+            "score": 4.9182156133829,
+            "percentage": 98.36431226765801
+          },
+          "Zero-Shot": {
+            "score": 4.951272727272727,
+            "percentage": 99.02545454545454
+          }
+        },
+        "relationship": {
+          "Few-Shot": {
+            "score": 4.949655172413793,
+            "percentage": 98.99310344827586
+          },
+          "One-Shot": {
+            "score": 4.934901960784314,
+            "percentage": 98.69803921568628
+          },
+          "Zero-Shot": {
+            "score": 4.953068592057762,
+            "percentage": 99.06137184115525
+          }
+        }
+      }
+    },
+    "Qwen3-32B": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.984862246442628,
+          "std": 0.1568573023536836,
+          "mean_pct": 99.69724492885256
+        },
+        "Accuracy": {
+          "mean": 4.86860429912201,
+          "std": 0.3941479343222801,
+          "mean_pct": 97.37208598244021
+        },
+        "Completeness": {
+          "mean": 4.607326672721768,
+          "std": 0.7021000545003421,
+          "mean_pct": 92.14653345443536
+        },
+        "Fluency": {
+          "mean": 4.987889797154103,
+          "std": 0.12490528438978662,
+          "mean_pct": 99.75779594308204
+        },
+        "KG_Alignment": {
+          "mean": 4.746594005449591,
+          "std": 0.5831521059967423,
+          "mean_pct": 94.93188010899182
+        },
+        "Overall_Score": {
+          "mean": 4.83905540417802,
+          "std": 0.31210285623700607,
+          "mean_pct": 96.7811080835604
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.869715698393078,
+          "percentage": 97.39431396786156,
+          "count": 809
+        },
+        "factual": {
+          "mean": 4.851972157772622,
+          "percentage": 97.03944315545243,
+          "count": 862
+        },
+        "inferential": {
+          "mean": 4.827339901477833,
+          "percentage": 96.54679802955665,
+          "count": 812
+        },
+        "relationship": {
+          "mean": 4.806829268292683,
+          "percentage": 96.13658536585365,
+          "count": 820
+        }
+      },
+      "by_shot_type": {
+        "Few-Shot": {
+          "mean": 4.841923774954629,
+          "percentage": 96.83847549909258,
+          "count": 1102
+        },
+        "One-Shot": {
+          "mean": 4.822098421541318,
+          "percentage": 96.44196843082635,
+          "count": 1077
+        },
+        "Zero-Shot": {
+          "mean": 4.852491103202847,
+          "percentage": 97.04982206405694,
+          "count": 1124
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "Few-Shot": {
+            "score": 4.889811320754717,
+            "percentage": 97.79622641509434
+          },
+          "One-Shot": {
+            "score": 4.84014598540146,
+            "percentage": 96.8029197080292
+          },
+          "Zero-Shot": {
+            "score": 4.88,
+            "percentage": 97.6
+          }
+        },
+        "factual": {
+          "Few-Shot": {
+            "score": 4.852142857142857,
+            "percentage": 97.04285714285714
+          },
+          "One-Shot": {
+            "score": 4.825089605734767,
+            "percentage": 96.50179211469535
+          },
+          "Zero-Shot": {
+            "score": 4.876567656765676,
+            "percentage": 97.53135313531352
+          }
+        },
+        "inferential": {
+          "Few-Shot": {
+            "score": 4.826865671641791,
+            "percentage": 96.53731343283582
+          },
+          "One-Shot": {
+            "score": 4.815613382899628,
+            "percentage": 96.31226765799256
+          },
+          "Zero-Shot": {
+            "score": 4.839272727272727,
+            "percentage": 96.78545454545453
+          }
+        },
+        "relationship": {
+          "Few-Shot": {
+            "score": 4.802076124567474,
+            "percentage": 96.04152249134948
+          },
+          "One-Shot": {
+            "score": 4.806274509803921,
+            "percentage": 96.12549019607842
+          },
+          "Zero-Shot": {
+            "score": 4.81231884057971,
+            "percentage": 96.2463768115942
+          }
+        }
+      }
+    }
+  }
+}
