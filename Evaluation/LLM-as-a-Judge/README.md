@@ -17,9 +17,9 @@ You will evaluate a model-generated question-answer pair on FIVE metrics using a
 2 = Poor  
 1 = Very Poor
 
-==============================
-DETAILED SCORING CRITERIA
-==============================
+
+#### DETAILED SCORING CRITERIA
+
 
 1. **RELEVANCE (1–5):** Does the question appropriately relate to the source text?  
    5: Perfectly relevant to the source, clearly grounded in the text  
@@ -56,17 +56,17 @@ DETAILED SCORING CRITERIA
    2: Limited use of KG information; may contain minor contradictions or misinterpretations  
    1: Ignores KG information entirely or includes clear contradictions
 
-==============================
-INPUT
-==============================
+
+#### INPUT
+
 **Question:** {question}  
 **Answer:** {answer}  
 **Source Context:** {source_context}  
 **Knowledge Graph Triples:** {kg_triples}
 
-==============================
-RESPONSE FORMAT
-==============================
+
+#### RESPONSE FORMAT
+
 Relevance: X  
 Accuracy: X  
 Completeness: X  
@@ -131,7 +131,7 @@ API_KEY = "your_nscale_api_key"
 
 
 ### 📂 Folder Structure
-
+```text
 LLM-as-a-Judge/
 │
 ├── README.md                         # Overview (this file)
@@ -165,7 +165,7 @@ LLM-as-a-Judge/
     ├── Qwen_zeroshot_evaluation_results.csv
     ├── Qwen_oneshot_evaluation_results.csv
     └── Qwen_fewshot_evaluation_results.csv
-
+```
 ---
    ###  📈 Output
 
@@ -179,7 +179,6 @@ Majority voting agreement  (see llms results analysis)
 
 Agreement with human evaluators (see LLM vs Human/)
 
----
 
 📘 For full QA generation methodology and dataset details, see the main project README.
 
