@@ -115,32 +115,18 @@ NeuReg/
 │   │   ├── evaluation_results.csv              # Per-triple validation outcomes
 │   │   └── evaluation_report.json              # Aggregate KG validation statistics
 │   ├── LLM-as-a-Judge/                        # LLM-based QA evaluation (5 models)
-│   │   ├── README.md                          # Overview of LLM evaluation 
+│   │   ├── README.md                          # Overview of LLM evaluation setup and metric definitions
 │   │   ├── DeepSeek-R1-Distill-Llama-70B/     # Evaluation results from DeepSeek-R1
-│   │   │   ├── DeepSeek-R1-Distill-Llama-70B.ipynb
-│   │   │   ├── DeepSeek_zeroshot_evaluation_results.csv
-│   │   │   ├── DeepSeek_oneshot_evaluation_results.csv
-│   │   │   └── DeepSeek_fewshot_evaluation_results.csv
+│   │   │   ├── DeepSeek-R1-Distill-Llama-70B.ipynb         # ipynb file
+│   │   │   ├── DeepSeek_zeroshot_evaluation_results.csv    #  Zero-Shot QA results
+│   │   │   ├── DeepSeek_oneshot_evaluation_results.csv     #  One-Shot QA results
+│   │   │   └── DeepSeek_fewshot_evaluation_results.csv     #  Few-Shot QA results
 │   │   ├── Gemma-2 Instruct 27B/              # Evaluation results from Gemma-2 27B
-│   │   │   ├── Gemma-2 Instruct 27B.ipynb
-│   │   │   ├── Gemma_zeroshot_evaluation_results.csv
-│   │   │   ├── Gemma_oneshot_evaluation_results.csv
-│   │   │   └── Gemma_fewshot_evaluation_results.csv
 │   │   ├── LLaMA 3.3 70B/                     # Evaluation results from Meta's LLaMA 3.3 70B
-│   │   │   ├── LLaMA_3.3_70B.ipynb
-│   │   │   ├── LLaMA_zeroshot_evaluation_results.csv
-│   │   │   ├── LLaMA_oneshot_evaluation_results.csv
-│   │   │   └── LLaMA_fewshot_evaluation_results.csv
 │   │   ├── mixtral-8x22b-instruct-v0.1/       # Evaluation results from Mixtral 8x22B Instruct
-│   │   │   ├── mixtral-8x22b-instruct-v0.1.ipynb
-│   │   │   ├── mixtral_zeroshot_evaluation_results.csv
-│   │   │   ├── mixtral_oneshot_evaluation_results.csv
-│   │   │   └── mixtral_fewshot_evaluation_results.csv
 │   │   └── Qwen3-32B/                         # Evaluation results from Qwen3-32B
-│   │       ├── Qwen3-32B.ipynb
-│   │       ├── Qwen_zeroshot_evaluation_results.csv
-│   │       ├── Qwen_oneshot_evaluation_results.csv
-│   │       └── Qwen_fewshot_evaluation_results.csv
+│   │       └── **(Each model folder includes: one `.ipynb` notebook + 3 CSVs for Zero-/One-/Few-Shot QA evaluation results)**
+
 │   ├── llms results analysis/                 # Cross-model aggregation and statistics
 │   │   ├── README.md
 │   │   ├── LLM results analysis.ipynb         # Compare results across LLM judges
