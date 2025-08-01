@@ -1,0 +1,4817 @@
+{
+  "summary": {
+    "total_chunks_evaluated": 153,
+    "average_f1_score": 0.8795031055900621,
+    "average_precision": 0.9360126916975146,
+    "average_recall": 0.8294283036551078,
+    "ontology_pass_rate": 0.9803921568627451
+  },
+  "overall_metrics": {
+    "precision": 0.9360126916975146,
+    "recall": 0.8294283036551078,
+    "f1_score": 0.8795031055900621,
+    "total_extracted_triples": 1891,
+    "total_true_positives": 1770,
+    "total_false_positives": 121,
+    "total_false_negatives": 364,
+    "total_ground_truth_facts": 2134
+  },
+  "ontology_alignment": {
+    "pass_rate": 0.9803921568627451,
+    "pass_count": 150,
+    "total_chunks": 153,
+    "average_confidence": 0.9133986928104575
+  },
+  "best_performing_chunks": [
+    {
+      "chunk_id": "version-2-november-2021-we-hav-p8-4-7c3f8b2e",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "i-where-clothing-or-equipment-p14-18-c4d9837b",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "european-union-and-european-ec-p16-27-6c536dbb",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 12,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "i-british-citizens-who-hold-a-p18-33-c4f24b26",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 11,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "55-students-who-finish-school-p22-44-819f8a64",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 12,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    }
+  ],
+  "worst_performing_chunks": [
+    {
+      "chunk_id": "60-we-recognise-the-benefits-o-p23-48-a57c6da7",
+      "precision": 0.6666666666666666,
+      "recall": 0.6153846153846154,
+      "f1_score": 0.64,
+      "extracted_triples": 12,
+      "true_positives": 8,
+      "false_positives": 4,
+      "false_negatives": 5,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "42-for-funding-eligibility-pur-p20-37-51960637",
+      "precision": 0.6363636363636364,
+      "recall": 0.6363636363636364,
+      "f1_score": 0.6363636363636364,
+      "extracted_triples": 11,
+      "true_positives": 7,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "funding-eligibility-summary-1-p64-158-8bea8b17",
+      "precision": 0.6153846153846154,
+      "recall": 0.5714285714285714,
+      "f1_score": 0.5925925925925927,
+      "extracted_triples": 13,
+      "true_positives": 8,
+      "false_positives": 5,
+      "false_negatives": 6,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "a-signed-scanned-document-att-p38-89-e06c69d7",
+      "precision": 0.7,
+      "recall": 0.5,
+      "f1_score": 0.5833333333333334,
+      "extracted_triples": 10,
+      "true_positives": 7,
+      "false_positives": 3,
+      "false_negatives": 7,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "it-is-particularly-important-t-p61-152-35faf5ab",
+      "precision": 0.6,
+      "recall": 0.375,
+      "f1_score": 0.4615384615384615,
+      "extracted_triples": 5,
+      "true_positives": 3,
+      "false_positives": 2,
+      "false_negatives": 5,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    }
+  ],
+  "chunk_level_metrics": [
+    {
+      "chunk_id": "e-this-must-include-the-locati-p36-86-c656a27c",
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9473684210526316,
+      "extracted_triples": 9,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "29-we-have-based-the-three-yea-p16-26-df135766",
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "extracted_triples": 7,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "these-documents-outline-the-ma-p6-1-a8c3d2db",
+      "precision": 1.0,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.8695652173913044,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "where-we-do-ask-for-informatio-p7-2-ffa77cc9",
+      "precision": 0.8333333333333334,
+      "recall": 0.625,
+      "f1_score": 0.7142857142857143,
+      "extracted_triples": 6,
+      "true_positives": 5,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "what-s-new-we-have-made-the-fo-p8-3-b3688f8d",
+      "precision": 0.9166666666666666,
+      "recall": 0.8461538461538461,
+      "f1_score": 0.8799999999999999,
+      "extracted_triples": 12,
+      "true_positives": 11,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "version-2-november-2021-we-hav-p8-4-7c3f8b2e",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "some-institutions-have-simply-p9-6-4a187af5",
+      "precision": 0.8333333333333334,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.7407407407407408,
+      "extracted_triples": 12,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 5,
+      "ground_truth": 15,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "if-planned-funded-activity-bec-p9-7-4aaa8da2",
+      "precision": 0.7692307692307693,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.7692307692307693,
+      "extracted_triples": 13,
+      "true_positives": 10,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "1-introduction-and-background-p10-8-d395cf80",
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1_score": 0.8571428571428571,
+      "extracted_triples": 9,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "background-4-all-institutions-p10-9-c144ca8e",
+      "precision": 0.9230769230769231,
+      "recall": 1.0,
+      "f1_score": 0.9600000000000001,
+      "extracted_triples": 13,
+      "true_positives": 12,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "8-this-document-is-expected-to-p10-10-f97acb38",
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.9565217391304348,
+      "extracted_triples": 11,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "scope-of-this-document-10-this-p11-11-c0642fcd",
+      "precision": 1.0,
+      "recall": 0.8235294117647058,
+      "f1_score": 0.9032258064516129,
+      "extracted_triples": 14,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 17,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "2-principles-and-conditions-of-p12-12-5bb11bad",
+      "precision": 1.0,
+      "recall": 0.5833333333333334,
+      "f1_score": 0.7368421052631579,
+      "extracted_triples": 7,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "14-we-only-expect-institutions-p12-13-6935b5e3",
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "extracted_triples": 7,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "funding-agreements-and-conditi-p12-14-b216b423",
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9411764705882353,
+      "extracted_triples": 16,
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "a-tuition-fees-cannot-be-charg-p13-15-635b3883",
+      "precision": 0.7333333333333333,
+      "recall": 0.6875,
+      "f1_score": 0.7096774193548386,
+      "extracted_triples": 15,
+      "true_positives": 11,
+      "false_positives": 4,
+      "false_negatives": 5,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "where-a-student-resits-an-exa-p13-16-9002179e",
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "extracted_triples": 14,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "e-no-fee-must-be-charged-to-st-p14-17-e313249f",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "i-where-clothing-or-equipment-p14-18-c4d9837b",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "v-the-recreational-use-of-leis-p14-19-6972afad",
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.8888888888888888,
+      "extracted_triples": 9,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "vii-optional-extra-activities-p14-20-ead3ba13",
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1_score": 0.967741935483871,
+      "extracted_triples": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "evidence-and-record-keeping-17-p15-21-d9b51b4f",
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9411764705882353,
+      "extracted_triples": 16,
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "22-the-institution-itself-will-p15-22-1d357788",
+      "precision": 0.8461538461538461,
+      "recall": 1.0,
+      "f1_score": 0.9166666666666666,
+      "extracted_triples": 13,
+      "true_positives": 11,
+      "false_positives": 2,
+      "false_negatives": 0,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "action-on-ineligible-planned-h-p15-23-2f8871df",
+      "precision": 0.7142857142857143,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.7142857142857143,
+      "extracted_triples": 7,
+      "true_positives": 5,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ground_truth": 7,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "3-student-eligibility-introduc-p16-24-7f545124",
+      "precision": 0.875,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.823529411764706,
+      "extracted_triples": 8,
+      "true_positives": 7,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "28-most-young-people-legally-r-p16-25-d65286d1",
+      "precision": 0.7777777777777778,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.7777777777777778,
+      "extracted_triples": 9,
+      "true_positives": 7,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "european-union-and-european-ec-p16-27-6c536dbb",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 12,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "residency-eligibility-32-the-f-p17-29-16893efd",
+      "precision": 1.0,
+      "recall": 0.6923076923076923,
+      "f1_score": 0.8181818181818181,
+      "extracted_triples": 9,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "35-in-determining-student-elig-p17-30-f18d2e5a",
+      "precision": 0.875,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.823529411764706,
+      "extracted_triples": 8,
+      "true_positives": 7,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "36-students-who-are-attending-p17-31-9ca982ce",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "definition-of-ordinarily-resid-p18-32-7d85743a",
+      "precision": 0.9,
+      "recall": 0.6923076923076923,
+      "f1_score": 0.7826086956521738,
+      "extracted_triples": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 4,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.7
+    },
+    {
+      "chunk_id": "i-british-citizens-who-hold-a-p18-33-c4f24b26",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 11,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "aoc-b-1-january-if-the-academi-p19-34-84e5cc9e",
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.88,
+      "extracted_triples": 22,
+      "true_positives": 22,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "ground_truth": 28,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "a-those-who-are-accompanying-o-p19-35-61dc87ed",
+      "precision": 0.9411764705882353,
+      "recall": 0.8421052631578947,
+      "f1_score": 0.8888888888888888,
+      "extracted_triples": 17,
+      "true_positives": 16,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ground_truth": 19,
+      "ontology_alignment": "Not Pass",
+      "ontology_confidence": 0.2
+    },
+    {
+      "chunk_id": "e-those-who-are-dependants-of-p19-36-7bf71922",
+      "precision": 0.6923076923076923,
+      "recall": 0.6923076923076923,
+      "f1_score": 0.6923076923076923,
+      "extracted_triples": 13,
+      "true_positives": 9,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "42-for-funding-eligibility-pur-p20-37-51960637",
+      "precision": 0.6363636363636364,
+      "recall": 0.6363636363636364,
+      "f1_score": 0.6363636363636364,
+      "extracted_triples": 11,
+      "true_positives": 7,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "no-recourse-to-public-funds-43-p20-38-ee14cd42",
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1_score": 0.875,
+      "extracted_triples": 8,
+      "true_positives": 7,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.8
+    },
+    {
+      "chunk_id": "age-44-a-16-to-18-year-old-stu-p20-39-c96dba6c",
+      "precision": 0.9,
+      "recall": 0.8181818181818182,
+      "f1_score": 0.8571428571428572,
+      "extracted_triples": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "46-a-learning-programme-compri-p21-40-18ba12f1",
+      "precision": 0.9375,
+      "recall": 0.75,
+      "f1_score": 0.8333333333333334,
+      "extracted_triples": 16,
+      "true_positives": 15,
+      "false_positives": 1,
+      "false_negatives": 5,
+      "ground_truth": 20,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "students-under-16-48-there-is-p21-41-a8bfcb38",
+      "precision": 1.0,
+      "recall": 0.7368421052631579,
+      "f1_score": 0.8484848484848484,
+      "extracted_triples": 14,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ground_truth": 19,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "51-groups-of-compulsory-school-p21-42-8f21e80e",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "52-esfa-funds-children-who-are-p22-43-af3763da",
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.962962962962963,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "55-students-who-finish-school-p22-44-819f8a64",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 12,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "56-esfa-will-not-fund-further-p22-45-a5ba27bf",
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.8888888888888888,
+      "extracted_triples": 9,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "groups-of-students-normal-recr-p23-46-381b664d",
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.8333333333333333,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "59-this-definition-may-be-vari-p23-47-0b6759fe",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 5,
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 6,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "60-we-recognise-the-benefits-o-p23-48-a57c6da7",
+      "precision": 0.6666666666666666,
+      "recall": 0.6153846153846154,
+      "f1_score": 0.64,
+      "extracted_triples": 12,
+      "true_positives": 8,
+      "false_positives": 4,
+      "false_negatives": 5,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "students-from-wales-scotland-o-p23-49-6982094d",
+      "precision": 0.9375,
+      "recall": 0.8823529411764706,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 16,
+      "true_positives": 15,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 17,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "higher-education-students-63-e-p24-50-6b608d1a",
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1_score": 0.9285714285714286,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 15,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "parents-to-be-65-students-who-p24-51-fec79438",
+      "precision": 0.7142857142857143,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.7692307692307692,
+      "extracted_triples": 7,
+      "true_positives": 5,
+      "false_positives": 2,
+      "false_negatives": 1,
+      "ground_truth": 6,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "provision-for-offenders-66-ins-p24-52-49942d7d",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "students-not-eligible-for-esfa-p24-53-7e6a580e",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 14,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "69-students-whose-whole-progra-p25-54-28e6e466",
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9473684210526316,
+      "extracted_triples": 9,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "73-all-students-living-in-the-p25-55-dd2dcdce",
+      "precision": 0.9166666666666666,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.9166666666666666,
+      "extracted_triples": 12,
+      "true_positives": 11,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "77-in-line-with-the-general-da-p26-56-bf2992b8",
+      "precision": 1.0,
+      "recall": 0.9444444444444444,
+      "f1_score": 0.9714285714285714,
+      "extracted_triples": 17,
+      "true_positives": 17,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "79-institution-management-must-p26-57-6e07466e",
+      "precision": 1.0,
+      "recall": 0.85,
+      "f1_score": 0.9189189189189189,
+      "extracted_triples": 17,
+      "true_positives": 17,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 20,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "81-an-institution-must-retain-p27-58-abb9c629",
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1_score": 0.967741935483871,
+      "extracted_triples": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "82-the-learning-agreement-and-p27-59-1cb56a99",
+      "precision": 0.896551724137931,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.912280701754386,
+      "extracted_triples": 29,
+      "true_positives": 26,
+      "false_positives": 3,
+      "false_negatives": 2,
+      "ground_truth": 28,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "g-confirmation-that-part-time-p27-60-3e84c4a9",
+      "precision": 1.0,
+      "recall": 0.6923076923076923,
+      "f1_score": 0.8181818181818181,
+      "extracted_triples": 9,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "4-study-programme-eligibility-p28-61-cda63362",
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.962962962962963,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "educational-progression-87-ins-p28-62-293a381c",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "resits-and-retakes-88-when-lea-p29-63-9a133b9f",
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1_score": 0.8421052631578948,
+      "extracted_triples": 9,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "90-for-this-funding-year-only-p29-64-6300801d",
+      "precision": 0.8235294117647058,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.7999999999999999,
+      "extracted_triples": 17,
+      "true_positives": 14,
+      "false_positives": 3,
+      "false_negatives": 4,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "91-general-certificate-of-seco-p29-66-8477bed0",
+      "precision": 1.0,
+      "recall": 0.7647058823529411,
+      "f1_score": 0.8666666666666666,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 17,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "95-students-whose-programmes-d-p30-67-14757368",
+      "precision": 0.7777777777777778,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.7777777777777778,
+      "extracted_triples": 9,
+      "true_positives": 7,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "planned-hours-for-study-progra-p30-68-b7be7f87",
+      "precision": 1.0,
+      "recall": 0.7647058823529411,
+      "f1_score": 0.8666666666666666,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 17,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.8
+    },
+    {
+      "chunk_id": "99-for-funding-purposes-study-p30-69-6dfac77d",
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.8333333333333334,
+      "extracted_triples": 12,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "skills-plus-english-and-maths-p31-70-04ae3bf9",
+      "precision": 1.0,
+      "recall": 0.7222222222222222,
+      "f1_score": 0.8387096774193548,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "a-time-spent-working-towards-i-p31-71-bccf1356",
+      "precision": 0.7692307692307693,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.7692307692307693,
+      "extracted_triples": 13,
+      "true_positives": 10,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "105-work-experience-and-other-p32-72-120636e2",
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1_score": 0.7692307692307693,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "107-many-students-will-look-fo-p32-73-af395152",
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.88,
+      "extracted_triples": 11,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "110-non-qualification-hours-mu-p32-74-29010f83",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "recording-planned-hours-114-th-p33-75-5295e9d0",
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1_score": 0.888888888888889,
+      "extracted_triples": 20,
+      "true_positives": 20,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ground_truth": 25,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "118-when-institutions-calculat-p33-76-f7538222",
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "extracted_triples": 7,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "119-when-institutions-recruit-p34-77-343bfd3e",
+      "precision": 0.8823529411764706,
+      "recall": 0.7894736842105263,
+      "f1_score": 0.8333333333333333,
+      "extracted_triples": 17,
+      "true_positives": 15,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "ground_truth": 19,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "120-when-an-institution-or-its-p34-78-8fca3129",
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1_score": 0.8421052631578948,
+      "extracted_triples": 9,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "123-institutions-must-be-able-p34-79-f1f873c5",
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1_score": 0.888888888888889,
+      "extracted_triples": 12,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 15,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "124-esfa-expects-non-qualifica-p35-80-6d6bb8a2",
+      "precision": 1.0,
+      "recall": 0.8421052631578947,
+      "f1_score": 0.9142857142857143,
+      "extracted_triples": 16,
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 19,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "125-institutions-must-also-be-p35-82-444dc25e",
+      "precision": 0.9230769230769231,
+      "recall": 0.8571428571428571,
+      "f1_score": 0.888888888888889,
+      "extracted_triples": 13,
+      "true_positives": 12,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "institutions-must-have-evidenc-p35-83-6d378fd0",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "131-all-institutions-should-co-p36-84-187bea98",
+      "precision": 0.9444444444444444,
+      "recall": 0.9444444444444444,
+      "f1_score": 0.9444444444444444,
+      "extracted_triples": 18,
+      "true_positives": 17,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "133-the-following-advice-on-re-p36-85-3d06c911",
+      "precision": 1.0,
+      "recall": 0.9047619047619048,
+      "f1_score": 0.9500000000000001,
+      "extracted_triples": 19,
+      "true_positives": 19,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 21,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "136-an-electronic-signature-is-p37-87-07652b8b",
+      "precision": 1.0,
+      "recall": 0.7894736842105263,
+      "f1_score": 0.8823529411764706,
+      "extracted_triples": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 19,
+      "ontology_alignment": "Not Pass",
+      "ontology_confidence": 0.2
+    },
+    {
+      "chunk_id": "138-a-wet-signature-is-created-p37-88-fe66a2e0",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "a-signed-scanned-document-att-p38-89-e06c69d7",
+      "precision": 0.7,
+      "recall": 0.5,
+      "f1_score": 0.5833333333333334,
+      "extracted_triples": 10,
+      "true_positives": 7,
+      "false_positives": 3,
+      "false_negatives": 7,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "143-when-a-student-withdraws-f-p38-90-73871f86",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 15,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "ineligible-provision-145-the-f-p38-91-8b69f1eb",
+      "precision": 0.9090909090909091,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.7692307692307692,
+      "extracted_triples": 11,
+      "true_positives": 10,
+      "false_positives": 1,
+      "false_negatives": 5,
+      "ground_truth": 15,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "d-vendor-certificated-courses-p39-92-afbfe7f1",
+      "precision": 0.9285714285714286,
+      "recall": 1.0,
+      "f1_score": 0.962962962962963,
+      "extracted_triples": 14,
+      "true_positives": 13,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "j-students-are-also-ineligible-p39-93-7fa002bc",
+      "precision": 0.7222222222222222,
+      "recall": 0.8125,
+      "f1_score": 0.7647058823529411,
+      "extracted_triples": 18,
+      "true_positives": 13,
+      "false_positives": 5,
+      "false_negatives": 3,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "5-definitions-and-terminology-p40-94-5b1d83dd",
+      "precision": 1.0,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.8695652173913044,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "access-to-higher-education-149-p40-95-c6ddb295",
+      "precision": 0.7777777777777778,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.7777777777777778,
+      "extracted_triples": 9,
+      "true_positives": 7,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "achievement-150-the-current-da-p40-96-9d2b68fc",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 14,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "approved-qualifications-and-fi-p41-97-d55c3087",
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058,
+      "extracted_triples": 7,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "bursary-funding-156-esfa-gives-p41-98-b72639c2",
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.9565217391304348,
+      "extracted_triples": 11,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "full-time-and-part-time-studen-p41-99-bc8512cf",
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1_score": 0.8421052631578948,
+      "extracted_triples": 9,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "higher-level-programmes-for-st-p42-100-9577f6a0",
+      "precision": 1.0,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.8695652173913044,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "e-we-do-not-fund-any-students-p42-101-e75cc721",
+      "precision": 1.0,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.8750000000000001,
+      "extracted_triples": 7,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "aoo-b-higher-national-certific-p42-102-c6aaffaa",
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "extracted_triples": 8,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 1.0
+    },
+    {
+      "chunk_id": "individualised-learner-record-p43-103-91af0463",
+      "precision": 0.9,
+      "recall": 0.75,
+      "f1_score": 0.8181818181818182,
+      "extracted_triples": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "prevent-duty-171-the-prevent-d-p43-104-655f925b",
+      "precision": 0.9285714285714286,
+      "recall": 1.0,
+      "f1_score": 0.962962962962963,
+      "extracted_triples": 14,
+      "true_positives": 13,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "prince-s-trust-team-programme-p44-106-3087a95c",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 8,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 1.0
+    },
+    {
+      "chunk_id": "school-census-174-the-departme-p44-107-a17979ce",
+      "precision": 0.75,
+      "recall": 0.8,
+      "f1_score": 0.7741935483870969,
+      "extracted_triples": 16,
+      "true_positives": 12,
+      "false_positives": 4,
+      "false_negatives": 3,
+      "ground_truth": 15,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "t-level-176-t-level-are-funded-p44-108-5adcd319",
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1_score": 0.9473684210526316,
+      "extracted_triples": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "6-subcontracting-subcontracted-p46-109-54483a9a",
+      "precision": 0.8,
+      "recall": 0.7272727272727273,
+      "f1_score": 0.761904761904762,
+      "extracted_triples": 10,
+      "true_positives": 8,
+      "false_positives": 2,
+      "false_negatives": 3,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "annex-16-to-19-funding-subcont-p46-110-43dca981",
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1_score": 0.9473684210526316,
+      "extracted_triples": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ground_truth": 9,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "monitoring-of-your-subcontract-p46-111-a791340b",
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "extracted_triples": 14,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 7,
+      "ground_truth": 21,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "controls-over-students-tutors-p46-112-f034a4b9",
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.962962962962963,
+      "extracted_triples": 13,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "183-you-must-make-sure-that-yo-p47-113-3c650e09",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 8,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "distance-subcontracted-deliver-p47-114-577aafe6",
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.7692307692307692,
+      "extracted_triples": 12,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "191-schools-and-academies-must-p48-115-e8ef393f",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "193-when-a-subcontractor-wants-p48-116-d053b112",
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.88,
+      "extracted_triples": 11,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "annex-a-acronyms-and-glossary-p48-117-b8217ac3",
+      "precision": 0.84,
+      "recall": 0.75,
+      "f1_score": 0.7924528301886793,
+      "extracted_triples": 25,
+      "true_positives": 21,
+      "false_positives": 4,
+      "false_negatives": 7,
+      "ground_truth": 28,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "annex-b-planned-hours-and-time-p50-122-2abd0600",
+      "precision": 0.8461538461538461,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.8148148148148148,
+      "extracted_triples": 13,
+      "true_positives": 11,
+      "false_positives": 2,
+      "false_negatives": 3,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "for-student-eligibility-for-pu-p51-123-9f987806",
+      "precision": 0.9090909090909091,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 11,
+      "true_positives": 10,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "institutions-must-ensure-that-p51-124-cc88d350",
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.7692307692307692,
+      "extracted_triples": 12,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "core-aim-learning-plan-indicat-p52-126-f7a6bbfb",
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1_score": 0.923076923076923,
+      "extracted_triples": 6,
+      "true_positives": 6,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 7,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "usually-recognised-as-educatio-p52-128-6ca6537e",
+      "precision": 1.0,
+      "recall": 0.6153846153846154,
+      "f1_score": 0.761904761904762,
+      "extracted_triples": 8,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "are-building-and-premises-cost-p52-129-15a723de",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "3-esfa-has-included-2-examples-p52-130-35f91e9f",
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058,
+      "extracted_triples": 14,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "ground_truth": 20,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "a-recording-planned-hours-at-i-p53-131-498863f3",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "extracted_triples": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "advice-to-funding-auditors-onl-p53-132-c9cc511b",
+      "precision": 0.9411764705882353,
+      "recall": 0.7272727272727273,
+      "f1_score": 0.8205128205128205,
+      "extracted_triples": 17,
+      "true_positives": 16,
+      "false_positives": 1,
+      "false_negatives": 6,
+      "ground_truth": 22,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "students-doing-3-or-more-as-o-p53-133-3b966135",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 17,
+      "true_positives": 17,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 17,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "subject-or-activity-planned-pl-p55-135-9200a362",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 19,
+      "true_positives": 19,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 19,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "the-qualification-planned-hou-p55-136-fdfe84a5",
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9473684210526316,
+      "extracted_triples": 18,
+      "true_positives": 18,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 20,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "annex-c-withdrawals-compliance-p56-140-948458a6",
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1_score": 0.967741935483871,
+      "extracted_triples": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "4-for-distance-learning-provis-p57-141-8268713b",
+      "precision": 0.9375,
+      "recall": 0.5555555555555556,
+      "f1_score": 0.6976744186046512,
+      "extracted_triples": 16,
+      "true_positives": 15,
+      "false_positives": 1,
+      "false_negatives": 12,
+      "ground_truth": 27,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "7-institutions-must-record-stu-p57-142-73bd29f2",
+      "precision": 0.9230769230769231,
+      "recall": 0.75,
+      "f1_score": 0.8275862068965517,
+      "extracted_triples": 13,
+      "true_positives": 12,
+      "false_positives": 1,
+      "false_negatives": 4,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "10-when-checking-the-withdrawa-p57-143-908f4576",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "12-an-institution-should-also-p58-144-5675e1bf",
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "extracted_triples": 8,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "additional-clarification-on-wi-p58-145-1f61050a",
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9411764705882353,
+      "extracted_triples": 16,
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "if-the-learner-withdraws-from-p58-146-ad5766c8",
+      "precision": 0.8461538461538461,
+      "recall": 0.8461538461538461,
+      "f1_score": 0.8461538461538461,
+      "extracted_triples": 13,
+      "true_positives": 11,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "a5-no-learning-must-be-specifi-p59-147-edc80374",
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1_score": 0.923076923076923,
+      "extracted_triples": 14,
+      "true_positives": 12,
+      "false_positives": 2,
+      "false_negatives": 0,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "q8-is-the-date-of-withdrawal-f-p59-148-dc551e47",
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1_score": 0.7692307692307693,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "ground_truth": 16,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "q11-if-a-young-person-complete-p60-149-ae44e242",
+      "precision": 0.9,
+      "recall": 0.75,
+      "f1_score": 0.8181818181818182,
+      "extracted_triples": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "q13-when-does-the-first-six-we-p60-150-21cee00c",
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1_score": 0.9,
+      "extracted_triples": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "q15-when-a-student-completes-a-p61-151-abf3436e",
+      "precision": 1.0,
+      "recall": 0.9230769230769231,
+      "f1_score": 0.9600000000000001,
+      "extracted_triples": 12,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 13,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "it-is-particularly-important-t-p61-152-35faf5ab",
+      "precision": 0.6,
+      "recall": 0.375,
+      "f1_score": 0.4615384615384615,
+      "extracted_triples": 5,
+      "true_positives": 3,
+      "false_positives": 2,
+      "false_negatives": 5,
+      "ground_truth": 8,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "the-institution-has-a-choice-f-p61-153-533ca5ac",
+      "precision": 0.9,
+      "recall": 0.75,
+      "f1_score": 0.8181818181818182,
+      "extracted_triples": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "annex-d-condition-of-funding-o-p62-154-10fee58a",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 15,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "3-4-we-made-a-change-to-our-ma-p62-155-4f0e1a00",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 11,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "enrolments-and-exemptions-9-to-p63-156-76f0d8c0",
+      "precision": 0.8888888888888888,
+      "recall": 0.7272727272727273,
+      "f1_score": 0.7999999999999999,
+      "extracted_triples": 9,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "12-if-a-16-to-19-funding-stude-p63-157-0ff01d4d",
+      "precision": 0.6923076923076923,
+      "recall": 0.75,
+      "f1_score": 0.7199999999999999,
+      "extracted_triples": 13,
+      "true_positives": 9,
+      "false_positives": 4,
+      "false_negatives": 3,
+      "ground_truth": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85
+    },
+    {
+      "chunk_id": "funding-eligibility-summary-1-p64-158-8bea8b17",
+      "precision": 0.6153846153846154,
+      "recall": 0.5714285714285714,
+      "f1_score": 0.5925925925925927,
+      "extracted_triples": 13,
+      "true_positives": 8,
+      "false_positives": 5,
+      "false_negatives": 6,
+      "ground_truth": 14,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "4-where-an-institution-has-not-p64-159-a9e872ee",
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1_score": 0.8000000000000002,
+      "extracted_triples": 10,
+      "true_positives": 8,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9
+    },
+    {
+      "chunk_id": "funding-data-arrangements-main-p64-160-a0c6d849",
+      "precision": 1.0,
+      "recall": 0.7894736842105263,
+      "f1_score": 0.8823529411764706,
+      "extracted_triples": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ground_truth": 19,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "7-8-schools-and-academies-must-p65-161-7665d096",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 18,
+      "true_positives": 18,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 18,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "it-is-important-that-instituti-p65-162-80b7250a",
+      "precision": 0.9230769230769231,
+      "recall": 0.8,
+      "f1_score": 0.8571428571428571,
+      "extracted_triples": 13,
+      "true_positives": 12,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ground_truth": 15,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "15-the-difference-between-a-tr-p66-163-44cc3d4f",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "austria-germany-netherlands-be-p67-165-09ac39f3",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 26,
+      "true_positives": 26,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 26,
+      "ontology_alignment": "Not Pass",
+      "ontology_confidence": 0.2
+    },
+    {
+      "chunk_id": "france-notes-on-certain-territ-p67-166-d8c03da2",
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9411764705882353,
+      "extracted_triples": 24,
+      "true_positives": 24,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ground_truth": 27,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "3-this-includes-all-the-europe-p67-167-bb4b5746",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 11,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "3-this-includes-all-the-europe-p67-167-uma4b5746",
+      "precision": 1.0,
+      "recall": 0.9615384615384616,
+      "f1_score": 0.9803921568627451,
+      "extracted_triples": 25,
+      "true_positives": 25,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 26,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    },
+    {
+      "chunk_id": "coronavirus-coronavirus-and-im-p8-5-5e86d832",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "extracted_triples": 10,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 10,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95
+    }
+  ],
+  "detailed_results": [
+    {
+      "chunk_id": "e-this-must-include-the-locati-p36-86-c656a27c",
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9473684210526316,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "provider -> does_not_specify -> type_of_signature_to_use"
+      ]
+    },
+    {
+      "chunk_id": "29-we-have-based-the-three-yea-p16-26-df135766",
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "education_fees_and_awards_regulations_2007 -> amended -> true"
+      ]
+    },
+    {
+      "chunk_id": "these-documents-outline-the-ma-p6-1-a8c3d2db",
+      "precision": 1.0,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.8695652173913044,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "esfa -> has_funding_agreements_for -> young_people",
+        "funding_arrangements_2021_2022 -> applies_to_academic_year -> 2021/2022",
+        "institutions -> has_legal_duty -> gdpr_compliance_regarding_retention_of_personal_or_sensitive_information"
+      ]
+    },
+    {
+      "chunk_id": "where-we-do-ask-for-informatio-p7-2-ffa77cc9",
+      "precision": 0.8333333333333334,
+      "recall": 0.625,
+      "f1_score": 0.7142857142857143,
+      "true_positives": 5,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "maintained_schools -> provides_service -> local_authority"
+      ],
+      "false_negative_facts": [
+        "esfa -> clearly_communicates_needs_and_purpose -> information_request",
+        "esfa -> must_not_send_information_other_than_secure_method -> true",
+        "esfa -> provides_online_enquiry_form_for_contact_and_information -> true"
+      ]
+    },
+    {
+      "chunk_id": "what-s-new-we-have-made-the-fo-p8-3-b3688f8d",
+      "precision": 0.9166666666666666,
+      "recall": 0.8461538461538461,
+      "f1_score": 0.8799999999999999,
+      "true_positives": 11,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "repeat_year_funding_advice -> pertains_to -> funding_delivery"
+      ],
+      "false_negative_facts": [
+        "subcontracting_restrictions_advice -> pertains_to -> funding_delivery",
+        "guidance_document -> has_update -> sub_contracting_funding_rules"
+      ]
+    },
+    {
+      "chunk_id": "version-2-november-2021-we-hav-p8-4-7c3f8b2e",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "some-institutions-have-simply-p9-6-4a187af5",
+      "precision": 0.8333333333333334,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.7407407407407408,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "current_funding_year -> is_time_period_of -> institutions",
+        "knowledge_of_education_delivery -> corresponds_to_learning_aim -> individual_students"
+      ],
+      "false_negative_facts": [
+        "institutions -> planning_assumptions_use -> subject_to_advice",
+        "institutions -> adapt_planning_delivery_method -> how_they_need",
+        "planning_assumptions_for_2021_2022 -> are -> more_up_to_date",
+        "knowledge_of_education_delivery -> about -> individual_students_in_both_years",
+        "planning_assumptions_for_future_years -> should_not -> simply_repeat_issues"
+      ]
+    },
+    {
+      "chunk_id": "if-planned-funded-activity-bec-p9-7-4aaa8da2",
+      "precision": 0.7692307692307693,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.7692307692307693,
+      "true_positives": 10,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "funding_element -> evaluates -> substitute_activities",
+        "funding_element -> defines -> funding_impact",
+        "funding_regulations -> governed_by -> funding_element"
+      ],
+      "false_negative_facts": [
+        "current_difficult_circumstances -> affects -> planning_hours",
+        "advice -> helps_plan -> hours_for_students",
+        "advice -> helps_avoid -> funding_audit_issues"
+      ]
+    },
+    {
+      "chunk_id": "1-introduction-and-background-p10-8-d395cf80",
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1_score": 0.8571428571428571,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "secretary_of_state_for_education -> uses_powers_through -> esfa",
+        "secretary_of_state_for_education -> writes_guidance_on_behalf_of -> themselves",
+        "esfa -> uses_methodology -> national_funding_methodology"
+      ]
+    },
+    {
+      "chunk_id": "background-4-all-institutions-p10-9-c144ca8e",
+      "precision": 0.9230769230769231,
+      "recall": 1.0,
+      "f1_score": 0.9600000000000001,
+      "true_positives": 12,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "local_authorities -> is_funded_by -> esfa"
+      ],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "8-this-document-is-expected-to-p10-10-f97acb38",
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.9565217391304348,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "document -> is_expected_to_be_used_for -> funding_audit_testing"
+      ]
+    },
+    {
+      "chunk_id": "scope-of-this-document-10-this-p11-11-c0642fcd",
+      "precision": 1.0,
+      "recall": 0.8235294117647058,
+      "f1_score": 0.9032258064516129,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "document -> sets_out -> esfa_funding_conditions",
+        "funding_year -> starts_on -> 1 August 2021",
+        "funding_year -> ends_on -> 31 July 2022"
+      ]
+    },
+    {
+      "chunk_id": "2-principles-and-conditions-of-p12-12-5bb11bad",
+      "precision": 1.0,
+      "recall": 0.5833333333333334,
+      "f1_score": 0.7368421052631579,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "institution -> must_not_record_as_funded -> students_enrolled_at_other_institutions",
+        "institution -> must_avoid_funding_from -> office_for_students",
+        "institution -> must_avoid_funding_from -> other_esfa_programmes",
+        "institution -> must_avoid_funding_from -> other_sources",
+        "institution -> must_ensure_planned_hours_are -> realistic_and_deliverable"
+      ]
+    },
+    {
+      "chunk_id": "14-we-only-expect-institutions-p12-13-6935b5e3",
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "audit_evidence -> is_in_accordance_with -> usual_student_enrolment_processes"
+      ]
+    },
+    {
+      "chunk_id": "funding-agreements-and-conditi-p12-14-b216b423",
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9411764705882353,
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "funding_agreements -> sets_out -> funds_expected_in_return_for_funding",
+        "esfa -> issued_guidance_on -> detailed_condition_of_funding"
+      ]
+    },
+    {
+      "chunk_id": "a-tuition-fees-cannot-be-charg-p13-15-635b3883",
+      "precision": 0.7333333333333333,
+      "recall": 0.6875,
+      "f1_score": 0.7096774193548386,
+      "true_positives": 11,
+      "false_positives": 4,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "student_16_to_18 -> participates_in -> education_programme",
+        "education_programme -> includes -> consecutive_study_years",
+        "student_16_to_18 -> has_funding_condition -> free_tuition",
+        "examination_resit_fee -> is_funded_by -> inclusion_in_planned_hour_returns"
+      ],
+      "false_negative_facts": [
+        "student_16_to_18 -> is_defined_as -> under_19_on_31_August_in_teaching_year",
+        "consecutive_study_years -> is_recorded_in -> learning_agreement",
+        "institutions -> cannot_charge -> enrolment_fees",
+        "institutions -> cannot_charge -> registration_fees",
+        "student -> fails_without_good_reason -> examination"
+      ]
+    },
+    {
+      "chunk_id": "where-a-student-resits-an-exa-p13-16-9002179e",
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "absence_due_to_other_acceptable_reasons -> is_reason_for -> non_completion_of_coursework",
+        "voluntary_contribution -> is_sought_from -> student_or_sponsor"
+      ]
+    },
+    {
+      "chunk_id": "e-no-fee-must-be-charged-to-st-p14-17-e313249f",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "study_programme_elements_16_18 -> includes -> full_time_or_part_time_education",
+        "institution -> has_discretion -> determine_charge_amount_and_recipient"
+      ]
+    },
+    {
+      "chunk_id": "i-where-clothing-or-equipment-p14-18-c4d9837b",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "v-the-recreational-use-of-leis-p14-19-6972afad",
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.8888888888888888,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "field_trips -> is_part_of -> study_programme"
+      ],
+      "false_negative_facts": [
+        "field_trips -> has_associated_cost -> additional_cost"
+      ]
+    },
+    {
+      "chunk_id": "vii-optional-extra-activities-p14-20-ead3ba13",
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1_score": 0.967741935483871,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "institution -> meets_cost_of -> provision_of_optional_extra_activities"
+      ]
+    },
+    {
+      "chunk_id": "evidence-and-record-keeping-17-p15-21-d9b51b4f",
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9411764705882353,
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "documentation -> underpins -> funding_claims_or_returns",
+        "documentation -> treated_as -> financial_and_legal_records"
+      ]
+    },
+    {
+      "chunk_id": "22-the-institution-itself-will-p15-22-1d357788",
+      "precision": 0.8461538461538461,
+      "recall": 1.0,
+      "f1_score": 0.9166666666666666,
+      "true_positives": 11,
+      "false_positives": 2,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "documentary_evidence -> is_documentation_required_by -> esfa",
+        "institution -> provides_service -> funding_guidance_for_young_people"
+      ],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "action-on-ineligible-planned-h-p15-23-2f8871df",
+      "precision": 0.7142857142857143,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.7142857142857143,
+      "true_positives": 5,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "evidence -> requires -> realistic_delivery",
+        "reduced_planned_hours -> corresponds_to -> evidence_delivered"
+      ],
+      "false_negative_facts": [
+        "evidence -> is_not -> realistic_or_deliverable",
+        "reduced_planned_hours -> corresponds_to -> evidence_delivered_to_individual_students"
+      ]
+    },
+    {
+      "chunk_id": "3-student-eligibility-introduc-p16-24-7f545124",
+      "precision": 0.875,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.823529411764706,
+      "true_positives": 7,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "funding_eligibility_post_16 -> is_governed_by -> ESFA_funding_regulations"
+      ],
+      "false_negative_facts": [
+        "student_eligibility_introduction -> pertains_to -> ESFA_young_people's_funding",
+        "students -> has_consistency -> across_all_institution_types"
+      ]
+    },
+    {
+      "chunk_id": "28-most-young-people-legally-r-p16-25-d65286d1",
+      "precision": 0.7777777777777778,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.7777777777777778,
+      "true_positives": 7,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "funded_institutions -> provides_assistance -> funded_students",
+        "funding_auditors -> receives_assistance -> compliance_evidence_of_student_eligibility"
+      ],
+      "false_negative_facts": [
+        "post-16_enrolment_form -> is_used_for -> confirmation_of_uk_residency",
+        "funding_16_to_19_study_programme -> is_part_of -> study_programme_funding"
+      ]
+    },
+    {
+      "chunk_id": "european-union-and-european-ec-p16-27-6c536dbb",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "residency-eligibility-32-the-f-p17-29-16893efd",
+      "precision": 1.0,
+      "recall": 0.6923076923076923,
+      "f1_score": 0.8181818181818181,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "student -> has_eligibility_duration -> full_duration",
+        "student -> remains_eligible_for -> full_duration_of_study_programme",
+        "institution -> must_establish_eligibility_for -> each_student",
+        "student -> must_have -> legal_right_to_reside_in_uk_at_start_of_study_programme"
+      ]
+    },
+    {
+      "chunk_id": "35-in-determining-student-elig-p17-30-f18d2e5a",
+      "precision": 0.875,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.823529411764706,
+      "true_positives": 7,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "institution -> provides_assistance -> student_completion_support"
+      ],
+      "false_negative_facts": [
+        "institution -> must_satisfy -> reasonable_likelihood_of_completion",
+        "institution -> must_consider -> practicality_of_providing_place"
+      ]
+    },
+    {
+      "chunk_id": "36-students-who-are-attending-p17-31-9ca982ce",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "study_programme -> has_breaks -> only_normal_holiday_periods",
+        "study_programme -> has_funding -> whole_duration"
+      ]
+    },
+    {
+      "chunk_id": "definition-of-ordinarily-resid-p18-32-7d85743a",
+      "precision": 0.9,
+      "recall": 0.6923076923076923,
+      "f1_score": 0.7826086956521738,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.7,
+      "false_positive_triples": [
+        "funding_element -> givernedBy -> education_fees_and_awards_regulations"
+      ],
+      "false_negative_facts": [
+        "- ordinarily_resident -> includes -> Channel_Islands_and_Isle_of_Man",
+        "- person_not_ordinarily_resident -> reason -> parent_spouse_civil_partner_working_temporarily_abroad",
+        "- funding_eligibility -> corresponds_to -> Schedule_1_Education_Fees_and_Awards_Regulations_2007",
+        "- settled -> correspondsToLearningAim -> Irish_citizen"
+      ]
+    },
+    {
+      "chunk_id": "i-british-citizens-who-hold-a-p18-33-c4f24b26",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "aoc-b-1-january-if-the-academi-p19-34-84e5cc9e",
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.88,
+      "true_positives": 22,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "esfa -> considers -> students_not_living_in_uk_last_3_years",
+        "funding_eligibility_criteria -> includes -> students_not_living_in_uk_last_3_years",
+        "funding_eligibility_criteria -> includes -> under_18_eligibility",
+        "refugee_status_group -> includes -> spouses_civil_partners_children",
+        "recently_settled_status_group -> has_timeframe -> within_3_years_preceding_course_start",
+        "pre_settled_status_group -> has_context -> following_eu_exit"
+      ]
+    },
+    {
+      "chunk_id": "a-those-who-are-accompanying-o-p19-35-61dc87ed",
+      "precision": 0.9411764705882353,
+      "recall": 0.8421052631578947,
+      "f1_score": 0.8888888888888888,
+      "true_positives": 16,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ontology_alignment": "Not Pass",
+      "ontology_confidence": 0.2,
+      "false_positive_triples": [
+        "teacher_exchange_program -> provides_service -> teaching_assistance"
+      ],
+      "false_negative_facts": [
+        "family_member -> is_usually -> parent",
+        "individual -> entered_uk -> within_last_3_years",
+        "individual -> accompanied_by -> no_parent"
+      ]
+    },
+    {
+      "chunk_id": "e-those-who-are-dependants-of-p19-36-7bf71922",
+      "precision": 0.6923076923076923,
+      "recall": 0.6923076923076923,
+      "f1_score": 0.6923076923076923,
+      "true_positives": 9,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "spouse -> corresponds_to_learning_aim -> state_recognised_relationship",
+        "institution -> requires_documentation -> esfa_funding_guidance",
+        "institution -> is_expected_to_ensure -> student_consideration_for_funding",
+        "student -> participates_in -> esfa_funding_under_exceptional_circumstances"
+      ],
+      "false_negative_facts": [
+        "dependants_of_foreign_students -> has_funding_eligibility -> TRUE",
+        "european_economic_area -> is_related_to -> funding_eligibility",
+        "switzerland -> is_related_to -> funding_eligibility",
+        "overseas_territories -> is_related_to -> funding_eligibility"
+      ]
+    },
+    {
+      "chunk_id": "42-for-funding-eligibility-pur-p20-37-51960637",
+      "precision": 0.6363636363636364,
+      "recall": 0.6363636363636364,
+      "f1_score": 0.6363636363636364,
+      "true_positives": 7,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "funding_regulations -> governs -> funding_eligibility_criteria",
+        "funding_element -> defines -> funding_impact",
+        "funding_element -> requires -> evidence_of_citizenship",
+        "funding_element -> has_funding_condition -> citizenship_condition"
+      ],
+      "false_negative_facts": [
+        "funding_eligibility_purposes -> defines -> european_economic_area",
+        "british_overseas_territories_citizens -> has_eligibility -> students",
+        "european_economic_area -> includes -> each_overseas_territories_of_members",
+        "european_economic_area_definition -> has_temporal_value -> 20201231"
+      ]
+    },
+    {
+      "chunk_id": "no-recourse-to-public-funds-43-p20-38-ee14cd42",
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1_score": 0.875,
+      "true_positives": 7,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.8,
+      "false_positive_triples": [
+        "immigration_condition -> has_legal_duty -> allow_education_access"
+      ],
+      "false_negative_facts": [
+        "passport_stamp_no_recourse_to_public_funds -> does_not_breach -> immigration_conditions_when_accessing_state_funded_education"
+      ]
+    },
+    {
+      "chunk_id": "age-44-a-16-to-18-year-old-stu-p20-39-c96dba6c",
+      "precision": 0.9,
+      "recall": 0.8181818181818182,
+      "f1_score": 0.8571428571428572,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "student_16_to_18 -> has_age -> 19_during_programme"
+      ],
+      "false_negative_facts": [
+        "student_16_to_18 -> has_age_recorded_on -> learning_agreement",
+        "learning_programme -> has_funding_purpose -> complete_learning_programme"
+      ]
+    },
+    {
+      "chunk_id": "46-a-learning-programme-compri-p21-40-18ba12f1",
+      "precision": 0.9375,
+      "recall": 0.75,
+      "f1_score": 0.8333333333333334,
+      "true_positives": 15,
+      "false_positives": 1,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "learning_aim -> corresponds_to_learning_aim -> single_level"
+      ],
+      "false_negative_facts": [
+        "learning_programme -> generally_centered_around -> single_level_learning_aims",
+        "learning_programme -> minority_of_learning_aims -> different_level",
+        "a_level_subject -> has_duration -> two_years",
+        "student -> aged_19_to_24_on -> 31_August_2021",
+        "student -> aged_19_and_over_on -> 31_August_2021"
+      ]
+    },
+    {
+      "chunk_id": "students-under-16-48-there-is-p21-41-a8bfcb38",
+      "precision": 1.0,
+      "recall": 0.7368421052631579,
+      "f1_score": 0.8484848484848484,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "missing_fact: young_person -> has_previous_education -> alternative_provision",
+        "missing_fact: young_person -> has_previous_education -> education_otherwise",
+        "missing_fact: institution -> is_expected_to_seek_funding -> local_authority_if_appropriate",
+        "missing_fact: institution -> is_expected_to_seek_funding -> school_if_appropriate",
+        "missing_fact: institution -> is_expected_to_seek_funding -> academy_if_appropriate"
+      ]
+    },
+    {
+      "chunk_id": "51-groups-of-compulsory-school-p21-42-8f21e80e",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "separate_14_to_16_provision_funding_arrangements -> applies_to -> students_studying_below_level_3"
+      ]
+    },
+    {
+      "chunk_id": "52-esfa-funds-children-who-are-p22-43-af3763da",
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.962962962962963,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "children_compulsory_school_age -> has_completed -> statutory_education"
+      ]
+    },
+    {
+      "chunk_id": "55-students-who-finish-school-p22-44-819f8a64",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "56-esfa-will-not-fund-further-p22-45-a5ba27bf",
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.8888888888888888,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "esfa -> provides_funding -> further_education_institutions"
+      ],
+      "false_negative_facts": [
+        "part_time_further_education_program -> applies_regardless_of -> age"
+      ]
+    },
+    {
+      "chunk_id": "groups-of-students-normal-recr-p23-46-381b664d",
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.8333333333333333,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "distance_subcontracting_arrangements -> must_comply_with -> guidance_in_subcontracting_control_regulations",
+        "institutions -> must_not_jeopardize -> reputation_of_themselves_or_esfa",
+        "normal_recruitment_area -> takes_into_account -> students_normal_travel_to_learn_patterns",
+        "normal_recruitment_area -> may_include -> parts_of_scotland_or_wales_near_border_explained_in_more_detail_in_paragraphs_below"
+      ]
+    },
+    {
+      "chunk_id": "59-this-definition-may-be-vari-p23-47-0b6759fe",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "funding_body -> varies_definition -> tightly_or_loosely"
+      ]
+    },
+    {
+      "chunk_id": "60-we-recognise-the-benefits-o-p23-48-a57c6da7",
+      "precision": 0.6666666666666666,
+      "recall": 0.6153846153846154,
+      "f1_score": 0.64,
+      "true_positives": 8,
+      "false_positives": 4,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "funded_institution -> provides_assistance -> exchange_programme",
+        "foreign_student -> is_counted_as_guided_learning -> esfa_16_to_19_funding",
+        "funded_institution -> evaluates -> student_participation_status",
+        "funded_institution -> is_funded_by -> foreign_government_funding"
+      ],
+      "false_negative_facts": [
+        "foreign_student -> is_from -> European_Economic_Area",
+        "funded_institution -> submits_data_return_type -> Individualised_Learner_Record",
+        "funded_institution -> submits_data_return_type -> school_census",
+        "foreign_student -> attends_study_programme_funded_by -> foreign_government",
+        "funded_institution -> demonstrates_funding_impact_through -> another_institution"
+      ]
+    },
+    {
+      "chunk_id": "students-from-wales-scotland-o-p23-49-6982094d",
+      "precision": 0.9375,
+      "recall": 0.8823529411764706,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 15,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "students_of_all_nationalities -> has_legal_duty -> considered_eligible"
+      ],
+      "false_negative_facts": [
+        "dependants_of_british_armed_forces -> has_funding_duration -> throughout_service_period",
+        "dependants_of_british_armed_forces -> has_funding_basis -> same_as_other_young_people_legally_living_in_england"
+      ]
+    },
+    {
+      "chunk_id": "higher-education-students-63-e-p24-50-6b608d1a",
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1_score": 0.9285714285714286,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "groups_of_students -> must_not_be_enrolled_for_funding -> part_time_programmes",
+        "full_time_programme_students -> enrolled_in -> publicly_funded_or_not_institution"
+      ]
+    },
+    {
+      "chunk_id": "parents-to-be-65-students-who-p24-51-fec79438",
+      "precision": 0.7142857142857143,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.7692307692307692,
+      "true_positives": 5,
+      "false_positives": 2,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "institution -> provides_assistance -> learning_agreement",
+        "institution -> has_legal_duty -> accommodate_parental_leave"
+      ],
+      "false_negative_facts": [
+        "institution -> should_not_discourage -> student_from_entering_into_learning_agreement"
+      ]
+    },
+    {
+      "chunk_id": "provision-for-offenders-66-ins-p24-52-49942d7d",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "residency_eligibility_advice -> not_referred_to -> institutions"
+      ]
+    },
+    {
+      "chunk_id": "students-not-eligible-for-esfa-p24-53-7e6a580e",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "69-students-whose-whole-progra-p25-54-28e6e466",
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9473684210526316,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "overseas_fee_paying_students -> does_not_count_towards -> 3_year_legal_residency_required_for_esfa_funding"
+      ]
+    },
+    {
+      "chunk_id": "73-all-students-living-in-the-p25-55-dd2dcdce",
+      "precision": 0.9166666666666666,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.9166666666666666,
+      "true_positives": 11,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "institutions -> has_legal_duty -> perform_procedures"
+      ],
+      "false_negative_facts": [
+        "student_eligibility -> compliance_evidence -> 74"
+      ]
+    },
+    {
+      "chunk_id": "77-in-line-with-the-general-da-p26-56-bf2992b8",
+      "precision": 1.0,
+      "recall": 0.9444444444444444,
+      "f1_score": 0.9714285714285714,
+      "true_positives": 17,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "institutions -> record_documentation_to_prove_eligibility_for -> students_not_ordinarily_resident_for_three_years"
+      ]
+    },
+    {
+      "chunk_id": "79-institution-management-must-p26-57-6e07466e",
+      "precision": 1.0,
+      "recall": 0.85,
+      "f1_score": 0.9189189189189189,
+      "true_positives": 17,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "learning_agreement/enrolment_form -> is_signed_by -> institution",
+        "learning_agreement/enrolment_form -> can_be -> separate_or_combined_forms",
+        "learning_agreement/enrolment_form -> covers -> broad_areas"
+      ]
+    },
+    {
+      "chunk_id": "81-an-institution-must-retain-p27-58-abb9c629",
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1_score": 0.967741935483871,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "learning_agreement -> detail_proportionate_to -> length_of_learning_programme"
+      ]
+    },
+    {
+      "chunk_id": "82-the-learning-agreement-and-p27-59-1cb56a99",
+      "precision": 0.896551724137931,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.912280701754386,
+      "true_positives": 26,
+      "false_positives": 3,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "educational_programme -> has_duration_value -> programme_duration",
+        "educational_entity -> provides_assistance -> information_advice_guidance",
+        "assessment_and_guidance_process -> verifies -> learning_agreement_completion"
+      ],
+      "false_negative_facts": [
+        "missing_fact: residency_status -> indicates -> home_or_overseas",
+        "missing_fact: learning_programme -> has_planned_funded_activities -> other_funded_activities_per_year"
+      ]
+    },
+    {
+      "chunk_id": "g-confirmation-that-part-time-p27-60-3e84c4a9",
+      "precision": 1.0,
+      "recall": 0.6923076923076923,
+      "f1_score": 0.8181818181818181,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "part_time_students -> not_enrolled_in -> funded_study_programmes_at_other_institutions",
+        "institutions -> verifies -> student_attendance_exclusivity",
+        "subcontractors -> records -> documentation_seen_without_copying",
+        "subcontractors -> provides_documentation -> as_clear_records_or_copies"
+      ]
+    },
+    {
+      "chunk_id": "4-study-programme-eligibility-p28-61-cda63362",
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.962962962962963,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "institutions -> must_comply_with -> annex_d_rules_for_funding_condition"
+      ]
+    },
+    {
+      "chunk_id": "educational-progression-87-ins-p28-62-293a381c",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "one_year_offer_programmes -> targets -> 18_and_19_year-olds",
+        "one_year_offer_programmes -> excluded_from -> educational_progression_consideration"
+      ]
+    },
+    {
+      "chunk_id": "resits-and-retakes-88-when-lea-p29-63-9a133b9f",
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1_score": 0.8421052631578948,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "resits_and_retakes -> is_valid_learning_activity -> false_due_to_previous_funding"
+      ],
+      "false_negative_facts": [
+        "one_year_offer_programme -> is_intended_for -> 18_and_19_year-olds",
+        "one_year_offer_programme -> is_intended_for -> high_value_subjects"
+      ]
+    },
+    {
+      "chunk_id": "90-for-this-funding-year-only-p29-64-6300801d",
+      "precision": 0.8235294117647058,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.7999999999999999,
+      "true_positives": 14,
+      "false_positives": 3,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "institution -> has_legal_duty -> encourage_student_progression",
+        "institution -> provides_assistance -> impacted_students",
+        "repeat_year_funding -> is_governed_by -> funding_regulations"
+      ],
+      "false_negative_facts": [
+        "- institution -> should_use_offer_only_where -> clear_benefit_over_other_alternatives",
+        "- student -> stays_on_for_additional_time -> not_in_circumstances_described_above",
+        "- further_detail_on_repeat_year_funding -> is_available_from -> our_website",
+        "- institution -> should_encourage -> vast_majority_of_student_cohort"
+      ]
+    },
+    {
+      "chunk_id": "91-general-certificate-of-seco-p29-66-8477bed0",
+      "precision": 1.0,
+      "recall": 0.7647058823529411,
+      "f1_score": 0.8666666666666666,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "Eligible_provision -> refers_to -> provision_92",
+        "study_programme -> has_qualifying_period -> 2_weeks_for_part_time_between_2_and_24_weeks",
+        "study_programme -> has_maximum_hours_per_week -> 40_hours_from_this_year",
+        "qualifying_period -> is_documented_in -> funding_rates_and_formula_guidance"
+      ]
+    },
+    {
+      "chunk_id": "95-students-whose-programmes-d-p30-67-14757368",
+      "precision": 0.7777777777777778,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.7777777777777778,
+      "true_positives": 7,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "full_time_programme -> includes -> organised_examination_preparation",
+        "full_time_student -> participates_in -> same_academic_year_activities"
+      ],
+      "false_negative_facts": [
+        "student_programme -> does_not_meet_full_time_criteria -> within_funding_year",
+        "full_time_student -> enrolled_at -> multiple_institutions_at_same_time"
+      ]
+    },
+    {
+      "chunk_id": "planned-hours-for-study-progra-p30-68-b7be7f87",
+      "precision": 1.0,
+      "recall": 0.7647058823529411,
+      "f1_score": 0.8666666666666666,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.8,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "study_programme -> has_funding -> measured_in_planned_hours",
+        "legal_work_hours -> is_capped_at -> 40_hours",
+        "planned_hours -> are_directly_related_to -> study_programme",
+        "weekly_study_limit -> applies_from -> this_year"
+      ]
+    },
+    {
+      "chunk_id": "99-for-funding-purposes-study-p30-69-6dfac77d",
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.8333333333333334,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "students -> capable_of -> achieving_higher_level_qualifications",
+        "substantial_vocational_qualification -> is_core_aim_of -> study_programme"
+      ],
+      "false_negative_facts": [
+        "qualifications -> must_be_approved_for_teaching -> 16_to_19_funding_year_olds",
+        "study_programme -> includes -> substantial_work_experience_and_employability"
+      ]
+    },
+    {
+      "chunk_id": "skills-plus-english-and-maths-p31-70-04ae3bf9",
+      "precision": 1.0,
+      "recall": 0.7222222222222222,
+      "f1_score": 0.8387096774193548,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "study_leave -> is_explicit_in -> student_timetable",
+        "non_qualification_hours -> includes -> employment",
+        "non_qualification_hours -> includes -> enrichment",
+        "non_qualification_hours -> includes -> pastoral",
+        "non_qualification_hours -> has_requirements -> timetabled_organized_supervised"
+      ]
+    },
+    {
+      "chunk_id": "a-time-spent-working-towards-i-p31-71-bccf1356",
+      "precision": 0.7692307692307693,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.7692307692307693,
+      "true_positives": 10,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "volunteering_activities -> evaluates -> community_service_skills",
+        "volunteering_activities -> has_participant -> young_people",
+        "enrichment_activity -> has_duration_value -> time_spent_on_enrichment"
+      ],
+      "false_negative_facts": [
+        "internally_certificated_qualifications -> is_developed_assessed_awarded_by -> funded_institution",
+        "time_spent_on_work_related_activities -> includes -> other_work_related_activities",
+        "volunteering_and_community_activities -> is_organized_by -> institution"
+      ]
+    },
+    {
+      "chunk_id": "105-work-experience-and-other-p32-72-120636e2",
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1_score": 0.7692307692307693,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "work_experience -> is_identified_in -> work_placement_entity",
+        "work_experience -> is_identified_in -> work_experience_learning_aim_references",
+        "work_experience -> has_condition -> necessary",
+        "institution -> has_evidence_of -> support_outside_normal_working_hours",
+        "work_experience -> has_description -> specialist_skills_development",
+        "work_experience -> includes -> other_work-related_learning_or_activities"
+      ]
+    },
+    {
+      "chunk_id": "107-many-students-will-look-fo-p32-73-af395152",
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.88,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "esfa -> requires_prior_approval_from -> 1 December 2021",
+        "paid_work_experience -> involves -> \"look-a-like\" weekly allowance",
+        "non_qualification_hours -> must_not_be_recorded_under -> learning_aim_class_codes"
+      ]
+    },
+    {
+      "chunk_id": "110-non-qualification-hours-mu-p32-74-29010f83",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "recording-planned-hours-114-th-p33-75-5295e9d0",
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1_score": 0.888888888888889,
+      "true_positives": 20,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "missing_fact: study_programme -> recorded_in_separate_fields_from -> 2021/2022",
+        "missing_fact: t_level_programme -> recorded_in_separate_fields_from -> 2021/2022",
+        "missing_fact: study_programme -> requires_annual_update_for -> multiple_funding_years",
+        "missing_fact: planned_hours -> must_be_deliverable_to -> individual_student",
+        "missing_fact: programme_content_change -> triggers_update_of -> planned_hours"
+      ]
+    },
+    {
+      "chunk_id": "118-when-institutions-calculat-p33-76-f7538222",
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1_score": 0.9333333333333333,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "missing_fact: institution -> must_use -> average_planned_hours_attended_by_students"
+      ]
+    },
+    {
+      "chunk_id": "119-when-institutions-recruit-p34-77-343bfd3e",
+      "precision": 0.8823529411764706,
+      "recall": 0.7894736842105263,
+      "f1_score": 0.8333333333333333,
+      "true_positives": 15,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "institution -> provides_assistance -> student_progression",
+        "educational_policy -> provides_guidance_on -> planned_hours_management"
+      ],
+      "false_negative_facts": [
+        "institution -> must_record -> planned_hours_for_short_programmes_only",
+        "institution -> can_update_planned_hours -> when_sure_of_progression",
+        "institution -> updates_planned_hours -> include_additional_delivery",
+        "advice_applies -> regardless_of_gap -> between_programmes"
+      ]
+    },
+    {
+      "chunk_id": "120-when-an-institution-or-its-p34-78-8fca3129",
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1_score": 0.8421052631578948,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "institution_or_subcontractor -> provides_service -> different_delivery_centre_for_students"
+      ],
+      "false_negative_facts": [
+        "missing_fact1: timetable_or_learning_plan -> covers -> learning_aims_and_activities",
+        "missing_fact2: timetable_or_learning_plan -> is_primary_source_for -> funding_audit_evidence"
+      ]
+    },
+    {
+      "chunk_id": "123-institutions-must-be-able-p34-79-f1f873c5",
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1_score": 0.888888888888889,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "institution -> manages -> student_compliance_study_programmes",
+        "institution -> reports_on -> student_compliance_study_programmes",
+        "student_individual_plans -> may_change -> during_year"
+      ]
+    },
+    {
+      "chunk_id": "124-esfa-expects-non-qualifica-p35-80-6d6bb8a2",
+      "precision": 1.0,
+      "recall": 0.8421052631578947,
+      "f1_score": 0.9142857142857143,
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "non_qualification_activity -> must_be -> coherent",
+        "eep_activity -> triggers_additional_audit_attention -> when_exceeds_half_study_programme_funding",
+        "annex_b_table_1b -> provides_examples_of -> recognised_educational_costs"
+      ]
+    },
+    {
+      "chunk_id": "125-institutions-must-also-be-p35-82-444dc25e",
+      "precision": 0.9230769230769231,
+      "recall": 0.8571428571428571,
+      "f1_score": 0.888888888888889,
+      "true_positives": 12,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "student -> has_attendance_record -> study_programme"
+      ],
+      "false_negative_facts": [
+        "funding_condition -> is_documented_on -> GOV.UK",
+        "student -> lacks_gcse -> grade_4_or_C_in_maths_or_english"
+      ]
+    },
+    {
+      "chunk_id": "institutions-must-have-evidenc-p35-83-6d378fd0",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "institution -> must_have_evidence -> individual_students_undertaking_specified_study_programme_during_learning_period",
+        "experience -> shows -> registers_of_attendance_are_key_records_in_supporting_accuracy_of_data_returns"
+      ]
+    },
+    {
+      "chunk_id": "131-all-institutions-should-co-p36-84-187bea98",
+      "precision": 0.9444444444444444,
+      "recall": 0.9444444444444444,
+      "f1_score": 0.9444444444444444,
+      "true_positives": 17,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "institution -> has_legal_duty -> monitor_student_attendance_and_progress"
+      ],
+      "false_negative_facts": [
+        "missing_fact: institution -> considers_benefits_of -> register_system"
+      ]
+    },
+    {
+      "chunk_id": "133-the-following-advice-on-re-p36-85-3d06c911",
+      "precision": 1.0,
+      "recall": 0.9047619047619048,
+      "f1_score": 0.9500000000000001,
+      "true_positives": 19,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "register -> completed_at -> start_of_each_session",
+        "absence -> requires_evidence -> authorised_absence_evidence"
+      ]
+    },
+    {
+      "chunk_id": "136-an-electronic-signature-is-p37-87-07652b8b",
+      "precision": 1.0,
+      "recall": 0.7894736842105263,
+      "f1_score": 0.8823529411764706,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Not Pass",
+      "ontology_confidence": 0.2,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "electronic_or_digital_signature -> includes -> wet_and_dry_signatures",
+        "digital_signature -> makes -> document_non_refutable",
+        "electronic_signature -> is_associated_with -> record",
+        "electronic_or_digital_signature -> is_held_from -> any_party_for_any_reason"
+      ]
+    },
+    {
+      "chunk_id": "138-a-wet-signature-is-created-p37-88-fe66a2e0",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "a-signed-scanned-document-att-p38-89-e06c69d7",
+      "precision": 0.7,
+      "recall": 0.5,
+      "f1_score": 0.5833333333333334,
+      "true_positives": 7,
+      "false_positives": 3,
+      "false_negatives": 7,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "institutions -> has_legal_duty -> ensure_genuineness_of_alternative_evidence",
+        "institutions -> provides_service -> alternative_evidence_verification",
+        "usual_process_for_wet_signatures -> is_replacement_activity_of -> electronic_confirmation"
+      ],
+      "false_negative_facts": [
+        "- electronic_confirmation -> includes -> signed_scanned_document_attached_to_email",
+        "- electronic_confirmation -> includes -> photo_taken_on_camera/digital_medium",
+        "- electronic_confirmation -> is_allowed_only_when -> no_other_useable_digital_or_electronic_processes_exist",
+        "- ceasing_to_attend_withdrawal_from_course_learning_agreement_amendment -> are_types_of_forms",
+        "- alternative_evidence -> includes -> ceasing_to_attend_form",
+        "- alternative_evidence -> includes -> withdrawal_from_course_form",
+        "- alternative_evidence -> includes -> learning_agreement_amendment_form"
+      ]
+    },
+    {
+      "chunk_id": "143-when-a-student-withdraws-f-p38-90-73871f86",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "ineligible-provision-145-the-f-p38-91-8b69f1eb",
+      "precision": 0.9090909090909091,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.7692307692307692,
+      "true_positives": 10,
+      "false_positives": 1,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "higher_education_qualifications -> includes -> company_specific_learning_aims"
+      ],
+      "false_negative_facts": [
+        "provision -> must_not_be_included_in -> students' funded planned hours",
+        "course -> has_start_requirement -> teaching_and_learning_not_just_induction",
+        "esfa_funding -> purpose -> enable_continuing_students_to_complete",
+        "higher_education_qualifications -> refers_to -> 'Higher-level programmes for students'",
+        "institutions -> checks_with -> awarding_body"
+      ]
+    },
+    {
+      "chunk_id": "d-vendor-certificated-courses-p39-92-afbfe7f1",
+      "precision": 0.9285714285714286,
+      "recall": 1.0,
+      "f1_score": 0.962962962962963,
+      "true_positives": 13,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "vendor_certificated_courses -> is_funded_by -> esfa_approved_qualifications"
+      ],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "j-students-are-also-ineligible-p39-93-7fa002bc",
+      "precision": 0.7222222222222222,
+      "recall": 0.8125,
+      "f1_score": 0.7647058823529411,
+      "true_positives": 13,
+      "false_positives": 5,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "funding_element -> defines -> single_institution_funding",
+        "funding_element -> evaluates -> study_programme_funding",
+        "funding_regulations -> governs -> funding_element",
+        "funding_element -> requires -> compliance_criterion",
+        "compliance_criterion -> has_description -> comply_with_subcontracting_control_regulations"
+      ],
+      "false_negative_facts": [
+        "student -> is_ineligible_for_funding_if_enrolled_in -> short_programme_at_another_institution_while_enrolled_in_funded_provision_or_full_time_higher_education",
+        "student -> is_ineligible_for_funding_during -> summer_term_if_fully_funded_with_retention_recorded",
+        "student -> is_ineligible_for_funding_if_programme_is_delivered_through -> non_compliant_distance_subcontracting_arrangements"
+      ]
+    },
+    {
+      "chunk_id": "5-definitions-and-terminology-p40-94-5b1d83dd",
+      "precision": 1.0,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.8695652173913044,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "document -> composed_of -> 4_books",
+        "annex_a -> provides_explanations_of -> acronyms",
+        "individualised_learner_record_specification -> specifies_academic_year -> 2021/2022"
+      ]
+    },
+    {
+      "chunk_id": "access-to-higher-education-149-p40-95-c6ddb295",
+      "precision": 0.7777777777777778,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.7777777777777778,
+      "true_positives": 7,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "esfa -> is_funded_by -> young_people_by_exception",
+        "access_to_higher_education_programmes -> is_funded_by -> esfa_by_exception"
+      ],
+      "false_negative_facts": [
+        "qualification_title_standard_format -> includes -> subject/area_of_study",
+        "qualification_specifications -> includes -> diploma_credit_and_qualification_specifications"
+      ]
+    },
+    {
+      "chunk_id": "achievement-150-the-current-da-p40-96-9d2b68fc",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "approved-qualifications-and-fi-p41-97-d55c3087",
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "approved_qualification -> is_funded_for -> 14_to_19",
+        "learning_aim_reference_service -> has_reference_number -> 154",
+        "learning_aim_reference_service -> has_reference_number -> 155"
+      ]
+    },
+    {
+      "chunk_id": "bursary-funding-156-esfa-gives-p41-98-b72639c2",
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.9565217391304348,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "institution -> has_funding_start_status -> start_of_year"
+      ]
+    },
+    {
+      "chunk_id": "full-time-and-part-time-studen-p41-99-bc8512cf",
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1_score": 0.8421052631578948,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "student -> participates_in -> full_time_education_period"
+      ],
+      "false_negative_facts": [
+        "part_time_student -> engaged_in -> study_programme",
+        "full_time_education_period -> has_weekly_limit -> education_or_training"
+      ]
+    },
+    {
+      "chunk_id": "higher-level-programmes-for-st-p42-100-9577f6a0",
+      "precision": 1.0,
+      "recall": 0.7692307692307693,
+      "f1_score": 0.8695652173913044,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "higher_education_provision -> is_typically_in_place_of -> AS_level",
+        "young_person -> must_be_enrolled_on -> full_level_3_programme",
+        "higher_education_provision -> is_a_small_part_of -> overall_provision"
+      ]
+    },
+    {
+      "chunk_id": "e-we-do-not-fund-any-students-p42-101-e75cc721",
+      "precision": 1.0,
+      "recall": 0.7777777777777778,
+      "f1_score": 0.8750000000000001,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "students_eligible_for_student_finance -> includes -> Tuition Fee Loans",
+        "students_eligible_for_student_finance -> includes -> Maintenance Loans"
+      ]
+    },
+    {
+      "chunk_id": "aoo-b-higher-national-certific-p42-102-c6aaffaa",
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 1.0,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "higher_national_certificates -> classified_as -> prescribed_higher_education",
+        "first_undergraduate_degrees -> classified_as -> prescribed_higher_education",
+        "postgraduate_degrees -> classified_as -> prescribed_higher_education",
+        "non_prescribed_higher_education_qualifications -> defined_in -> education_reform_act_1988_paragraphs_1g_1h"
+      ]
+    },
+    {
+      "chunk_id": "individualised-learner-record-p43-103-91af0463",
+      "precision": 0.9,
+      "recall": 0.75,
+      "f1_score": 0.8181818181818182,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "institution -> has_legal_duty -> provide_pre_entry_advice_and_guidance"
+      ],
+      "false_negative_facts": [
+        "- individualised_learner_record -> is_used_by -> institutions_other_than_those_recording_data_using_school_census",
+        "- individualised_learner_record -> records -> all_relevant_funding_data",
+        "- learning_agreement_enrolment_form -> is_signed_by -> institution_and_student"
+      ]
+    },
+    {
+      "chunk_id": "prevent-duty-171-the-prevent-d-p43-104-655f925b",
+      "precision": 0.9285714285714286,
+      "recall": 1.0,
+      "f1_score": 0.962962962962963,
+      "true_positives": 13,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "institutions -> has_legal_duty -> prevent_terrorism"
+      ],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "prince-s-trust-team-programme-p44-106-3087a95c",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 1.0,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "school-census-174-the-departme-p44-107-a17979ce",
+      "precision": 0.75,
+      "recall": 0.8,
+      "f1_score": 0.7741935483870969,
+      "true_positives": 12,
+      "false_positives": 4,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "funding_recording -> is_governed_by -> funding_regulations",
+        "funding_regulations -> defines -> funding_element",
+        "funding_element -> evaluates -> activity",
+        "activity -> has_funding_impact -> funding_impact"
+      ],
+      "false_negative_facts": [
+        "1. start_date -> determines -> whether_funding_should_be_recorded",
+        "2. qualifying_periods_of_attendance -> count_as -> funding_start",
+        "3. funding -> should_be -> recorded"
+      ]
+    },
+    {
+      "chunk_id": "t-level-176-t-level-are-funded-p44-108-5adcd319",
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1_score": 0.9473684210526316,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "funding_rates_and_formula_guidance -> has_associated_document -> gov_uk_funding_info"
+      ],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "6-subcontracting-subcontracted-p46-109-54483a9a",
+      "precision": 0.8,
+      "recall": 0.7272727272727273,
+      "f1_score": 0.761904761904762,
+      "true_positives": 8,
+      "false_positives": 2,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "subcontracting_funding_rules -> has_replacement_activity -> published_full_advice_on_website",
+        "published_full_advice_on_website -> is_status_of -> subcontracting_funding_rules"
+      ],
+      "false_negative_facts": [
+        "subcontracting_funding_rules -> is_published -> true",
+        "subcontracting_requirements_for_16_to_19_funding -> is_set_out_in -> 16_to_19_funding_Annex",
+        "subcontracting_funding_rules -> replaces -> earlier_draft_advice"
+      ]
+    },
+    {
+      "chunk_id": "annex-16-to-19-funding-subcont-p46-110-43dca981",
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1_score": 0.9473684210526316,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "subcontractor -> performs -> eep_activity"
+      ],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "monitoring-of-your-subcontract-p46-111-a791340b",
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 7,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "contract -> is_part_of -> subcontractor_monitoring_activity",
+        "learner_access -> is_full -> true",
+        "learner_access -> includes -> additional_unspecified_elements",
+        "learner -> has_information_about -> funding_bursary_16_to_19",
+        "learner -> has_information_about -> student_support_funding",
+        "learner -> has_information_about -> information_advice_and_guidance",
+        "learner -> has_information_about -> learning_support_if_required"
+      ]
+    },
+    {
+      "chunk_id": "controls-over-students-tutors-p46-112-f034a4b9",
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.962962962962963,
+      "true_positives": 13,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "learning_agreement -> reflects -> initial_guidance_and_assessment_outcome"
+      ]
+    },
+    {
+      "chunk_id": "183-you-must-make-sure-that-yo-p47-113-3c650e09",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "distance-subcontracted-deliver-p47-114-577aafe6",
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.7692307692307692,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "institution -> provides_service -> distance_subcontracting",
+        "institution -> provides_service -> whole_programme_subcontracting"
+      ],
+      "false_negative_facts": [
+        "normal_recruitment_area -> is_defined_in -> Funding_regulations_guidance",
+        "distance_subcontracting -> requires -> same_level_of_management_control_safeguarding_and_compliance",
+        "institution -> must_seek_approval_for -> continuing_or_new_arrangements_for_distance_subcontracting",
+        "institution -> must_seek_approval_for -> continuing_or_new_arrangements_for_whole_programme_subcontracting"
+      ]
+    },
+    {
+      "chunk_id": "191-schools-and-academies-must-p48-115-e8ef393f",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "193-when-a-subcontractor-wants-p48-116-d053b112",
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.88,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "third_party -> could_include -> sports_club",
+        "provider -> must_take_steps -> assure_third_party_facilities_and_safeguarding",
+        "provider -> must_ensure_clarity_with -> sports_club"
+      ]
+    },
+    {
+      "chunk_id": "annex-a-acronyms-and-glossary-p48-117-b8217ac3",
+      "precision": 0.84,
+      "recall": 0.75,
+      "f1_score": 0.7924528301886793,
+      "true_positives": 21,
+      "false_positives": 4,
+      "false_negatives": 7,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "department_for_education -> is_educational_entity -> TRUE",
+        "education_health_and_care_plan -> is_educational_entity -> TRUE",
+        "full_time_equivalent -> is_measurement_type -> TRUE",
+        "local_authorities -> is_educational_entity -> TRUE"
+      ],
+      "false_negative_facts": [
+        "2021/2022_academic_year -> denotes_esfa_funding_year -> August_2021_to_July_2022",
+        "2021-21 -> denotes_financial_year -> April_2021_to_March_2022",
+        "cdf -> has_purpose -> work_placements",
+        "employment_enrichment_and_pastoral -> has_description -> planned_hours",
+        "find_a_learning_aim -> will_replace -> Learning_Aim_Reference_Service",
+        "las -> has_abbreviation -> Learning_Aim_Reference_Service",
+        "Sector_Subject_Area -> has_description -> UTC_Sector_Subject_Area"
+      ]
+    },
+    {
+      "chunk_id": "annex-b-planned-hours-and-time-p50-122-2abd0600",
+      "precision": 0.8461538461538461,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.8148148148148148,
+      "true_positives": 11,
+      "false_positives": 2,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "institutions -> has_legal_duty -> record_planned_hours_accordingly",
+        "student_timetable -> includes -> learning_agreement"
+      ],
+      "false_negative_facts": [
+        "institutions -> must_show -> simple_format",
+        "institutions -> must_record -> accurately_in_accordance_with_hours",
+        "table_1 -> is_part_of -> evidence_of_student_eligibility"
+      ]
+    },
+    {
+      "chunk_id": "for-student-eligibility-for-pu-p51-123-9f987806",
+      "precision": 0.9090909090909091,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 10,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "activity -> is_valid_learning_activity -> TRUE"
+      ],
+      "false_negative_facts": [
+        "learning_plan -> sets_out -> study_programme"
+      ]
+    },
+    {
+      "chunk_id": "institutions-must-ensure-that-p51-124-cc88d350",
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.7692307692307692,
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "planned_hours -> is_counted_as_planned_hours -> TRUE",
+        "eligible_activity -> is_valid_learning_activity -> TRUE"
+      ],
+      "false_negative_facts": [
+        "institution -> ensures_deliverability_to_individual_students -> planned_hours",
+        "eligible_activity -> is_supported_by_evidence -> existence",
+        "completed -> requires_evidence_from -> external_awarding_body_or_learning_activities",
+        "continuing -> has_attendance_evidence_from -> registers_or_other_sources"
+      ]
+    },
+    {
+      "chunk_id": "core-aim-learning-plan-indicat-p52-126-f7a6bbfb",
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1_score": 0.923076923076923,
+      "true_positives": 6,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "core_aim_identification -> applies_only_to -> vocational_or_mixed_vocational_programmes"
+      ]
+    },
+    {
+      "chunk_id": "usually-recognised-as-educatio-p52-128-6ca6537e",
+      "precision": 1.0,
+      "recall": 0.6153846153846154,
+      "f1_score": 0.761904761904762,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "staffing_costs -> are_recognised_as -> educational_costs",
+        "premises_costs -> relate_directly_to -> delivery_of_education_and_training",
+        "equipment_material_costs -> are_wholly_attributable_to -> education_training_delivery",
+        "staffing_costs_commercial -> are_met_from -> commercial_activities",
+        "apportionment_model -> applies_to -> split_between_commercial_and_educational_activities"
+      ]
+    },
+    {
+      "chunk_id": "are-building-and-premises-cost-p52-129-15a723de",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "weekly_wage -> is_payment_to -> individual_students",
+        "attendance_allowance -> is_payment_to -> individual_students"
+      ]
+    },
+    {
+      "chunk_id": "3-esfa-has-included-2-examples-p52-130-35f91e9f",
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058,
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "esfa -> includes -> 2_examples",
+        "individual_student_summary_planned_hours -> corresponds_to -> detailed_timetable",
+        "individual_student_summary_planned_hours -> corresponds_to -> learning_agreement",
+        "institutions -> produces_similar_schedules -> funding_audit_samples",
+        "management_information_system -> records_in -> 2_main_ways",
+        "institutions -> must_ensure_additional_evidence -> for_each_recording_method"
+      ]
+    },
+    {
+      "chunk_id": "a-recording-planned-hours-at-i-p53-131-498863f3",
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "- planned_hours -> are_calculated_by_adding -> individual_learning_aim_and_activity_level",
+        "- eep_hours -> are_not_recorded_under -> learning_aim",
+        "- audit_process -> is_more_straightforward_when -> planned_hours_breakdown_compares_to_other_evidence"
+      ]
+    },
+    {
+      "chunk_id": "advice-to-funding-auditors-onl-p53-132-c9cc511b",
+      "precision": 0.9411764705882353,
+      "recall": 0.7272727272727273,
+      "f1_score": 0.8205128205128205,
+      "true_positives": 16,
+      "false_positives": 1,
+      "false_negatives": 6,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "funding_advice -> is_issued_by -> educational_authority"
+      ],
+      "false_negative_facts": [
+        "funding_advice -> aims_to_reduce -> evidential_issues_for_current_funding_year",
+        "discretion -> is_helpful_for -> institutions",
+        "learning_aim -> leads_to -> first_full_Level_3_or_Level_2_programme",
+        "simplified_funding_audit_rules -> apply_where_learning_aim_recommends -> minimum_450_glh",
+        "institution -> must_evidence_success_in -> delivering_learning_aims",
+        "funding_advice -> is_issued_to -> all_funding_auditors"
+      ]
+    },
+    {
+      "chunk_id": "students-doing-3-or-more-as-o-p53-133-3b966135",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 17,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "subject-or-activity-planned-pl-p55-135-9200a362",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 19,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "the-qualification-planned-hou-p55-136-fdfe84a5",
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9473684210526316,
+      "true_positives": 18,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "academic_year -> has_start_date -> august_2021",
+        "academic_year -> has_end_date -> july_2022"
+      ]
+    },
+    {
+      "chunk_id": "annex-c-withdrawals-compliance-p56-140-948458a6",
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1_score": 0.967741935483871,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "funding_position -> related_to -> eligibility_to_count_students_for_funding_purposes"
+      ]
+    },
+    {
+      "chunk_id": "4-for-distance-learning-provis-p57-141-8268713b",
+      "precision": 0.9375,
+      "recall": 0.5555555555555556,
+      "f1_score": 0.6976744186046512,
+      "true_positives": 15,
+      "false_positives": 1,
+      "false_negatives": 12,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "timely_withdrawal_action -> has_temporal_value -> within_4_weeks"
+      ],
+      "false_negative_facts": [
+        "institution -> must_withdraw -> student",
+        "student -> has_absence_duration -> 4_continuous_weeks",
+        "absence_duration -> excludes -> holidays",
+        "student -> has_absence_duration -> more_than_4_weeks",
+        "institution -> must_provide -> auditable_evidence",
+        "auditable_evidence -> of -> intention_to_return",
+        "institution -> must_withdraw -> student",
+        "student -> has_absence_duration -> 4_continuous_weeks",
+        "absence_duration -> excludes -> holidays",
+        "student -> has_absence_duration -> more_than_4_weeks",
+        "institution -> must_provide -> auditable_evidence",
+        "auditable_evidence -> of -> intention_to_return"
+      ]
+    },
+    {
+      "chunk_id": "7-institutions-must-record-stu-p57-142-73bd29f2",
+      "precision": 0.9230769230769231,
+      "recall": 0.75,
+      "f1_score": 0.8275862068965517,
+      "true_positives": 12,
+      "false_positives": 1,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "withdrawal_date -> is_status_of -> student_record_flagged_as_withdrawn"
+      ],
+      "false_negative_facts": [
+        "institution -> must_record_withdrawal_dates -> promptly_and_accurately",
+        "withdrawal_date -> reflects -> last_actual_recorded_attendance",
+        "withdrawal_date -> is_not -> date_record_flagged_as_withdrawn",
+        "student_classification -> is_withdrawn_after -> four_weeks_since_last_attendance_or_missed_contact"
+      ]
+    },
+    {
+      "chunk_id": "10-when-checking-the-withdrawa-p57-143-908f4576",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "missing_fact: esfa -> does_not_expect -> systematic_pattern_around_other_key_dates"
+      ]
+    },
+    {
+      "chunk_id": "12-an-institution-should-also-p58-144-5675e1bf",
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "1. institution -> provides -> planned_timetable_for_assignment_receipt",
+        "2. institution -> checks_with -> students_who_have_not_provided_assignment_on_due_date",
+        "3. institution -> should_help -> students_complete_their_programmes",
+        "4. subcontractor -> implements -> guidance"
+      ]
+    },
+    {
+      "chunk_id": "additional-clarification-on-wi-p58-145-1f61050a",
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9411764705882353,
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "withdrawn_qualification -> excluded_from -> total_hours_for_the_year",
+        "included_timetabled_hours -> based_on -> significant_material_difference"
+      ]
+    },
+    {
+      "chunk_id": "if-the-learner-withdraws-from-p58-146-ad5766c8",
+      "precision": 0.8461538461538461,
+      "recall": 0.8461538461538461,
+      "f1_score": 0.8461538461538461,
+      "true_positives": 11,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "full_time_student -> reduces_programme -> becomes_part_time_student",
+        "date_of_withdrawal -> can_be_used_as_withdrawal_date -> contacted_by_staff_date"
+      ],
+      "false_negative_facts": [
+        "full_time_student -> remains -> full_time_for_statistical_and_funding_purposes",
+        "contacted_by_staff -> cannot_be_counted_as -> guided_learning"
+      ]
+    },
+    {
+      "chunk_id": "a5-no-learning-must-be-specifi-p59-147-edc80374",
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1_score": 0.923076923076923,
+      "true_positives": 12,
+      "false_positives": 2,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "sits_examination_early_june -> is_counted_as_planned_hours -> TRUE",
+        "student -> has_completion_status -> likely_successful_completion_if_passed"
+      ],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "q8-is-the-date-of-withdrawal-f-p59-148-dc551e47",
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1_score": 0.7692307692307693,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "traineeship -> has_progression_outcome -> sustainable_employment",
+        "traineeship -> has_progression_outcome -> full_time_education",
+        "traineeship -> has_progression_outcome -> other_training",
+        "traineeship -> has_progression_outcome -> apprenticeship",
+        "student -> is_marked_as_completed_in -> Individualised_Learner_Record_data_return",
+        "traineeship -> has_planned_hours_section_reference -> Recording_planned_hours"
+      ]
+    },
+    {
+      "chunk_id": "q11-if-a-young-person-complete-p60-149-ae44e242",
+      "precision": 0.9,
+      "recall": 0.75,
+      "f1_score": 0.8181818181818182,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "institution -> has_legal_duty -> inform_local_authority"
+      ],
+      "false_negative_facts": [
+        "student -> leaves_learning_after -> last_exam",
+        "student -> leaves_learning_after -> last_marked_assignment",
+        "funding_impact -> depends_on -> material_difference"
+      ]
+    },
+    {
+      "chunk_id": "q13-when-does-the-first-six-we-p60-150-21cee00c",
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1_score": 0.9,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "student -> has_funding_start_status -> crosses_into_new_year"
+      ],
+      "false_negative_facts": [
+        "six_week_period -> starts_when -> student_programme_crosses_into_new_funding_year"
+      ]
+    },
+    {
+      "chunk_id": "q15-when-a-student-completes-a-p61-151-abf3436e",
+      "precision": 1.0,
+      "recall": 0.9230769230769231,
+      "f1_score": 0.9600000000000001,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "study_programme -> has_completion_criteria -> equivalent_start_period_needed_for_funding"
+      ]
+    },
+    {
+      "chunk_id": "it-is-particularly-important-t-p61-152-35faf5ab",
+      "precision": 0.6,
+      "recall": 0.375,
+      "f1_score": 0.4615384615384615,
+      "true_positives": 3,
+      "false_positives": 2,
+      "false_negatives": 5,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "providers -> has_legal_duty -> adjust_planned_hours_for_early_completers",
+        "providers -> has_legal_duty -> reduce_effect_on_retention_factor"
+      ],
+      "false_negative_facts": [
+        "1. providers -> must_consider -> multiple_students_completing_early",
+        "2. providers -> must_not_include -> early_completers_in_average_planned_hours",
+        "3. providers -> must_not_record -> planned_hours_at_financially_related_institutions",
+        "4. providers -> must_adjust -> planned_hours_when_students_withdraw",
+        "5. providers -> reduces_effect_on_retention_factor -> due_to_lower_funding_band"
+      ]
+    },
+    {
+      "chunk_id": "the-institution-has-a-choice-f-p61-153-533ca5ac",
+      "precision": 0.9,
+      "recall": 0.75,
+      "f1_score": 0.8181818181818182,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "institution -> provides_assistance -> student_withdrawal_process"
+      ],
+      "false_negative_facts": [
+        "- institution -> prefers_reducing_hours_over_funding_overlap_assessment -> because_easier",
+        "- funding_claim_report -> specific_to_age_range -> 16_to_19",
+        "- funding_reduction -> corresponds_to -> actual_attendance_period"
+      ]
+    },
+    {
+      "chunk_id": "annex-d-condition-of-funding-o-p62-154-10fee58a",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "3-4-we-made-a-change-to-our-ma-p62-155-4f0e1a00",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 11,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "enrolments-and-exemptions-9-to-p63-156-76f0d8c0",
+      "precision": 0.8888888888888888,
+      "recall": 0.7272727272727273,
+      "f1_score": 0.7999999999999999,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "overseas_qualification -> corresponds_to_learning_aim -> gcse_grade_9_to_4"
+      ],
+      "false_negative_facts": [
+        "qualifying_period -> is_against -> maths_and_or_english_aim",
+        "student_with_complex_needs -> can_be_exempt -> approved_stepping_stone_qualification",
+        "student_from_non_gcse_country -> can_be_exempt -> gcse_funding_condition"
+      ]
+    },
+    {
+      "chunk_id": "12-if-a-16-to-19-funding-stude-p63-157-0ff01d4d",
+      "precision": 0.6923076923076923,
+      "recall": 0.75,
+      "f1_score": 0.7199999999999999,
+      "true_positives": 9,
+      "false_positives": 4,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.85,
+      "false_positive_triples": [
+        "institution -> has_legal_duty -> ensure_funding_condition_met",
+        "funding_regulations -> governs -> funding_element",
+        "funding_element -> defines -> funding_impact",
+        "funding_element -> evaluates -> student_achievement"
+      ],
+      "false_negative_facts": [
+        "student_16_to_19 -> studies_qualification_outside_study_programme -> qualification",
+        "funding_condition -> has_tolerance_level -> 5_percent_until_further_notice",
+        "funding_condition -> has_description -> condition_of_funding_webpage"
+      ]
+    },
+    {
+      "chunk_id": "funding-eligibility-summary-1-p64-158-8bea8b17",
+      "precision": 0.6153846153846154,
+      "recall": 0.5714285714285714,
+      "f1_score": 0.5925925925925927,
+      "true_positives": 8,
+      "false_positives": 5,
+      "false_negatives": 6,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "sixth_form -> corresponds_to_learning_aim -> school_census_returns",
+        "academy -> provides_assistance -> school_sixth_form",
+        "academy -> participates_in -> funding_guidance_for_young_people_program",
+        "esfa -> evaluates -> sixth_form_closure_impact",
+        "sixth_form_closure -> has_reason -> planning_decision"
+      ],
+      "false_negative_facts": [
+        "- annex_e -> has_purpose -> summarise_main_student_eligibility_section",
+        "- annex_e -> has_purpose -> include_additional_guidance_relevant_to_academy_and_school_sixth_form_provision",
+        "- academies_or_schools_making_ilr_returns -> must -> read_and_comply_with_separate_advice",
+        "- esfa_notification -> must_be_done -> before_start_of_academic_year",
+        "- esfa -> will_withdraw_allocation -> depending_on_year_13_students",
+        "- late_notification -> results_in_recovery_of_funds -> from_year_ceasing_recruitment_for_year_12"
+      ]
+    },
+    {
+      "chunk_id": "4-where-an-institution-has-not-p64-159-a9e872ee",
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1_score": 0.8000000000000002,
+      "true_positives": 8,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.9,
+      "false_positive_triples": [
+        "institution -> has_legal_duty -> withdraw_funding_if_no_enrollment",
+        "institution -> plans_closure -> sixth_form"
+      ],
+      "false_negative_facts": [
+        "institution -> does_not_recruit -> students",
+        "data_returns -> reveal -> no_students_enrolled"
+      ]
+    },
+    {
+      "chunk_id": "funding-data-arrangements-main-p64-160-a0c6d849",
+      "precision": 1.0,
+      "recall": 0.7894736842105263,
+      "f1_score": 0.8823529411764706,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "missing_fact: sixth_form -> provides_access -> data_records",
+        "missing_fact: mixed_study_programme -> has_learning_aim -> core_learning_aim",
+        "missing_fact: control_procedures -> aim -> minimize_error_levels",
+        "missing_fact: student_learning_aims -> collected_at -> any_point_during_year"
+      ]
+    },
+    {
+      "chunk_id": "7-8-schools-and-academies-must-p65-161-7665d096",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 18,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "it-is-important-that-instituti-p65-162-80b7250a",
+      "precision": 0.9230769230769231,
+      "recall": 0.8,
+      "f1_score": 0.8571428571428571,
+      "true_positives": 12,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [
+        "qualifications -> is_funded_by -> sixth_forms"
+      ],
+      "false_negative_facts": [
+        "start_date -> must_be_completed -> accurately",
+        "end_date -> must_be_completed -> accurately",
+        "data_collection -> is_not -> snapshot_data"
+      ]
+    },
+    {
+      "chunk_id": "15-the-difference-between-a-tr-p66-163-44cc3d4f",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "annex_f -> defines -> European Union, European Economic Area, eligible overseas dependent territories"
+      ]
+    },
+    {
+      "chunk_id": "austria-germany-netherlands-be-p67-165-09ac39f3",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 26,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Not Pass",
+      "ontology_confidence": 0.2,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    },
+    {
+      "chunk_id": "france-notes-on-certain-territ-p67-166-d8c03da2",
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9411764705882353,
+      "true_positives": 24,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "heligoland -> is -> tax-free_port",
+        "french_overseas_department -> part_of -> metropolitan_france",
+        "former_german_democratic_republic_territory -> prior_to -> german_unification"
+      ]
+    },
+    {
+      "chunk_id": "3-this-includes-all-the-europe-p67-167-bb4b5746",
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1_score": 0.9523809523809523,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "switzerland -> treated_as_part_of_eea_for -> esfa_funding_eligibility_assessments_by_institutions"
+      ]
+    },
+    {
+      "chunk_id": "3-this-includes-all-the-europe-p67-167-uma4b5746",
+      "precision": 1.0,
+      "recall": 0.9615384615384616,
+      "f1_score": 0.9803921568627451,
+      "true_positives": 25,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": [
+        "eu_member_state_territories -> applies_to -> individuals_who_moved_to_uk_before_january_1_2021"
+      ]
+    },
+    {
+      "chunk_id": "coronavirus-coronavirus-and-im-p8-5-5e86d832",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ontology_alignment": "Pass",
+      "ontology_confidence": 0.95,
+      "false_positive_triples": [],
+      "false_negative_facts": []
+    }
+  ]
+}

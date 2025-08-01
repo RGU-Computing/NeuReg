@@ -1,0 +1,13 @@
+Shot Type,Question Type,Samples,Original Dataset Size,Percentage of Total Sample
+zero_shot,factual,14,1127,8.8%
+zero_shot,relationship,14,1127,8.8%
+zero_shot,comparative,14,1127,8.8%
+zero_shot,inferential,14,1127,8.8%
+one_shot,factual,13,1080,8.1%
+one_shot,relationship,13,1080,8.1%
+one_shot,comparative,13,1080,8.1%
+one_shot,inferential,13,1080,8.1%
+few_shot,factual,13,1107,8.1%
+few_shot,relationship,13,1107,8.1%
+few_shot,comparative,13,1107,8.1%
+few_shot,inferential,13,1107,8.1%

@@ -1,0 +1,1173 @@
+{
+  "metadata": {
+    "analysis_timestamp": "2025-08-01T18:48:14.380537",
+    "analysis_type": "Human Evaluation",
+    "total_evaluators": 5,
+    "total_shot_types": 3,
+    "total_question_types": 4,
+    "total_records": 10322,
+    "expected_qa_pairs": 160,
+    "metrics_evaluated": [
+      "Relevance",
+      "Accuracy",
+      "Completeness",
+      "Fluency",
+      "KG_Alignment"
+    ],
+    "num_evaluators": 5
+  },
+  "data_loading": {
+    "files_loaded": [
+      {
+        "filename": "Ev_Ramita_01.csv",
+        "evaluator": "Evaluator_01_Ramita",
+        "records": 2065
+      },
+      {
+        "filename": "Ev_Sibgha_02.csv",
+        "evaluator": "Evaluator_02_Sibgha",
+        "records": 2064
+      },
+      {
+        "filename": "Ev_Saim_03.csv",
+        "evaluator": "Evaluator_03_Saim",
+        "records": 2064
+      },
+      {
+        "filename": "Ev_Shahzad_04.csv",
+        "evaluator": "Evaluator_04_Shahzad",
+        "records": 2065
+      },
+      {
+        "filename": "Ev_Ammar_05.csv",
+        "evaluator": "Evaluator_05_Ammar",
+        "records": 2064
+      }
+    ],
+    "files_failed": [],
+    "total_records": 10322,
+    "expected_records": 800
+  },
+  "majority_vote_analysis": {
+    "evaluator_distribution": {
+      "5": 160
+    },
+    "total_qa_ids": 160,
+    "valid_qa_ids": 160,
+    "agreement_by_metric": {
+      "Relevance": {
+        "full_agreement": 80,
+        "majority_exists": 76,
+        "no_majority": 4
+      },
+      "Accuracy": {
+        "full_agreement": 89,
+        "majority_exists": 69,
+        "no_majority": 2
+      },
+      "Completeness": {
+        "full_agreement": 58,
+        "majority_exists": 98,
+        "no_majority": 4
+      },
+      "Fluency": {
+        "full_agreement": 30,
+        "majority_exists": 126,
+        "no_majority": 4
+      },
+      "KG_Alignment": {
+        "full_agreement": 84,
+        "majority_exists": 71,
+        "no_majority": 5
+      }
+    },
+    "agreement_by_qa": {
+      "all_metrics_majority": 150,
+      "some_metrics_majority": 8,
+      "no_metrics_majority": 2
+    },
+    "total_majority_vote_pairs": 160,
+    "evaluator_agreement_stats": {
+      "Evaluator_01_Ramita": {
+        "agreements": 577,
+        "total": 800,
+        "percentage": 72.125
+      },
+      "Evaluator_02_Sibgha": {
+        "agreements": 709,
+        "total": 800,
+        "percentage": 88.625
+      },
+      "Evaluator_03_Saim": {
+        "agreements": 714,
+        "total": 800,
+        "percentage": 89.25
+      },
+      "Evaluator_04_Shahzad": {
+        "agreements": 679,
+        "total": 800,
+        "percentage": 84.875
+      },
+      "Evaluator_05_Ammar": {
+        "agreements": 658,
+        "total": 800,
+        "percentage": 82.25
+      }
+    }
+  },
+  "overall_metrics": {
+    "Relevance": {
+      "mean": 4.852085967130215,
+      "std": 0.3956952832133086,
+      "mean_pct": 97.0417193426043
+    },
+    "Accuracy": {
+      "mean": 4.849367088607595,
+      "std": 0.36144107349961363,
+      "mean_pct": 96.98734177215191
+    },
+    "Completeness": {
+      "mean": 4.766793409378961,
+      "std": 0.437879621124461,
+      "mean_pct": 95.33586818757922
+    },
+    "Fluency": {
+      "mean": 4.792405063291139,
+      "std": 0.41814732666022225,
+      "mean_pct": 95.84810126582278
+    },
+    "KG_Alignment": {
+      "mean": 4.836708860759494,
+      "std": 0.38332717750825634,
+      "mean_pct": 96.73417721518987
+    },
+    "Overall_Score": {
+      "mean": 4.819279393173198,
+      "std": 0.26196310797879596,
+      "mean_pct": 96.38558786346397
+    }
+  },
+  "score_distribution": {
+    "statistics": {
+      "mean": 4.819279393173198,
+      "std": 0.26196310797879596,
+      "min": 3.6,
+      "max": 5.0
+    },
+    "ranges": {
+      "1.0-2.0": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "2.0-3.0": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "3.0-4.0": {
+        "count": 10,
+        "percentage": 0.0968804495252858
+      },
+      "4.0-5.0": {
+        "count": 781,
+        "percentage": 7.566363107924821
+      }
+    }
+  },
+  "shot_type_analysis": {
+    "few_shot": {
+      "count": 260,
+      "unique_qa": 52,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.828125,
+          "std": 0.44474050596618564,
+          "mean_pct": 96.5625
+        },
+        "Accuracy": {
+          "mean": 4.83203125,
+          "std": 0.3745708328521181,
+          "mean_pct": 96.640625
+        },
+        "Completeness": {
+          "mean": 4.73046875,
+          "std": 0.4445854810944685,
+          "mean_pct": 94.609375
+        },
+        "Fluency": {
+          "mean": 4.78125,
+          "std": 0.4235702594681104,
+          "mean_pct": 95.625
+        },
+        "KG_Alignment": {
+          "mean": 4.8359375,
+          "std": 0.3710577091631594,
+          "mean_pct": 96.71875
+        }
+      },
+      "overall": {
+        "mean": 4.801562499999999,
+        "std": 0.2766705055249852,
+        "pct": 96.03124999999999
+      }
+    },
+    "one_shot": {
+      "count": 260,
+      "unique_qa": 52,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.876923076923077,
+          "std": 0.36264546255500174,
+          "mean_pct": 97.53846153846155
+        },
+        "Accuracy": {
+          "mean": 4.8538461538461535,
+          "std": 0.35394169756433835,
+          "mean_pct": 97.07692307692307
+        },
+        "Completeness": {
+          "mean": 4.776923076923077,
+          "std": 0.43523188006715385,
+          "mean_pct": 95.53846153846153
+        },
+        "Fluency": {
+          "mean": 4.795366795366795,
+          "std": 0.4136922055208218,
+          "mean_pct": 95.9073359073359
+        },
+        "KG_Alignment": {
+          "mean": 4.8687258687258685,
+          "std": 0.338353740954844,
+          "mean_pct": 97.37451737451737
+        }
+      },
+      "overall": {
+        "mean": 4.834038461538462,
+        "std": 0.24377389688133697,
+        "pct": 96.68076923076924
+      }
+    },
+    "zero_shot": {
+      "count": 280,
+      "unique_qa": 56,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.850364963503649,
+          "std": 0.3773095594818303,
+          "mean_pct": 97.00729927007299
+        },
+        "Accuracy": {
+          "mean": 4.86080586080586,
+          "std": 0.35722903506705034,
+          "mean_pct": 97.2161172161172
+        },
+        "Completeness": {
+          "mean": 4.790441176470588,
+          "std": 0.4340453623768212,
+          "mean_pct": 95.80882352941175
+        },
+        "Fluency": {
+          "mean": 4.799270072992701,
+          "std": 0.419138546226179,
+          "mean_pct": 95.98540145985402
+        },
+        "KG_Alignment": {
+          "mean": 4.806569343065694,
+          "std": 0.4311504976040061,
+          "mean_pct": 96.13138686131387
+        }
+      },
+      "overall": {
+        "mean": 4.821167883211679,
+        "std": 0.2647289461608412,
+        "pct": 96.42335766423358
+      }
+    }
+  },
+  "question_type_analysis": {
+    "comparative": {
+      "count": 200,
+      "unique_qa": 40,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.818181818181818,
+          "std": 0.4360327925924458,
+          "mean_pct": 96.36363636363636
+        },
+        "Accuracy": {
+          "mean": 4.848484848484849,
+          "std": 0.3733137753903136,
+          "mean_pct": 96.96969696969697
+        },
+        "Completeness": {
+          "mean": 4.747474747474747,
+          "std": 0.4470645223861234,
+          "mean_pct": 94.94949494949495
+        },
+        "Fluency": {
+          "mean": 4.752525252525253,
+          "std": 0.46651171972230393,
+          "mean_pct": 95.05050505050505
+        },
+        "KG_Alignment": {
+          "mean": 4.833333333333333,
+          "std": 0.38697053233211604,
+          "mean_pct": 96.66666666666666
+        }
+      },
+      "overall": {
+        "mean": 4.8,
+        "std": 0.28284271247461895,
+        "pct": 96.0
+      }
+    },
+    "factual": {
+      "count": 200,
+      "unique_qa": 40,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.838383838383838,
+          "std": 0.4439570726737782,
+          "mean_pct": 96.76767676767678
+        },
+        "Accuracy": {
+          "mean": 4.817258883248731,
+          "std": 0.387438736414232,
+          "mean_pct": 96.34517766497461
+        },
+        "Completeness": {
+          "mean": 4.7360406091370555,
+          "std": 0.45329919656645135,
+          "mean_pct": 94.72081218274111
+        },
+        "Fluency": {
+          "mean": 4.776649746192893,
+          "std": 0.4175523236947621,
+          "mean_pct": 95.53299492385786
+        },
+        "KG_Alignment": {
+          "mean": 4.813131313131313,
+          "std": 0.3907941841231267,
+          "mean_pct": 96.26262626262626
+        }
+      },
+      "overall": {
+        "mean": 4.795707070707071,
+        "std": 0.27757882687160457,
+        "pct": 95.91414141414141
+      }
+    },
+    "inferential": {
+      "count": 200,
+      "unique_qa": 40,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.922680412371134,
+          "std": 0.28648491614586524,
+          "mean_pct": 98.4536082474227
+        },
+        "Accuracy": {
+          "mean": 4.855670103092783,
+          "std": 0.35233317727146773,
+          "mean_pct": 97.11340206185565
+        },
+        "Completeness": {
+          "mean": 4.788659793814433,
+          "std": 0.4338945906374184,
+          "mean_pct": 95.77319587628865
+        },
+        "Fluency": {
+          "mean": 4.84020618556701,
+          "std": 0.38120610171174496,
+          "mean_pct": 96.8041237113402
+        },
+        "KG_Alignment": {
+          "mean": 4.875647668393782,
+          "std": 0.3609560802681613,
+          "mean_pct": 97.51295336787564
+        }
+      },
+      "overall": {
+        "mean": 4.856443298969072,
+        "std": 0.2274486319765944,
+        "pct": 97.12886597938144
+      }
+    },
+    "relationship": {
+      "count": 200,
+      "unique_qa": 40,
+      "metrics": {
+        "Relevance": {
+          "mean": 4.83,
+          "std": 0.38969128355970734,
+          "mean_pct": 96.6
+        },
+        "Accuracy": {
+          "mean": 4.875,
+          "std": 0.3315488246330816,
+          "mean_pct": 97.5
+        },
+        "Completeness": {
+          "mean": 4.793969849246231,
+          "std": 0.41774263389945054,
+          "mean_pct": 95.87939698492463
+        },
+        "Fluency": {
+          "mean": 4.8,
+          "std": 0.4010037656936677,
+          "mean_pct": 96.0
+        },
+        "KG_Alignment": {
+          "mean": 4.825,
+          "std": 0.39389180464798257,
+          "mean_pct": 96.50000000000001
+        }
+      },
+      "overall": {
+        "mean": 4.82475,
+        "std": 0.253616926142816,
+        "pct": 96.495
+      }
+    }
+  },
+  "interaction_matrix": {
+    "comparative": {
+      "few_shot": {
+        "score": 4.747692307692308,
+        "percentage": 94.95384615384616
+      },
+      "one_shot": {
+        "score": 4.913846153846153,
+        "percentage": 98.27692307692305
+      },
+      "zero_shot": {
+        "score": 4.741176470588235,
+        "percentage": 94.82352941176471
+      }
+    },
+    "factual": {
+      "few_shot": {
+        "score": 4.822222222222222,
+        "percentage": 96.44444444444444
+      },
+      "one_shot": {
+        "score": 4.74,
+        "percentage": 94.80000000000001
+      },
+      "zero_shot": {
+        "score": 4.823571428571428,
+        "percentage": 96.47142857142856
+      }
+    },
+    "inferential": {
+      "few_shot": {
+        "score": 4.825396825396825,
+        "percentage": 96.50793650793649
+      },
+      "one_shot": {
+        "score": 4.866923076923078,
+        "percentage": 97.33846153846156
+      },
+      "zero_shot": {
+        "score": 4.875757575757576,
+        "percentage": 97.51515151515152
+      }
+    },
+    "relationship": {
+      "few_shot": {
+        "score": 4.812307692307693,
+        "percentage": 96.24615384615385
+      },
+      "one_shot": {
+        "score": 4.815384615384615,
+        "percentage": 96.3076923076923
+      },
+      "zero_shot": {
+        "score": 4.845,
+        "percentage": 96.89999999999999
+      }
+    }
+  },
+  "individual_evaluator_analysis": {
+    "Evaluator_01_Ramita": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.8,
+          "std": 0.40125589006041523,
+          "mean_pct": 96.0
+        },
+        "Accuracy": {
+          "mean": 4.767295597484277,
+          "std": 0.4238904885065457,
+          "mean_pct": 95.34591194968553
+        },
+        "Completeness": {
+          "mean": 4.811320754716981,
+          "std": 0.39248980186307425,
+          "mean_pct": 96.22641509433961
+        },
+        "Fluency": {
+          "mean": 4.314465408805032,
+          "std": 0.492196893553509,
+          "mean_pct": 86.28930817610063
+        },
+        "KG_Alignment": {
+          "mean": 4.949685534591195,
+          "std": 0.21928370555881452,
+          "mean_pct": 98.9937106918239
+        },
+        "Overall_Score": {
+          "mean": 4.7284375,
+          "std": 0.16856981412075037,
+          "mean_pct": 94.56875
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.76,
+          "percentage": 95.19999999999999,
+          "count": 40
+        },
+        "factual": {
+          "mean": 4.69125,
+          "percentage": 93.825,
+          "count": 40
+        },
+        "inferential": {
+          "mean": 4.72375,
+          "percentage": 94.475,
+          "count": 40
+        },
+        "relationship": {
+          "mean": 4.7387500000000005,
+          "percentage": 94.775,
+          "count": 40
+        }
+      },
+      "by_shot_type": {
+        "few_shot": {
+          "mean": 4.746153846153847,
+          "percentage": 94.92307692307695,
+          "count": 52
+        },
+        "one_shot": {
+          "mean": 4.70096153846154,
+          "percentage": 94.0192307692308,
+          "count": 52
+        },
+        "zero_shot": {
+          "mean": 4.7375,
+          "percentage": 94.75,
+          "count": 56
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "few_shot": {
+            "score": 4.769230769230769,
+            "percentage": 95.38461538461537
+          },
+          "one_shot": {
+            "score": 4.769230769230769,
+            "percentage": 95.38461538461537
+          },
+          "zero_shot": {
+            "score": 4.742857142857142,
+            "percentage": 94.85714285714283
+          }
+        },
+        "factual": {
+          "few_shot": {
+            "score": 4.753846153846154,
+            "percentage": 95.07692307692308
+          },
+          "one_shot": {
+            "score": 4.638461538461538,
+            "percentage": 92.76923076923076
+          },
+          "zero_shot": {
+            "score": 4.682142857142857,
+            "percentage": 93.64285714285714
+          }
+        },
+        "inferential": {
+          "few_shot": {
+            "score": 4.707692307692307,
+            "percentage": 94.15384615384615
+          },
+          "one_shot": {
+            "score": 4.719230769230769,
+            "percentage": 94.38461538461539
+          },
+          "zero_shot": {
+            "score": 4.742857142857142,
+            "percentage": 94.85714285714283
+          }
+        },
+        "relationship": {
+          "few_shot": {
+            "score": 4.753846153846154,
+            "percentage": 95.07692307692308
+          },
+          "one_shot": {
+            "score": 4.676923076923076,
+            "percentage": 93.53846153846152
+          },
+          "zero_shot": {
+            "score": 4.7821428571428575,
+            "percentage": 95.64285714285715
+          }
+        }
+      }
+    },
+    "Evaluator_02_Sibgha": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.935483870967742,
+          "std": 0.31576374850200173,
+          "mean_pct": 98.70967741935483
+        },
+        "Accuracy": {
+          "mean": 4.8,
+          "std": 0.41716420511109803,
+          "mean_pct": 96.0
+        },
+        "Completeness": {
+          "mean": 4.72258064516129,
+          "std": 0.46340753530645296,
+          "mean_pct": 94.45161290322581
+        },
+        "Fluency": {
+          "mean": 4.980645161290322,
+          "std": 0.13821532899064884,
+          "mean_pct": 99.61290322580645
+        },
+        "KG_Alignment": {
+          "mean": 4.7935483870967746,
+          "std": 0.42175844310671096,
+          "mean_pct": 95.87096774193549
+        },
+        "Overall_Score": {
+          "mean": 4.846451612903226,
+          "std": 0.2525910969410349,
+          "mean_pct": 96.92903225806452
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.866666666666667,
+          "percentage": 97.33333333333334,
+          "count": 40
+        },
+        "factual": {
+          "mean": 4.81025641025641,
+          "percentage": 96.2051282051282,
+          "count": 40
+        },
+        "inferential": {
+          "mean": 4.843243243243243,
+          "percentage": 96.86486486486486,
+          "count": 40
+        },
+        "relationship": {
+          "mean": 4.865,
+          "percentage": 97.30000000000001,
+          "count": 40
+        }
+      },
+      "by_shot_type": {
+        "few_shot": {
+          "mean": 4.82,
+          "percentage": 96.4,
+          "count": 52
+        },
+        "one_shot": {
+          "mean": 4.865384615384615,
+          "percentage": 97.30769230769229,
+          "count": 52
+        },
+        "zero_shot": {
+          "mean": 4.852830188679245,
+          "percentage": 97.0566037735849,
+          "count": 56
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "few_shot": {
+            "score": 4.8307692307692305,
+            "percentage": 96.61538461538461
+          },
+          "one_shot": {
+            "score": 4.9692307692307685,
+            "percentage": 99.38461538461537
+          },
+          "zero_shot": {
+            "score": 4.8,
+            "percentage": 96.0
+          }
+        },
+        "factual": {
+          "few_shot": {
+            "score": 4.8,
+            "percentage": 96.0
+          },
+          "one_shot": {
+            "score": 4.723076923076923,
+            "percentage": 94.46153846153847
+          },
+          "zero_shot": {
+            "score": 4.8999999999999995,
+            "percentage": 97.99999999999999
+          }
+        },
+        "inferential": {
+          "few_shot": {
+            "score": 4.8,
+            "percentage": 96.0
+          },
+          "one_shot": {
+            "score": 4.846153846153846,
+            "percentage": 96.9230769230769
+          },
+          "zero_shot": {
+            "score": 4.883333333333334,
+            "percentage": 97.66666666666669
+          }
+        },
+        "relationship": {
+          "few_shot": {
+            "score": 4.846153846153846,
+            "percentage": 96.9230769230769
+          },
+          "one_shot": {
+            "score": 4.923076923076923,
+            "percentage": 98.46153846153847
+          },
+          "zero_shot": {
+            "score": 4.828571428571428,
+            "percentage": 96.57142857142857
+          }
+        }
+      }
+    },
+    "Evaluator_03_Saim": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.948387096774193,
+          "std": 0.2970318183816795,
+          "mean_pct": 98.96774193548387
+        },
+        "Accuracy": {
+          "mean": 4.832258064516129,
+          "std": 0.3748481049724331,
+          "mean_pct": 96.64516129032258
+        },
+        "Completeness": {
+          "mean": 4.7272727272727275,
+          "std": 0.4751707951998038,
+          "mean_pct": 94.54545454545456
+        },
+        "Fluency": {
+          "mean": 4.961290322580645,
+          "std": 0.19352743916802656,
+          "mean_pct": 99.2258064516129
+        },
+        "KG_Alignment": {
+          "mean": 4.825806451612904,
+          "std": 0.3972043063677278,
+          "mean_pct": 96.51612903225806
+        },
+        "Overall_Score": {
+          "mean": 4.8587096774193546,
+          "std": 0.24115175390660756,
+          "mean_pct": 97.1741935483871
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.887179487179488,
+          "percentage": 97.74358974358975,
+          "count": 40
+        },
+        "factual": {
+          "mean": 4.797435897435896,
+          "percentage": 95.94871794871793,
+          "count": 40
+        },
+        "inferential": {
+          "mean": 4.859459459459459,
+          "percentage": 97.18918918918918,
+          "count": 40
+        },
+        "relationship": {
+          "mean": 4.890000000000001,
+          "percentage": 97.80000000000001,
+          "count": 40
+        }
+      },
+      "by_shot_type": {
+        "few_shot": {
+          "mean": 4.812,
+          "percentage": 96.24000000000001,
+          "count": 52
+        },
+        "one_shot": {
+          "mean": 4.865384615384615,
+          "percentage": 97.30769230769229,
+          "count": 52
+        },
+        "zero_shot": {
+          "mean": 4.89622641509434,
+          "percentage": 97.9245283018868,
+          "count": 56
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "few_shot": {
+            "score": 4.8307692307692305,
+            "percentage": 96.61538461538461
+          },
+          "one_shot": {
+            "score": 4.9692307692307685,
+            "percentage": 99.38461538461537
+          },
+          "zero_shot": {
+            "score": 4.861538461538462,
+            "percentage": 97.23076923076924
+          }
+        },
+        "factual": {
+          "few_shot": {
+            "score": 4.766666666666667,
+            "percentage": 95.33333333333334
+          },
+          "one_shot": {
+            "score": 4.723076923076923,
+            "percentage": 94.46153846153847
+          },
+          "zero_shot": {
+            "score": 4.892857142857143,
+            "percentage": 97.85714285714286
+          }
+        },
+        "inferential": {
+          "few_shot": {
+            "score": 4.8,
+            "percentage": 96.0
+          },
+          "one_shot": {
+            "score": 4.846153846153846,
+            "percentage": 96.9230769230769
+          },
+          "zero_shot": {
+            "score": 4.933333333333334,
+            "percentage": 98.66666666666667
+          }
+        },
+        "relationship": {
+          "few_shot": {
+            "score": 4.846153846153846,
+            "percentage": 96.9230769230769
+          },
+          "one_shot": {
+            "score": 4.923076923076923,
+            "percentage": 98.46153846153847
+          },
+          "zero_shot": {
+            "score": 4.8999999999999995,
+            "percentage": 97.99999999999999
+          }
+        }
+      }
+    },
+    "Evaluator_04_Shahzad": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.869565217391305,
+          "std": 0.33783196234608776,
+          "mean_pct": 97.3913043478261
+        },
+        "Accuracy": {
+          "mean": 4.975155279503106,
+          "std": 0.15613738177508188,
+          "mean_pct": 99.50310559006212
+        },
+        "Completeness": {
+          "mean": 4.708074534161491,
+          "std": 0.4826975185454525,
+          "mean_pct": 94.16149068322981
+        },
+        "Fluency": {
+          "mean": 4.850931677018633,
+          "std": 0.35726705914874796,
+          "mean_pct": 97.01863354037266
+        },
+        "KG_Alignment": {
+          "mean": 4.813664596273292,
+          "std": 0.3905920017118148,
+          "mean_pct": 96.27329192546584
+        },
+        "Overall_Score": {
+          "mean": 4.843478260869565,
+          "std": 0.2895648909777502,
+          "mean_pct": 96.86956521739131
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.720000000000001,
+          "percentage": 94.40000000000002,
+          "count": 40
+        },
+        "factual": {
+          "mean": 4.87,
+          "percentage": 97.39999999999999,
+          "count": 40
+        },
+        "inferential": {
+          "mean": 4.945,
+          "percentage": 98.9,
+          "count": 40
+        },
+        "relationship": {
+          "mean": 4.835,
+          "percentage": 96.7,
+          "count": 40
+        }
+      },
+      "by_shot_type": {
+        "few_shot": {
+          "mean": 4.784615384615384,
+          "percentage": 95.69230769230768,
+          "count": 52
+        },
+        "one_shot": {
+          "mean": 4.8769230769230765,
+          "percentage": 97.53846153846153,
+          "count": 52
+        },
+        "zero_shot": {
+          "mean": 4.864285714285714,
+          "percentage": 97.28571428571428,
+          "count": 56
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "few_shot": {
+            "score": 4.630769230769231,
+            "percentage": 92.61538461538463
+          },
+          "one_shot": {
+            "score": 4.907692307692307,
+            "percentage": 98.15384615384615
+          },
+          "zero_shot": {
+            "score": 4.628571428571428,
+            "percentage": 92.57142857142856
+          }
+        },
+        "factual": {
+          "few_shot": {
+            "score": 4.923076923076923,
+            "percentage": 98.46153846153847
+          },
+          "one_shot": {
+            "score": 4.7846153846153845,
+            "percentage": 95.6923076923077
+          },
+          "zero_shot": {
+            "score": 4.8999999999999995,
+            "percentage": 97.99999999999999
+          }
+        },
+        "inferential": {
+          "few_shot": {
+            "score": 4.8769230769230765,
+            "percentage": 97.53846153846153
+          },
+          "one_shot": {
+            "score": 4.9692307692307685,
+            "percentage": 99.38461538461537
+          },
+          "zero_shot": {
+            "score": 4.985714285714286,
+            "percentage": 99.71428571428571
+          }
+        },
+        "relationship": {
+          "few_shot": {
+            "score": 4.707692307692308,
+            "percentage": 94.15384615384616
+          },
+          "one_shot": {
+            "score": 4.846153846153846,
+            "percentage": 96.9230769230769
+          },
+          "zero_shot": {
+            "score": 4.942857142857143,
+            "percentage": 98.85714285714286
+          }
+        }
+      }
+    },
+    "Evaluator_05_Ammar": {
+      "overall_performance": {
+        "Relevance": {
+          "mean": 4.7125,
+          "std": 0.5306635220032613,
+          "mean_pct": 94.25000000000001
+        },
+        "Accuracy": {
+          "mean": 4.86875,
+          "std": 0.3387337686705233,
+          "mean_pct": 97.37500000000001
+        },
+        "Completeness": {
+          "mean": 4.8625,
+          "std": 0.3454556739170885,
+          "mean_pct": 97.24999999999999
+        },
+        "Fluency": {
+          "mean": 4.8625,
+          "std": 0.3801274198816921,
+          "mean_pct": 97.24999999999999
+        },
+        "KG_Alignment": {
+          "mean": 4.8,
+          "std": 0.4314667102020482,
+          "mean_pct": 96.0
+        },
+        "Overall_Score": {
+          "mean": 4.82125,
+          "std": 0.31451020121240325,
+          "mean_pct": 96.42500000000001
+        }
+      },
+      "by_question_type": {
+        "comparative": {
+          "mean": 4.7700000000000005,
+          "percentage": 95.4,
+          "count": 40
+        },
+        "factual": {
+          "mean": 4.8100000000000005,
+          "percentage": 96.2,
+          "count": 40
+        },
+        "inferential": {
+          "mean": 4.91,
+          "percentage": 98.2,
+          "count": 40
+        },
+        "relationship": {
+          "mean": 4.795,
+          "percentage": 95.89999999999999,
+          "count": 40
+        }
+      },
+      "by_shot_type": {
+        "few_shot": {
+          "mean": 4.846153846153847,
+          "percentage": 96.92307692307693,
+          "count": 52
+        },
+        "one_shot": {
+          "mean": 4.861538461538462,
+          "percentage": 97.23076923076924,
+          "count": 52
+        },
+        "zero_shot": {
+          "mean": 4.760714285714286,
+          "percentage": 95.21428571428572,
+          "count": 56
+        }
+      },
+      "interaction_matrix": {
+        "comparative": {
+          "few_shot": {
+            "score": 4.676923076923076,
+            "percentage": 93.53846153846152
+          },
+          "one_shot": {
+            "score": 4.953846153846154,
+            "percentage": 99.07692307692308
+          },
+          "zero_shot": {
+            "score": 4.685714285714285,
+            "percentage": 93.71428571428571
+          }
+        },
+        "factual": {
+          "few_shot": {
+            "score": 4.861538461538462,
+            "percentage": 97.23076923076924
+          },
+          "one_shot": {
+            "score": 4.8307692307692305,
+            "percentage": 96.61538461538461
+          },
+          "zero_shot": {
+            "score": 4.742857142857143,
+            "percentage": 94.85714285714286
+          }
+        },
+        "inferential": {
+          "few_shot": {
+            "score": 4.938461538461539,
+            "percentage": 98.76923076923077
+          },
+          "one_shot": {
+            "score": 4.953846153846154,
+            "percentage": 99.07692307692308
+          },
+          "zero_shot": {
+            "score": 4.8428571428571425,
+            "percentage": 96.85714285714285
+          }
+        },
+        "relationship": {
+          "few_shot": {
+            "score": 4.907692307692307,
+            "percentage": 98.15384615384615
+          },
+          "one_shot": {
+            "score": 4.707692307692308,
+            "percentage": 94.15384615384616
+          },
+          "zero_shot": {
+            "score": 4.771428571428571,
+            "percentage": 95.42857142857143
+          }
+        }
+      }
+    }
+  },
+  "inter_evaluator_variance": {
+    "Relevance": {
+      "average_variance": 0.11354838709677419,
+      "average_std": 0.2254891592963276
+    },
+    "Accuracy": {
+      "average_variance": 0.08623376623376625,
+      "average_std": 0.1889411588097342
+    },
+    "Completeness": {
+      "average_variance": 0.13437908496732023,
+      "average_std": 0.283163694880611
+    },
+    "Fluency": {
+      "average_variance": 0.15376623376623375,
+      "average_std": 0.3464776023724627
+    },
+    "KG_Alignment": {
+      "average_variance": 0.09974025974025974,
+      "average_std": 0.20915188942028365
+    },
+    "Overall_Score": {
+      "average_variance": 0.04788387096774194,
+      "average_std": 0.18759074706672332
+    }
+  }
+}
