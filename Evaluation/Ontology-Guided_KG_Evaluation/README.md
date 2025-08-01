@@ -62,7 +62,7 @@ INSTRUCTIONS:
 OUTPUT FORMAT:
 List each false positive triple exactly as shown above, one per line.
 If no false positives, respond with "NONE"
-```text
+```
 
 ##### 🔸 Prompt for False Negatives
 ```text
@@ -85,7 +85,7 @@ INSTRUCTIONS:
 OUTPUT FORMAT:
 List each missing fact as a potential triple, one per line.
 If no missing facts, respond with "NONE"
-```text
+```
 
 #### 🔹 Layer 2: Ontology Alignment Check
 
@@ -116,7 +116,7 @@ OUTPUT FORMAT (exactly as specified):
 (your judgment: Pass/Not Pass, confidence score)
 
 Where confidence score is between 0.0 and 1.0
-```text
+```
 
 ---
 
