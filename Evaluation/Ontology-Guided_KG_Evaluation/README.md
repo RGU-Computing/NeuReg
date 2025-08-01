@@ -82,9 +82,10 @@ OUTPUT FORMAT:
 List each missing fact as a potential triple, one per line.
 If no missing facts, respond with "NONE"
 
+
 #### 🔹 Layer 2: Ontology Alignment Check
 
-This layer checks whether extracted triples align with the domain ontology using LLM reasoning
+This layer checks whether extracted triples align with the domain ontology using LLM reasoning.
 
 ##### 🔸 Prompt for Ontology Alignment
 
@@ -111,6 +112,7 @@ OUTPUT FORMAT (exactly as specified):
 (your judgment: Pass/Not Pass, confidence score)
 
 Where confidence score is between 0.0 and 1.0
+
 
 ---
 
