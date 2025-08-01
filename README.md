@@ -121,11 +121,11 @@ NeuReg/
 │   │   │   ├── DeepSeek_zeroshot_evaluation_results.csv    #  Zero-Shot QA results
 │   │   │   ├── DeepSeek_oneshot_evaluation_results.csv     #  One-Shot QA results
 │   │   │   └── DeepSeek_fewshot_evaluation_results.csv     #  Few-Shot QA results
-│   │   ├── Gemma-2 Instruct 27B/              # Evaluation results from Gemma-2 27B
-│   │   ├── LLaMA 3.3 70B/                     # Evaluation results from Meta's LLaMA 3.3 70B
-│   │   ├── mixtral-8x22b-instruct-v0.1/       # Evaluation results from Mixtral 8x22B Instruct
-│   │   └── Qwen3-32B/                         # Evaluation results from Qwen3-32B
-│   │       └── **Each model folder includes: one `.ipynb` notebook + 3 CSVs for Zero-/One-/Few-Shot QA evaluation results**
+│   │   ├── Gemma-2 Instruct 27B/              # ipynb file and evaluation results
+│   │   ├── LLaMA 3.3 70B/                     # ipynb file and evaluation results
+│   │   ├── mixtral-8x22b-instruct-v0.1/       # ipynb file and evaluation results
+│   │   └── Qwen3-32B/                         # ipynb file and evaluation results
+Each model folder includes: one `.ipynb` notebook + 3 CSVs for Zero-/One-/Few-Shot QA evaluation results
 
 │   ├── llms results analysis/                 # Cross-model aggregation and statistics
 │   │   ├── README.md
