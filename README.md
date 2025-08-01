@@ -125,7 +125,7 @@ NeuReg/
 │   │   ├── LLaMA 3.3 70B/                     # Evaluation results from Meta's LLaMA 3.3 70B
 │   │   ├── mixtral-8x22b-instruct-v0.1/       # Evaluation results from Mixtral 8x22B Instruct
 │   │   └── Qwen3-32B/                         # Evaluation results from Qwen3-32B
-│   │       └── **(Each model folder includes: one `.ipynb` notebook + 3 CSVs for Zero-/One-/Few-Shot QA evaluation results)**
+│   │       └── **Each model folder includes: one `.ipynb` notebook + 3 CSVs for Zero-/One-/Few-Shot QA evaluation results**
 
 │   ├── llms results analysis/                 # Cross-model aggregation and statistics
 │   │   ├── README.md
