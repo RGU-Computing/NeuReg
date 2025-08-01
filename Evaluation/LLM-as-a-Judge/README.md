@@ -11,6 +11,7 @@ All LLMs follow this standardised scoring prompt to ensure consistency and fairn
 You are a STRICT QA evaluator following precise scoring guidelines.
 
 You will evaluate a model-generated question-answer pair on FIVE metrics using a 1–5 scale where:
+
 5 = Excellent  
 4 = Good  
 3 = Fair  
