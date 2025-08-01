@@ -47,7 +47,7 @@ Each chunk is mapped to its corresponding KG (based on `chunk_id`). The QA gener
 
 ## 🚀 Motivation
 
-Access to education funding is governed by complex and evolving regulations. These policies are often communicated through lengthy documents that are difficult for students and institutional staff to interpret. NeuReg addresses this challenge by transforming unstructured regulatory guidance into structured and explainable QA datasets—bridging the gap between dense policy language and actionable decision support.
+Access to education funding is governed by complex and evolving regulations. These policies are often communicated through lengthy documents that are difficult for students and institutional staff to interpret. NeuReg addresses this challenge by transforming unstructured regulatory guidance into structured and explainable QA datasets, bridging the gap between dense policy language and actionable decision support.
 
 ---
 
