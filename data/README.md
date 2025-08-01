@@ -57,7 +57,7 @@ These reflect how triples are distributed across document segments:
 
 | Metric                 | Value |
 | ---------------------- | ----- |
-| Total Chunks           | 150   |
+| Total Chunks           | 154   |
 | Mean Triples per Chunk | 12.43 |
 | Std. Deviation         | 4.10  |
 | Minimum                | 5     |
