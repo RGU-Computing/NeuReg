@@ -107,28 +107,57 @@ NeuReg/
 │   ├── One_Shot_QA_analysis_report.json   # Analysis report (one-shot)
 │   └── Few_Shot_QA_analysis_report.json   # Analysis report (few-shot)
 
-├── evaluation/                        # Evaluation modules for QA datasets
-│   ├── README.md 
-│   ├── ontology_guided/               # KG triples validation
-│   │   ├── Evaluation.ipynb
-│   │   ├── evaluation_results.csv
-│   │   └── evaluation_report.json
-│   ├── llm_judges/                    # LLM-based QA scoring (5 models)
-│   │   ├── DeepSeek-R1-Distill-Llama-70B/
+├── evaluation/                        # Complete evaluation framework
+│   ├── README.md                      # Central summary of all evaluation types and modules
+│   ├── Ontology-Guided_KG_Evaluation/         # Evaluation of KG triples
+│   │   ├── README.md
+│   │   ├── Evaluation.ipynb                    # Validates triple structure and semantics
+│   │   ├── evaluation_results.csv              # Per-triple validation outcomes
+│   │   └── evaluation_report.json              # Aggregate KG validation statistics
+│   ├── LLM-as-a-Judge/                        # LLM-based QA evaluation (5 models)
+│   │   ├── README.md                          # Overview of LLM evaluation 
+│   │   ├── DeepSeek-R1-Distill-Llama-70B/     # Evaluation results from DeepSeek-R1
 │   │   │   ├── DeepSeek-R1-Distill-Llama-70B.ipynb
-│   │   │   ├── *_zeroshot_*.csv
-│   │   │   └── *_fewshot_*.csv
-│   │   ├── Gemma-2-27B/
-│   │   ├── LLaMA-3.3-70B/
-│   │   ├── Mixtral-8x22B/
-│   │   └── Qwen3-32B/
-│   ├── humans/                        # Human-based QA evaluation
-│   │   ├── Evaluation_Template.pdf (or .csv)      # Annotation template
-│   │   ├── Human_based_results_analysis.ipynb
-│   │   └── humans_Analysis_report.csv
-│   └── llm_vs_human/                 # Correlation between LLM and human scores
-│       ├── llm_vs_human_Analysis_results_analysis.ipynb
-│       └── Correlation_llm_vs_human.csv
+│   │   │   ├── DeepSeek_zeroshot_evaluation_results.csv
+│   │   │   ├── DeepSeek_oneshot_evaluation_results.csv
+│   │   │   └── DeepSeek_fewshot_evaluation_results.csv
+│   │   ├── Gemma-2 Instruct 27B/              # Evaluation results from Gemma-2 27B
+│   │   │   ├── Gemma-2 Instruct 27B.ipynb
+│   │   │   ├── Gemma_zeroshot_evaluation_results.csv
+│   │   │   ├── Gemma_oneshot_evaluation_results.csv
+│   │   │   └── Gemma_fewshot_evaluation_results.csv
+│   │   ├── LLaMA 3.3 70B/                     # Evaluation results from Meta's LLaMA 3.3 70B
+│   │   │   ├── LLaMA_3.3_70B.ipynb
+│   │   │   ├── LLaMA_zeroshot_evaluation_results.csv
+│   │   │   ├── LLaMA_oneshot_evaluation_results.csv
+│   │   │   └── LLaMA_fewshot_evaluation_results.csv
+│   │   ├── mixtral-8x22b-instruct-v0.1/       # Evaluation results from Mixtral 8x22B Instruct
+│   │   │   ├── mixtral-8x22b-instruct-v0.1.ipynb
+│   │   │   ├── mixtral_zeroshot_evaluation_results.csv
+│   │   │   ├── mixtral_oneshot_evaluation_results.csv
+│   │   │   └── mixtral_fewshot_evaluation_results.csv
+│   │   └── Qwen3-32B/                         # Evaluation results from Qwen3-32B
+│   │       ├── Qwen3-32B.ipynb
+│   │       ├── Qwen_zeroshot_evaluation_results.csv
+│   │       ├── Qwen_oneshot_evaluation_results.csv
+│   │       └── Qwen_fewshot_evaluation_results.csv
+│   ├── llms results analysis/                 # Cross-model aggregation and statistics
+│   │   ├── README.md
+│   │   ├── LLM results analysis.ipynb         # Compare results across LLM judges
+│   │   └── comprehensive_analysis_report.json # Metrics summary (means, deviations, majority voting agreement)
+│   ├── Human Judgements/                      # Human evaluation and sampling
+│   │   ├── README.md
+│   │   ├── Evaluation_Template.md             # Annotation form and scoring rubric
+│   │   ├── stratified sampling method.ipynb   # Script for stratified QA sampling
+│   │   ├── QA_Human_Eval_Stratified_5percent.csv     # Final sampled QA set for annotation
+│   │   ├── QA_Sampling_Summary_Statistics.csv        # Summary of sampled distribution
+│   │   ├── QA_Stratified_Sampling_Visualization.png  # Sample distribution plots
+│   │   ├── human results analysis.ipynb       # Human score processing and statistics
+│   │   └── human_evaluation_analysis_report.json  # Metrics summary (means, deviations, majority voting agreement)
+│   ├── LLM vs Human/                          # Correlation between LLM and human scores
+│   │   ├── README.md
+│   │   ├── LLM vs Human.ipynb                 # Notebook to compare LLM vs human scores
+│   │   └── human_llm_comparison_results.csv   # Agreement metrics (e.g. EM, f1)
 
 ├── analysis/                          # Statistical analysis & insights
 │   ├── README.md 
