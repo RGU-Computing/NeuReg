@@ -174,11 +174,12 @@ Each model produces numeric scores (1–5) for each QA pair and metric. These re
 
 Cross-model comparison
 
-Aggregated analysis (see Evaluation/LLM-as-a-Judge/llms results analysis)
+Each model produces numeric scores (1–5) for each QA pair and metric. These results are used for:
 
-Majority voting agreement  (see Evaluation/LLM-as-a-Judge/llms results analysis)
-
-Agreement with human evaluators (see Evaluation/LLM vs Human)
+- Cross-model comparison  
+- Aggregated analysis (see [LLMs Results Analysis](../llms%20results%20analysis/))  
+- Majority voting agreement (see [LLMs Results Analysis](../llms%20results%20analysis/))  
+- Agreement with human evaluators (see [LLM vs Human](../LLM%20vs%20Human/))  
 
 
 📘 For full QA generation methodology and dataset details, see the main project README.
