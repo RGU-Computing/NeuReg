@@ -62,7 +62,7 @@ F1 Score: Harmonic mean of precision and recall, reflecting partial agreement.
 |                | Fluency       | 78.13           | 0.294    |
 |                | KG\_Alignment | 47.50           | 0.143    |
             ---------------------------
-|     **Overall**                | **63.00**       | **0.23**|
+|    Overall                     | 63.00           | 0.23     |
 ```
 ----
 
