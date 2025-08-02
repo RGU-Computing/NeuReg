@@ -83,4 +83,3 @@ Metric-wise full + majority agreement:
 | Llama-3.3-70B     | 4.50       | 63.90%         |
 
 
-For detailed model-level evaluations, see LLM-as-a-Judge/ and for LLM–Human agreement statistics, refer to LLM vs Human/.
