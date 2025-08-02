@@ -24,7 +24,7 @@ Total QA Pairs: 3,314
 
 📚 Question Types: factual, relationship, comparative, inferential
 
-### 🧠 Readability Analysis
+###  Readability Analysis
 Overall
 
 | Item      | Flesch-Kincaid (FK) | Gunning Fog (GF) |
@@ -90,7 +90,8 @@ Overall
 ### 📊 Visual Summary
 You can view the full overview in the following visualization:
 
-[Analysis :(QA_Analysis_Complete.png)]
+![QA Dataset Summary](QA_Analysis_Complete.png)
+
 
 
 
