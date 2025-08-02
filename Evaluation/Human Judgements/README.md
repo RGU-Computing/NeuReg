@@ -24,6 +24,11 @@ Shot Types: Zero-Shot, One-Shot, Few-Shot
 
 Question Types: Factual, Relationship, Comparative, Inferential
 
+
+![QA Stratified Sampling](QA_Stratified_Sampling_Visualization.png)
+
+
+
 | Shot Type | Question Type | Samples | Source Size | Sample % |
 | --------- | ------------- | ------- | ----------- | -------- |
 | Zero-Shot | Factual       | 14      | 1127        | 8.8%     |
