@@ -25,7 +25,10 @@ Exact Match (%): Percentage of scores that exactly matched human ratings.
 
 F1 Score: Harmonic mean of precision and recall, reflecting partial agreement.
 
+---
+
 ### 📊 LLM–Human Agreement Results
+```text
 
 | Model          | Metric        | Exact Match (%) | F1 Score |
 | -------------- | ------------- | --------------- | -------- |
@@ -60,7 +63,7 @@ F1 Score: Harmonic mean of precision and recall, reflecting partial agreement.
 |                | KG\_Alignment | 47.50           | 0.143    |
             ---------------------------
 |     **Overall**                | **63.00**       | **0.23**|
-
+```
 ----
 
 📎 Related Modules
