@@ -39,6 +39,9 @@ Question Types: Factual, Relationship, Comparative, Inferential
 | Few-Shot  | Comparative   | 13      | 1107        | 8.1%     |
 | Few-Shot  | Inferential   | 13      | 1107        | 8.1%     |
 
+
+[QA_Stratified_Sampling_Visualization.png]
+
 ----
 
 ###  🧩 Evaluation Overview
