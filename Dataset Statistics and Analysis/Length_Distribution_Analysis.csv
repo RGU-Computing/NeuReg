@@ -1,0 +1,9 @@
+Category,Type,Sample Count,Short (<30),Medium (30-60),Long (>60)
+Overall,All,"3,314",406 (12.3%),"1,072 (32.3%)","1,836 (55.4%)"
+zero_shot,Shot Type,"1,127",12 (1.1%),385 (34.2%),730 (64.8%)
+one_shot,Shot Type,"1,080",224 (20.7%),351 (32.5%),505 (46.8%)
+few_shot,Shot Type,"1,107",170 (15.4%),336 (30.4%),601 (54.3%)
+factual,Question Type,867,332 (38.3%),414 (47.8%),121 (14.0%)
+relationship,Question Type,822,69 (8.4%),452 (55.0%),301 (36.6%)
+comparative,Question Type,810,3 (0.4%),104 (12.8%),703 (86.8%)
+inferential,Question Type,815,2 (0.2%),102 (12.5%),711 (87.2%)

@@ -1,0 +1,211 @@
+{
+  "dataset_info": {
+    "total_samples": 3314,
+    "shot_distribution": {
+      "zero_shot": "1127",
+      "few_shot": "1107",
+      "one_shot": "1080"
+    },
+    "question_distribution": {
+      "factual": "867",
+      "relationship": "822",
+      "inferential": "815",
+      "comparative": "810"
+    }
+  },
+  "readability_analysis": {
+    "overall": {
+      "questions": {
+        "Flesch-Kincaid": 14.1,
+        "Gunning Fog": 9.28
+      },
+      "answers": {
+        "Flesch-Kincaid": 17.7,
+        "Gunning Fog": 11.61
+      }
+    },
+    "by_shot_type": {
+      "zero_shot": {
+        "questions": {
+          "Flesch-Kincaid": 15.2,
+          "Gunning Fog": 11.02
+        },
+        "answers": {
+          "Flesch-Kincaid": 16.3,
+          "Gunning Fog": 11.81
+        }
+      },
+      "one_shot": {
+        "questions": {
+          "Flesch-Kincaid": 13.4,
+          "Gunning Fog": 9.34
+        },
+        "answers": {
+          "Flesch-Kincaid": 17.8,
+          "Gunning Fog": 12.27
+        }
+      },
+      "few_shot": {
+        "questions": {
+          "Flesch-Kincaid": 13.7,
+          "Gunning Fog": 9.59
+        },
+        "answers": {
+          "Flesch-Kincaid": 17.9,
+          "Gunning Fog": 12.32
+        }
+      }
+    },
+    "by_question_type": {
+      "factual": {
+        "questions": {
+          "Flesch-Kincaid": 12.0,
+          "Gunning Fog": 9.05
+        },
+        "answers": {
+          "Flesch-Kincaid": 15.1,
+          "Gunning Fog": 11.95
+        }
+      },
+      "relationship": {
+        "questions": {
+          "Flesch-Kincaid": 13.4,
+          "Gunning Fog": 9.49
+        },
+        "answers": {
+          "Flesch-Kincaid": 16.3,
+          "Gunning Fog": 12.09
+        }
+      },
+      "comparative": {
+        "questions": {
+          "Flesch-Kincaid": 14.5,
+          "Gunning Fog": 10.42
+        },
+        "answers": {
+          "Flesch-Kincaid": 17.6,
+          "Gunning Fog": 11.97
+        }
+      },
+      "inferential": {
+        "questions": {
+          "Flesch-Kincaid": 15.3,
+          "Gunning Fog": 11.5
+        },
+        "answers": {
+          "Flesch-Kincaid": 18.1,
+          "Gunning Fog": 12.69
+        }
+      }
+    }
+  },
+  "length_analysis": {
+    "overall": {
+      "short": "406",
+      "medium": "1072",
+      "long": "1836",
+      "total": 3314
+    },
+    "by_shot_type": {
+      "zero_shot": {
+        "short": "12",
+        "medium": "385",
+        "long": "730",
+        "total": 1127
+      },
+      "one_shot": {
+        "short": "224",
+        "medium": "351",
+        "long": "505",
+        "total": 1080
+      },
+      "few_shot": {
+        "short": "170",
+        "medium": "336",
+        "long": "601",
+        "total": 1107
+      }
+    },
+    "by_question_type": {
+      "factual": {
+        "short": "332",
+        "medium": "414",
+        "long": "121",
+        "total": 867
+      },
+      "relationship": {
+        "short": "69",
+        "medium": "452",
+        "long": "301",
+        "total": 822
+      },
+      "comparative": {
+        "short": "3",
+        "medium": "104",
+        "long": "703",
+        "total": 810
+      },
+      "inferential": {
+        "short": "2",
+        "medium": "102",
+        "long": "711",
+        "total": 815
+      }
+    }
+  },
+  "vocabulary_diversity": {
+    "overall": {
+      "questions_ttr": 0.0541,
+      "answers_ttr": 0.04
+    },
+    "by_shot_type": {
+      "zero_shot": {
+        "questions_ttr": 0.1036,
+        "answers_ttr": 0.0737,
+        "sample_count": 1127
+      },
+      "one_shot": {
+        "questions_ttr": 0.111,
+        "answers_ttr": 0.0861,
+        "sample_count": 1080
+      },
+      "few_shot": {
+        "questions_ttr": 0.1081,
+        "answers_ttr": 0.0818,
+        "sample_count": 1107
+      }
+    },
+    "by_question_type": {
+      "factual": {
+        "questions_ttr": 0.113,
+        "answers_ttr": 0.1001,
+        "sample_count": 867
+      },
+      "relationship": {
+        "questions_ttr": 0.1251,
+        "answers_ttr": 0.0957,
+        "sample_count": 822
+      },
+      "comparative": {
+        "questions_ttr": 0.1057,
+        "answers_ttr": 0.0821,
+        "sample_count": 810
+      },
+      "inferential": {
+        "questions_ttr": 0.1258,
+        "answers_ttr": 0.0856,
+        "sample_count": 815
+      }
+    }
+  },
+  "key_insights": {
+    "most_readable_shot_questions": "one_shot",
+    "most_readable_shot_answers": "zero_shot",
+    "highest_long_answers_shot": "zero_shot",
+    "highest_long_answers_qtype": "inferential",
+    "highest_diversity_shot_q": "one_shot",
+    "highest_diversity_shot_a": "one_shot",
+    "highest_diversity_qtype_q": "inferential",
+    "highest_diversity_qtype_a": "factual"
+  }
+}

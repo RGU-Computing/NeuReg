@@ -1,0 +1,17 @@
+Category,Type,Sample Count,Flesch-Kincaid,Gunning Fog
+Overall,Questions,"3,314",14.1,9.28
+Overall,Answers,"3,314",17.7,11.61
+zero_shot,Questions,"1,127",15.2,11.02
+zero_shot,Answers,"1,127",16.3,11.81
+one_shot,Questions,"1,080",13.4,9.34
+one_shot,Answers,"1,080",17.8,12.27
+few_shot,Questions,"1,107",13.7,9.59
+few_shot,Answers,"1,107",17.9,12.32
+factual,Questions,867,12.0,9.05
+factual,Answers,867,15.1,11.95
+relationship,Questions,822,13.4,9.49
+relationship,Answers,822,16.3,12.09
+comparative,Questions,810,14.5,10.42
+comparative,Answers,810,17.6,11.97
+inferential,Questions,815,15.3,11.5
+inferential,Answers,815,18.1,12.69

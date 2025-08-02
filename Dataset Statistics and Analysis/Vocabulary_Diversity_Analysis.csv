@@ -1,0 +1,17 @@
+Category,Type,Sample Count,TTR,Vocab Size
+Overall,Questions,"3,314",0.0541,3890
+Overall,Answers,"3,314",0.04,8656
+zero_shot,Questions,"1,127",0.1036,2864
+zero_shot,Answers,"1,127",0.0737,6001
+one_shot,Questions,"1,080",0.111,2379
+one_shot,Answers,"1,080",0.0861,5518
+few_shot,Questions,"1,107",0.1081,2471
+few_shot,Answers,"1,107",0.0818,5784
+factual,Questions,867,0.113,1894
+factual,Answers,867,0.1001,3437
+relationship,Questions,822,0.1251,2040
+relationship,Answers,822,0.0957,4358
+comparative,Questions,810,0.1057,1967
+comparative,Answers,810,0.0821,5662
+inferential,Questions,815,0.1258,2549
+inferential,Answers,815,0.0856,5776

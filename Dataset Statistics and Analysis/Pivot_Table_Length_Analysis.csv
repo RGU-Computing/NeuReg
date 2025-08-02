@@ -1,0 +1,4 @@
+Shot Type,factual,relationship,comparative,inferential
+zero_shot,35.7%,61.7%,88.1%,77.1%
+one_shot,2.5%,5.5%,85.1%,92.9%
+few_shot,1.8%,40.0%,87.2%,91.9%
