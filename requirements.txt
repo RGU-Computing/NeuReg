@@ -1,17 +1,18 @@
 # Core Python Tools
 pydantic>=1.10.0
 ftfy>=6.1.1
-fitz  # PyMuPDF, ensure installed via pip install pymupdf
-uuid
-re
-enum
-dataclass
-OrderedDict
-List, Dict, Tuple, Optional
-sys
-os
-logging
-json
+fitz                       # PyMuPDF, ensure installed via pip install pymupdf
+uuid                       # For generating unique identifiers
+re                         # Regular expressions
+enum                       # Enumerations
+dataclasses                # For data structure definitions
+collections.OrderedDict    # For maintaining order in dictionaries
+typing                     # For type hints (List, Dict, Tuple, Optional)
+sys                        # System-specific parameters and functions
+os                         # File and directory handling
+logging                    # Configurable logging for debugging and tracing
+json                       # JSON file parsing and manipulation
+
 unstructured>=0.10.0  # for PDF parsing (partition_pdf)
 
 # Core Dependencies
