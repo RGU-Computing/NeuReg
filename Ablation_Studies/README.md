@@ -5,7 +5,7 @@ This module contains the implementation, datasets, evaluation, and analysis of t
 ---
 ### 📁 Folder Structure
 
-''' text
+```text
 Ablation Studies/
 │
 ├── Ablation Study 1/
@@ -38,7 +38,7 @@ Ablation Studies/
 │ └── Chunks Only Evaluation Analysis.ipynb
 └── KG Only/
 └── KG Only Evaluation Analysis.ipynb
-'''
+```
 
 ---
 
