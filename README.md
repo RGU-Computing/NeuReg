@@ -53,7 +53,7 @@ Access to education funding is governed by complex and evolving regulations. The
 
 ## ✨ Key Contributions
 
-### 🧠 A Novel Neuro-Symbolic QA Generation Framework
+### 🧠 Neuro-Symbolic QA Generation Framework
 We present NeuReg, a neuro-symbolic question–answer generation framework that integrates the generative power of large language models (LLMs) with structured knowledge from ontology-guided knowledge graphs and their aligned regulatory text segments. This hybrid approach enables the generation of high-quality, semantically grounded QA pairs tailored to complex regulatory domains.
 
 ### 📊 First-of-Its-Kind Regulatory QA Dataset
