@@ -1,0 +1,42 @@
+2025-07-23 01:17:43 - __main__ - INFO - Log file created: kg_only_evaluation_20250723_011743.log
+2025-07-23 01:17:43 - __main__ - INFO - ✓ Together.ai client initialized with model: google/gemma-2-27b-it
+2025-07-23 01:17:43 - __main__ - INFO -  Starting KG-only evaluation...
+2025-07-23 01:17:43 - __main__ - INFO - Dataset: Ablation_2_kg_only_qa_dataset.json
+2025-07-23 01:17:43 - __main__ - INFO - Output: Gemma_27B_kg_only_evaluation_results.csv
+2025-07-23 01:17:43 - __main__ - INFO - Model: google/gemma-2-27b-it
+2025-07-23 01:17:43 - __main__ - INFO - ✓ Loaded 792 KG-only QA pairs from Ablation_2_kg_only_qa_dataset.json
+2025-07-23 01:17:43 - __main__ - INFO - Sample structure keys: ['id', 'question', 'answer', 'question_type', 'qa_metadata', 'filtering_result', 'generation_method', 'ground_truth']
+2025-07-23 01:17:43 - __main__ - INFO - Ground truth keys: ['source_triples', 'chunk_id', 'num_source_triples', 'text_context_used', 'ablation_study']
+2025-07-23 01:18:30 - __main__ - INFO -  Checkpoint saved: 25 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:19:18 - __main__ - INFO -  Checkpoint saved: 50 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:20:07 - __main__ - INFO -  Checkpoint saved: 75 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:20:54 - __main__ - INFO -  Checkpoint saved: 100 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:21:42 - __main__ - INFO -  Checkpoint saved: 125 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:22:31 - __main__ - INFO -  Checkpoint saved: 150 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:23:19 - __main__ - INFO -  Checkpoint saved: 175 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:24:08 - __main__ - INFO -  Checkpoint saved: 200 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:24:56 - __main__ - INFO -  Checkpoint saved: 225 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:25:45 - __main__ - INFO -  Checkpoint saved: 250 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:26:34 - __main__ - INFO -  Checkpoint saved: 275 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:27:29 - __main__ - INFO -  Checkpoint saved: 300 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:28:23 - __main__ - INFO -  Checkpoint saved: 325 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:29:14 - __main__ - INFO -  Checkpoint saved: 350 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:30:06 - __main__ - INFO -  Checkpoint saved: 375 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:30:56 - __main__ - INFO -  Checkpoint saved: 400 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:31:46 - __main__ - INFO -  Checkpoint saved: 425 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:32:34 - __main__ - INFO -  Checkpoint saved: 450 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:33:27 - __main__ - INFO -  Checkpoint saved: 475 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:34:18 - __main__ - INFO -  Checkpoint saved: 500 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:35:07 - __main__ - INFO -  Checkpoint saved: 525 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:35:57 - __main__ - INFO -  Checkpoint saved: 550 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:36:49 - __main__ - INFO -  Checkpoint saved: 575 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:37:41 - __main__ - INFO -  Checkpoint saved: 600 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:38:32 - __main__ - INFO -  Checkpoint saved: 625 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:39:22 - __main__ - INFO -  Checkpoint saved: 650 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:40:15 - __main__ - INFO -  Checkpoint saved: 675 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:41:03 - __main__ - INFO -  Checkpoint saved: 700 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:41:54 - __main__ - INFO -  Checkpoint saved: 725 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:42:43 - __main__ - INFO -  Checkpoint saved: 750 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:43:33 - __main__ - INFO -  Checkpoint saved: 775 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:44:08 - __main__ - INFO -  Cleaned up checkpoint file
+2025-07-23 01:44:08 - __main__ - ERROR - Failed to save final results: 'Completeess'

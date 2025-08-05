@@ -1,0 +1,108 @@
+{
+  "report_metadata": {
+    "generation_date": "2025-07-16T00:24:44.233165",
+    "dataset_analyzed": "Ablation_1_chunks_only_qa_dataset.json",
+    "report_type": "Ablation_Study_1_Analysis",
+    "approach": "Chunks-only generation (no knowledge graph)"
+  },
+  "ablation_study_details": {
+    "study_number": 1,
+    "study_name": "Chunks Only (No Knowledge Graph)",
+    "hypothesis": "Knowledge graph triples significantly improve QA generation quality",
+    "removed_components": [
+      "knowledge_graph_triples",
+      "triple_similarity_scoring"
+    ],
+    "retained_components": [
+      "context_similarity",
+      "length_filtering",
+      "duplicate_detection"
+    ],
+    "expected_impact": "Reduced relevance scores and potentially lower quality questions without KG structure"
+  },
+  "executive_summary": {
+    "total_qa_attempts": 2192,
+    "final_questions_generated": 1077,
+    "overall_acceptance_rate": "49.1%",
+    "avg_relevance_score": "0.809",
+    "context_similarity_only": true,
+    "api_efficiency": "0.9 QA pairs per API call"
+  },
+  "detailed_analysis": {
+    "ablation_study_info": {
+      "study_number": 1,
+      "study_name": "Chunks Only (No Knowledge Graph)",
+      "removed_components": [
+        "knowledge_graph_triples",
+        "triple_similarity_scoring"
+      ],
+      "retained_components": [
+        "context_similarity",
+        "length_filtering",
+        "duplicate_detection"
+      ],
+      "purpose": "Evaluate contribution of knowledge graph information to QA quality"
+    },
+    "total_qa_attempts": 2192,
+    "final_dataset_queries": 1077,
+    "decision_distribution": {
+      "accepted_count": 1077,
+      "rejected_count": 1115,
+      "acceptance_rate": 49.13321167883212
+    },
+    "detailed_filtering_breakdown": {
+      "accepted": 1077,
+      "rejected_length": 313,
+      "rejected_duplicate": 802,
+      "rejected_parsing": 0
+    },
+    "question_type_distribution": {
+      "factual": 245,
+      "relationship": 288,
+      "comparative": 266,
+      "inferential": 278
+    },
+    "quality_statistics": {
+      "avg_relevance_score": 0.8088041046978482,
+      "min_relevance_score": 0.5189558863639832,
+      "max_relevance_score": 0.946968138217926,
+      "std_relevance_score": 0.062497216720103346,
+      "avg_question_length": 20.63695450324977,
+      "avg_answer_length": 50.83008356545961,
+      "avg_context_similarity": 0.8088041046978482
+    },
+    "generation_efficiency": {
+      "api_calls": 1153,
+      "qa_per_api_call": 0.9340849956634866,
+      "acceptance_rate": 49.13321167883212
+    },
+    "ablation_specific_metrics": {
+      "kg_components_removed": [
+        "knowledge_graph_triples",
+        "triple_similarity_scoring"
+      ],
+      "kg_components_retained": [
+        "context_similarity",
+        "length_filtering",
+        "duplicate_detection"
+      ],
+      "context_only_approach": true,
+      "triple_similarity_available": false
+    }
+  },
+  "comparison_baseline": {
+    "note": "This is ablation study 1. Compare results with full one-shot model to assess KG contribution.",
+    "key_differences": [
+      "No knowledge graph triples used in generation",
+      "No triple similarity scoring in relevance calculation",
+      "Context-only exemplar guidance",
+      "Simplified relevance scoring (context similarity only)"
+    ]
+  },
+  "expected_findings": [
+    "Questions may be more surface-level without KG structure guidance",
+    "Relationship and inferential questions may be of lower quality",
+    "Context similarity may be lower without entity/relationship anchoring",
+    "Generation may rely more heavily on explicit text mentions"
+  ]
+}

@@ -1,0 +1,11 @@
+2025-07-23 01:17:43 - __main__ - INFO - Log file created: kg_only_evaluation_20250723_011743.log
+2025-07-23 01:17:43 - __main__ - INFO - ✓ Together.ai client initialized with model: google/gemma-2-27b-it
+2025-07-23 01:17:43 - __main__ - INFO -  Starting KG-only evaluation...
+2025-07-23 01:17:43 - __main__ - INFO - Dataset: Ablation_2_kg_only_qa_dataset.json
+2025-07-23 01:17:43 - __main__ - INFO - Output: Gemma_27B_kg_only_evaluation_results.csv
+2025-07-23 01:17:43 - __main__ - INFO - Model: google/gemma-2-27b-it
+2025-07-23 01:17:43 - __main__ - INFO - ✓ Loaded 792 KG-only QA pairs from Ablation_2_kg_only_qa_dataset.json
+2025-07-23 01:17:43 - __main__ - INFO - Sample structure keys: ['id', 'question', 'answer', 'question_type', 'qa_metadata', 'filtering_result', 'generation_method', 'ground_truth']
+2025-07-23 01:17:43 - __main__ - INFO - Ground truth keys: ['source_triples', 'chunk_id', 'num_source_triples', 'text_context_used', 'ablation_study']
+2025-07-23 01:18:30 - __main__ - INFO -  Checkpoint saved: 25 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint
+2025-07-23 01:19:18 - __main__ - INFO -  Checkpoint saved: 50 results to Gemma_27B_kg_only_evaluation_results.csv.checkpoint

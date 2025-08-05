@@ -1,0 +1,108 @@
+{
+  "report_metadata": {
+    "generation_date": "2025-07-16T03:50:13.079706",
+    "dataset_analyzed": "Ablation_2_kg_only_qa_dataset.json",
+    "report_type": "Ablation_Study_2_Analysis",
+    "approach": "KG-only generation (no text context)"
+  },
+  "ablation_study_details": {
+    "study_number": 2,
+    "study_name": "KG Only (No Text Context)",
+    "hypothesis": "Text context significantly improves QA generation quality beyond KG structure",
+    "removed_components": [
+      "text_context",
+      "context_similarity_scoring"
+    ],
+    "retained_components": [
+      "triple_similarity",
+      "length_filtering",
+      "duplicate_detection"
+    ],
+    "expected_impact": "Questions may lack nuanced understanding without contextual text information"
+  },
+  "executive_summary": {
+    "total_qa_attempts": 2570,
+    "final_questions_generated": 792,
+    "overall_acceptance_rate": "30.8%",
+    "avg_relevance_score": "0.795",
+    "triple_similarity_only": true,
+    "api_efficiency": "0.6 QA pairs per API call"
+  },
+  "detailed_analysis": {
+    "ablation_study_info": {
+      "study_number": 2,
+      "study_name": "KG Only (No Text Context)",
+      "removed_components": [
+        "text_context",
+        "context_similarity_scoring"
+      ],
+      "retained_components": [
+        "triple_similarity",
+        "length_filtering",
+        "duplicate_detection"
+      ],
+      "purpose": "Evaluate contribution of text context vs. knowledge graph information to QA quality"
+    },
+    "total_qa_attempts": 2570,
+    "final_dataset_queries": 792,
+    "decision_distribution": {
+      "accepted_count": 792,
+      "rejected_count": 1778,
+      "acceptance_rate": 30.817120622568094
+    },
+    "detailed_filtering_breakdown": {
+      "accepted": 792,
+      "rejected_length": 1511,
+      "rejected_duplicate": 267,
+      "rejected_parsing": 0
+    },
+    "question_type_distribution": {
+      "relationship": 160,
+      "comparative": 300,
+      "inferential": 300,
+      "factual": 32
+    },
+    "quality_statistics": {
+      "avg_relevance_score": 0.7953128009432494,
+      "min_relevance_score": 0.6641436219215393,
+      "max_relevance_score": 0.9278757572174072,
+      "std_relevance_score": 0.04355538528765996,
+      "avg_question_length": 19.271464646464647,
+      "avg_answer_length": 40.791666666666664,
+      "avg_triple_similarity": 0.7953128009432494
+    },
+    "generation_efficiency": {
+      "api_calls": 1323,
+      "qa_per_api_call": 0.5986394557823129,
+      "acceptance_rate": 30.817120622568094
+    },
+    "ablation_specific_metrics": {
+      "context_components_removed": [
+        "text_context",
+        "context_similarity_scoring"
+      ],
+      "kg_components_retained": [
+        "triple_similarity",
+        "length_filtering",
+        "duplicate_detection"
+      ],
+      "kg_only_approach": true,
+      "context_similarity_available": false
+    }
+  },
+  "comparison_baseline": {
+    "note": "This is ablation study 2. Compare results with full one-shot model and study 1 to assess text context contribution.",
+    "key_differences": [
+      "No text context used in generation",
+      "No context similarity scoring in relevance calculation",
+      "KG-only exemplar guidance",
+      "Simplified relevance scoring (triple similarity only)"
+    ]
+  },
+  "expected_findings": [
+    "Questions may be more abstract without contextual grounding",
+    "Factual questions may be more entity-focused rather than content-specific",
+    "Answer quality may depend heavily on KG completeness",
+    "Generation may produce more formal, structured questions"
+  ]
+}
