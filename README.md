@@ -60,7 +60,7 @@ We present NeuReg, a neuro-symbolic question–answer generation framework that 
 We construct a domain-specific QA dataset for regulatory compliance in education funding, encompassing four distinct question types: Factual (FactQ), Relational (RelQ), Comparative (CompQ), and Inferential (InferQ). These QA pairs are generated using multi-strategy prompting and rigorously validated through comparative assessment by expert human annotators and state-of-the-art (SOTA) LLM judges. To the best of our knowledge, this is the first QA dataset of its kind within this domain.
 
 ### 🔬 Empirical Validation through Ablation and Fine-Tuning
-We conduct controlled ablation studies to quantify the individual contributions of structured KG triples and unstructured text chunks to QA generation quality—demonstrating the indispensable role of symbolic knowledge. Additionally, we evaluate the practical utility of the generated datasets by fine-tuning multiple LLMs (T5, FLAN-T5), analyzing the effects of prompting strategies (ZS, OS, FS) and model scale on QA performance.
+We conduct controlled ablation studies to quantify the individual contributions of structured KG triples and unstructured text chunks to QA generation quality, demonstrating the indispensable role of symbolic knowledge. Additionally, we evaluate the practical utility of the generated datasets by fine-tuning multiple LLMs (T5, FLAN-T5), analyzing the effects of prompting strategies (ZS, OS, FS) and model scale on QA performance.
 
 ---
 
@@ -174,15 +174,11 @@ Each model folder includes: one `.ipynb` notebook + 3 CSVs for Zero-/One-/Few-Sh
 ├── fine_tuning/                       # Fine-tuning experiments on QA datasets
 │   ├── README.md 
 │   ├── t5_small/
-│   │   ├── t5_small_zero.ipynb
-│   │   ├── t5_small_one.ipynb
-│   │   └── t5_small_few.ipynb
 │   ├── t5_base/
 │   ├── t5_large/
 │   ├── flan_t5_small/
 │   ├── flan_t5_base/
-│   ├── flan_t5_large/
-│   └── results/                       # Final results and logs
+│   └── flan_t5_large/                      #  results 
 ```
 ---
 
