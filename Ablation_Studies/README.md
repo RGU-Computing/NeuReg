@@ -84,7 +84,8 @@ Do not reference or require knowledge graph information.
 
 | Type             | Description                                                                                                                                                                                                                                                                                                                                                                              |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Factual**      | Generate factual questions that require **specific** information from the context. <br> These questions should ask for concrete details, numbers, dates, names, or specific requirements mentioned directly in the provided text. <br> Focus on extracting **precise information** that can be directly answered from the context **without external knowledge**. |
+| **Factual**      | Factual questions seek specific information that can be directly extracted from the knowledge graph relationships. They focus on entities, their properties, 
+ and direct connections represented in the triples|
 | **Relationship** | Generate questions about **relationships or interactions** between concepts, processes, or entities mentioned in the context. <br> Focus on how different elements **connect, influence**, or **interact with each other** based solely on the information provided in the text. <br> Each question should explore **connections between at least two concepts** from the context.     |
 | **Comparative**  | Generate questions comparing different **aspects, concepts, or scenarios** from the context. <br> These questions should highlight **differences**, **similarities**, or **contrasts** between multiple items such as funding types, requirements, processes, or organizational structures mentioned in the text. <br> Use only information **available in the provided context**.                                  |
 | **Inferential**  | Generate questions that require **analysis, reasoning, or inference** based on the context. <br> These questions should combine multiple pieces of information from the text to draw conclusions, identify implications, or predict outcomes. <br> They require **synthesizing information** from different parts of the context **without external knowledge**.                              |
@@ -155,14 +156,34 @@ Do not reference or require additional text context information.
     "type": "{question_type.value}"
   }
 ]
-```
+```                                                                                                                                               
+🟩 Factual Questions
+Task Description:
+Factual questions seek specific information that can be directly extracted from the knowledge graph relationships. They focus on entities, their properties, and direct connections represented in the triples.
 
-| Type             | Description                                                                                                                                                                                                                                                                                                                                                                              |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Factual**      | Generate factual questions that require specific information from the context. <br> These questions should ask for concrete details, numbers, dates, names, or specific requirements mentioned directly in the provided text. <br> Focus on extracting precise information that can be directly answered from the context without external knowledge. |
-| **Relationship** | Generate questions about relationships or interactions between concepts, processes, or entities mentioned in the context. <br> Focus on how different elements connect, influence, or interact with each other based solely on the information provided in the text. <br> Each question should explore connections between at least two concepts from the context.    |
-| **Comparative**  | Generate questions comparing different aspects, concepts, or scenarios from the context. <br> These questions should highlight differences, similarities, or contrasts between multiple items such as funding types, requirements, processes, or organizational structures mentioned in the text. <br> Use only information available in the provided context.                                 |
-| **Inferential**  | Generate questions that require analysis, reasoning, or inference based on the context. <br> These questions should combine multiple pieces of information from the text to draw conclusions, identify implications, or predict outcomes. <br> They require synthesizing information from different parts of the context without external knowledge.                           |
+Generation Guidance:
+Generate factual questions that ask about specific entities, relationships, or properties directly represented in the knowledge graph triples. Focus on “what”, “who”, “which” questions that can be answered by examining the graph structure and entity connections.
+
+🔷 Relationship Questions
+Task Description:
+Relationship questions explore direct and indirect connections between entities in the knowledge graph. They examine how entities are linked through various relationship types and connection patterns.
+
+Generation Guidance:
+Generate questions about relationships and connections between entities in the knowledge graph. Focus on how entities are connected, what relationships exist between them, and how these connections form meaningful patterns in the graph structure.
+
+🟨 Comparative Questions
+Task Description:
+Comparative questions examine differences and similarities between entities or relationship patterns in the knowledge graph. They analyze contrasting paths, different relationship types, or varying entity properties.
+
+Generation Guidance:
+Generate questions comparing different entities, relationships, or patterns in the knowledge graph. These questions should highlight differences in how entities are connected, what relationships they participate in, or how their graph positions differ from one another.
+
+🟪 Inferential Questions
+Task Description:
+Inferential questions require reasoning about the knowledge graph structure to derive insights not explicitly stated in individual triples. They synthesize multiple relationships to draw conclusions about the domain.
+
+Generation Guidance:
+Generate questions that require analysis and reasoning about the knowledge graph structure. These questions should combine information from multiple triples to draw conclusions, identify implications, or understand broader patterns in the entity relationships.
 
 ----
   #### Exemplar Knowledge Graph Triples:
