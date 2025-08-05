@@ -27,17 +27,17 @@ Ablation Studies/
 │ │ └── Qwen3-32B/
 │ │
 │ └── KG_only_Evaluation/
-│ ├── DeepSeek-R1-Distill-Llama-70B/
-│ ├── Gemma-2 Instruct (27B)/
-│ ├── Llama 3.3 70B/
-│ ├── mixtral-8x22b-instruct-v0.1/
-│ └── Qwen3-32B/
+│  ├── DeepSeek-R1-Distill-Llama-70B/
+│  ├── Gemma-2 Instruct (27B)/
+│  ├── Llama 3.3 70B/
+│  ├── mixtral-8x22b-instruct-v0.1/
+│  └── Qwen3-32B/
 │
 └── Results Analysis/
 ├── Chunks Only/
 │ └── Chunks Only Evaluation Analysis.ipynb
 └── KG Only/
-└── KG Only Evaluation Analysis.ipynb
+ └── KG Only Evaluation Analysis.ipynb
 ```
 
 ---
