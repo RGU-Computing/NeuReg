@@ -41,6 +41,72 @@ Ablation Studies/
 ```
 
 ---
+ABLATION STUDY: CHUNKS-ONLY QA GENERATION TASK
+
+TASK TYPE: {question_type}
+{task_description}
+
+EXEMPLAR DEMONSTRATION:
+
+EXAMPLE CONTEXT:
+{CHUNKS_ONLY_EXEMPLAR["context"]}
+
+EXAMPLE {question_type.value.upper()} QUESTION:
+{exemplar_question}
+
+NOW GENERATE FOR NEW CONTEXT:
+
+TARGET CONTEXT:
+{context}
+
+GENERATION INSTRUCTIONS: {generation_guidance}
+
+IMPORTANT: Generate questions and answers based ONLY on the text context provided. 
+Do not reference or require knowledge graph information.
+
+DIVERSITY REQUIREMENTS:
+- Each question must be UNIQUE and ask about DIFFERENT aspects
+- Use VARIED question starters and phrasing patterns  
+- Focus on DIFFERENT concepts, relationships, or information types mentioned in the text
+- Avoid repetitive structures or similar wordings
+- Make each question distinctly different from others and from the exemplar
+
+REQUIRED OUTPUT FORMAT:
+[
+  {{
+    "id": "1",
+    "question": "Your detailed question here?",
+    "answer": "Your comprehensive answer here.",
+    "type": "{question_type.value}"
+  }}
+]
+
+Chunks-Only Exemplar
+Context:
+ESFA funds children who are currently electively home educated (EHE) who attend general further education (Further Education) and sixth form colleges. EHE children who attend schools and academies are not eligible for ESFA young people's funding. You can find more information in the Funding rates and formula guide. Colleges may claim ESFA young people's funding for children of compulsory school age who have completed their statutory education, have achieved qualifications at least equivalent to a full level 2, and who want to enrol on a level 3 course. Colleges do not need to seek approval from ESFA, as we will count these students for lagged funding purposes. This advice also applies to schools and academies placing students in their sixth forms earlier than usual. In exceptional circumstances, for example, students arriving in the UK for the first time during school year 11, ESFA will consider provision for individual students of compulsory school age to be eligible for ESFA young people's funding in colleges. Groups of students would not be eligible for funding, since by inference such circumstances are unlikely to be exceptional.
+
+Exemplar Questions by Type:
+Factual Question:
+What type of students are not eligible for ESFA young people's funding if they attend schools and academies?
+Relationship Question:
+How is a student's eligibility for ESFA funding connected to completing statutory education and enrolling in a level 3 course?
+Comparative Question:
+What is the difference in ESFA funding eligibility between students arriving in the UK individually versus in groups during school year 11?
+Inferential Question:
+Why might ESFA be more willing to fund individual students rather than groups of students who arrive in the UK during year 11?
+Question Type Definitions
+Factual Questions
+Factual questions seek specific, concrete information that can be directly extracted from the text context. They typically start with 'What', 'When', 'Where', 'Who', or 'How much/many' and ask for precise details mentioned in the text.
+Generation Guidance: Generate factual questions that require specific information from the context. These questions should ask for concrete details, numbers, dates, names, or specific requirements mentioned directly in the provided text. Focus on extracting precise information that can be directly answered from the context.
+Relationship Questions
+Relationship questions explore connections between concepts, actions, or items mentioned in the text. They examine how different elements interact, depend on each other, or influence one another based on the information provided in the context.
+Generation Guidance: Generate questions about relationships or interactions between concepts, processes, or entities mentioned in the context. Focus on how different elements connect, influence, or interact with each other based solely on the information provided in the text.
+Comparative Questions
+Comparative questions examine differences and similarities between concepts, processes, or categories mentioned in the text. They help understand distinctions in requirements, procedures, amounts, or characteristics across different scenarios or instances.
+Generation Guidance: Generate questions comparing different aspects, concepts, or scenarios from the context. These questions should highlight differences, similarities, or contrasts between multiple items such as funding types, requirements, processes, or organizational structures mentioned in the text.
+Inferential Questions
+Inferential questions require reasoning and synthesis of multiple pieces of information from the text. They ask for conclusions, implications, or predictions that must be derived by combining various facts and statements from the context.
+Generation Guidance: Generate questions that require analysis, reasoning, or inference based on the context. These questions should combine multiple pieces of information from the text to draw conclusions, identify implications, or predict outcomes. They require synthesizing information from different parts of the context.
 
 
 ---
