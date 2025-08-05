@@ -1,4 +1,4 @@
-## 🔬 Ablation Studies – NeuReg QA Framework
+## 🔬 Ablation Studies
 
 This module contains the implementation, datasets, evaluation, and analysis of the **Ablation Studies** designed to isolate the contributions of **unstructured** (text-only) and **structured** (KG-only) inputs in QA generation. Both experiments use the One-Shot (OS) prompting strategy and follow the same architecture as the OS  NeuReg pipeline.
 
