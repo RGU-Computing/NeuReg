@@ -39,6 +39,50 @@ Ablation Studies/
 └── KG Only/
  └── KG Only Evaluation Analysis.ipynb
 ```
+---
+ABLATION STUDY: CHUNKS-ONLY QA GENERATION TASK
+
+TASK TYPE: {question_type.value.upper()}
+{task_description}
+
+EXEMPLAR DEMONSTRATION:
+
+EXAMPLE CONTEXT:
+{CHUNKS_ONLY_EXEMPLAR}
+
+EXAMPLE {question_type.value.upper()} QUESTION:
+{exemplar_question}
+
+NOW GENERATE FOR NEW CONTEXT:
+
+TARGET CONTEXT:
+{context}
+
+GENERATION INSTRUCTIONS: {generation_guidance}
+
+IMPORTANT: Generate questions and answers based ONLY on the text context provided. 
+Do not reference or require knowledge graph information.
+
+DIVERSITY REQUIREMENTS:
+- Each question must be UNIQUE and ask about DIFFERENT aspects
+- Use VARIED question starters and phrasing patterns  
+- Focus on DIFFERENT concepts, relationships, or information types mentioned in the text
+- Avoid repetitive structures or similar wordings
+- Make each question distinctly different from others and from the exemplar
+
+REQUIRED OUTPUT FORMAT:
+[
+  {
+    "id": "1",
+    "question": "Your detailed question here?",
+    "answer": "Your comprehensive answer here.",
+    "type": "{question_type.value}"
+  }
+]
+
+
+-----
+### The main prompt structure for chunks-only QA generation:
 
 
 ---
