@@ -112,7 +112,93 @@ Do not reference or require knowledge graph information.
 
 
 ```
+
 ---
+
+#### The main prompt structure for KG-only QA generation:
+
+TASK TYPE: {question_type.value.upper()}
+{task_description}
+
+EXEMPLAR DEMONSTRATION:
+
+EXAMPLE KNOWLEDGE GRAPH TRIPLES:
+{exemplar_triple_text}
+
+EXAMPLE {question_type.value.upper()} QUESTION:
+{exemplar_question}
+
+NOW GENERATE FOR NEW KNOWLEDGE GRAPH:
+
+TARGET KNOWLEDGE GRAPH TRIPLES:
+{triple_text}
+
+#### GENERATION INSTRUCTIONS: {generation_guidance}
+
+IMPORTANT: Generate questions and answers based ONLY on the knowledge graph triples provided.
+Do not reference or require additional text context information.
+
+#### 🔁 Diversity Requirements:
+- Each question must be UNIQUE and ask about DIFFERENT entities or relationships
+- Use VARIED question starters and phrasing patterns
+- Focus on DIFFERENT triples, entity connections, or relationship patterns
+- Avoid repetitive structures or similar wordings
+- Make each question distinctly different from others and from the exemplar
+
+#### REQUIRED OUTPUT FORMAT:
+```json
+[
+  {
+    "id": "1",
+    "question": "Your detailed question here?",
+    "answer": "Your comprehensive answer here.",
+    "type": "{question_type.value}"
+  }
+]
+```
+
+| Type             | Description                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Factual**      | Generate factual questions that require specific information from the context. <br> These questions should ask for concrete details, numbers, dates, names, or specific requirements mentioned directly in the provided text. <br> Focus on extracting precise information that can be directly answered from the context without external knowledge. |
+| **Relationship** | Generate questions about relationships or interactions between concepts, processes, or entities mentioned in the context. <br> Focus on how different elements connect, influence, or interact with each other based solely on the information provided in the text. <br> Each question should explore connections between at least two concepts from the context.    |
+| **Comparative**  | Generate questions comparing different aspects, concepts, or scenarios from the context. <br> These questions should highlight differences, similarities, or contrasts between multiple items such as funding types, requirements, processes, or organizational structures mentioned in the text. <br> Use only information available in the provided context.                                 |
+| **Inferential**  | Generate questions that require analysis, reasoning, or inference based on the context. <br> These questions should combine multiple pieces of information from the text to draw conclusions, identify implications, or predict outcomes. <br> They require synthesizing information from different parts of the context without external knowledge.                           |
+
+----
+  #### Exemplar Knowledge Graph Triples:
+
+("esfa", "funds", "ehe_children_further_education")
+("ehe_children_further_education", "enrolled_in", "further_education_colleges")
+("ehe_children_further_education", "enrolled_in", "sixth_form_colleges")
+("ehe_children_schools_academies", "not_eligible_for", "esfa_young_people_funding")
+("funding_rates_and_formula_guide", "provides_information_on", "esfa_funding_details")
+("colleges", "can_claim", "esfa_young_people_funding")
+("esfa_young_people_funding", "for_programme", "level_3_course")
+("children_compulsory_school_age", "has_achievement_status", "full_level_2_qualification")
+("esfa", "does_not_require_approval_from", "colleges_for_lagged_funding")
+("schools_and_academies", "applies_same_advice_as", "colleges_for_early_sixth_form_placement")
+("esfa", "considers_funding_eligibility_for", "individual_students_compulsory_school_age")
+("individual_students_compulsory_school_age", "has_reason", "arriving_in_uk_during_school_year_11")
+("groups_of_students", "not_eligible_for", "esfa_young_people_funding_due_to_non_exceptional_circumstances")
+
+ Exemplar_Questions:
+```json
+
+  "FACTUAL": {
+    "question": "question": "Which types of colleges do EHE children attend when funded by the ESFA?"
+  },
+  "RELATIONSHIP": {
+    "question": "What is the relationship between colleges and ESFA young people's funding for Level 3 courses?"
+  },
+  "COMPARATIVE": {
+    "question": "How does ESFA funding eligibility differ for individuals versus groups arriving during school year 11??"
+  },
+  "INFERENTIAL": {
+    "question": "Based on the ESFA's policy regarding approval for lagged funding, what implication can be drawn about the need for direct oversight by ESFA for such claims?"
+  }
+
+
+```
 
 ---
 
