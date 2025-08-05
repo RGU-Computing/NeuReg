@@ -40,7 +40,7 @@ Ablation Studies/
  └── KG Only Evaluation Analysis.ipynb
 ```
 ---
-ABLATION STUDY: CHUNKS-ONLY QA GENERATION TASK
+#### The main prompt structure for chunks-only QA generation:
 
 TASK TYPE: {question_type.value.upper()}
 {task_description}
@@ -58,19 +58,20 @@ NOW GENERATE FOR NEW CONTEXT:
 TARGET CONTEXT:
 {context}
 
-GENERATION INSTRUCTIONS: {generation_guidance}
+#### GENERATION INSTRUCTIONS: {generation_guidance}
 
 IMPORTANT: Generate questions and answers based ONLY on the text context provided. 
 Do not reference or require knowledge graph information.
 
-DIVERSITY REQUIREMENTS:
+#### 🔁 Diversity Requirements:
 - Each question must be UNIQUE and ask about DIFFERENT aspects
 - Use VARIED question starters and phrasing patterns  
 - Focus on DIFFERENT concepts, relationships, or information types mentioned in the text
 - Avoid repetitive structures or similar wordings
 - Make each question distinctly different from others and from the exemplar
 
-REQUIRED OUTPUT FORMAT:
+#### REQUIRED OUTPUT FORMAT:
+```json
 [
   {
     "id": "1",
@@ -79,11 +80,39 @@ REQUIRED OUTPUT FORMAT:
     "type": "{question_type.value}"
   }
 ]
+```
+
+| Type             | Description                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Factual**      | Generate factual questions that require **specific** information from the context. <br> These questions should ask for concrete details, numbers, dates, names, or specific requirements mentioned directly in the provided text. <br> Focus on extracting **precise information** that can be directly answered from the context **without external knowledge**. |
+| **Relationship** | Generate questions about **relationships or interactions** between concepts, processes, or entities mentioned in the context. <br> Focus on how different elements **connect, influence**, or **interact with each other** based solely on the information provided in the text. <br> Each question should explore **connections between at least two concepts** from the context.     |
+| **Comparative**  | Generate questions comparing different **aspects, concepts, or scenarios** from the context. <br> These questions should highlight **differences**, **similarities**, or **contrasts** between multiple items such as funding types, requirements, processes, or organizational structures mentioned in the text. <br> Use only information **available in the provided context**.                                  |
+| **Inferential**  | Generate questions that require **analysis, reasoning, or inference** based on the context. <br> These questions should combine multiple pieces of information from the text to draw conclusions, identify implications, or predict outcomes. <br> They require **synthesizing information** from different parts of the context **without external knowledge**.                              |
+
+----
+  ####  Exemplar Context (Excerpt):
+
+ "ESFA funds children who are currently electively home educated (EHE) who attend general further education (Further Education) and sixth form colleges. EHE children who attend schools and academies are not eligible for ESFA young people's funding. You can find more information in the Funding rates and formula guide. Colleges may claim ESFA young people's funding for children of compulsory school age who have completed their statutory education, have achieved qualifications at least equivalent to a full level 2, and who want to enrol on a level 3 course. Colleges do not need to seek approval from ESFA, as we will count these students for lagged funding purposes. This advice also applies to schools and academies placing students in their sixth forms earlier than usual. In exceptional circumstances, for example, students arriving in the UK for the first time during school year 11, ESFA will consider provision for individual students of compulsory school age to be eligible for ESFA young people's funding in colleges. Groups of students would not be eligible for funding, since by inference such circumstances are unlikely to be exceptional."
+
+ Exemplar_Questions:
+```json
+
+  "FACTUAL": {
+    "question": "question": "What type of students are not eligible for ESFA young people's funding if they attend schools and academies?"
+  },
+  "RELATIONSHIP": {
+    "question": "How is a student's eligibility for ESFA funding connected to completing statutory education and enrolling in a level 3 course?"
+  },
+  "COMPARATIVE": {
+    "question": "What is the difference in ESFA funding eligibility between students arriving in the UK individually versus in groups during school year 11?"
+  },
+  "INFERENTIAL": {
+    "question": "Why might ESFA be more willing to fund individual students rather than groups of students who arrive in the UK during year 11?"
+  }
 
 
------
-### The main prompt structure for chunks-only QA generation:
-
+```
+---
 
 ---
 
