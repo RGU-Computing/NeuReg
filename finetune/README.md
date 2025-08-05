@@ -65,3 +65,7 @@ METEOR: 0.455
 BLEU: 0.211
 
 This highlights the effectiveness of combining instruction tuning with domain-specific adaptation in regulatory QA tasks.
+
+-----
+
+⚠️ Note: Due to the large size of fine-tuned models such as T5 / FLAN-T5 variants, we have not included model checkpoints in this repository. Only the evaluation results and scripts are provided. For reproducibility, users may re-run fine-tuning locally if desired using the provided notebooks.
