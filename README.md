@@ -154,22 +154,38 @@ Each model folder includes: one `.ipynb` notebook + 3 CSVs for Zero-/One-/Few-Sh
 │   ├── LLMs_based_results_analysis.ipynb
 │   └── LLMs_Analysis_report.csv
 
-├── ablations/                         # Ablation studies (chunks_only/kg_only)
-│   ├── README.md 
-│   ├── chunks_only/                   # QA from chunks only (no KG)
-│   │   ├── chunks_only_qa_dataset.ipynb
-│   │   ├── evaluation/
-│   │   │   ├── chunks_only_evaluation_DeepSeekR1.ipynb
-│   │   │   ├── *.csv
-│   ├── kg_only/                       # QA from KG only (no chunks)
-│   │   ├── KG_only_qa_dataset.ipynb
-│   │   ├── evaluation/
-│   │   │   ├── KG_only_evaluation_DeepSeekR1.ipynb
-│   │   │   ├── *.csv
-│   ├── Ablation_1_chunks_only_qa_dataset.json      # Chunks-only QA JSON
-│   ├── Ablation_1_chunks_only_analysis_report.json # Evaluation report
-│   ├── Ablation_2_kg_only_qa_dataset.json          # KG-only QA JSON
-│   ├── Ablation_2_kg_only_analysis_report.json     # Evaluation report
+Ablation Studies/
+│
+├── Ablation Study 1/
+│ ├── chunks_only_qa_dataset.ipynb
+│ ├── Ablation_1_chunks_only_analysis_report.json
+│ └── Ablation_1_chunks_only_qa_dataset.json
+│
+├── Ablation Study 2/
+│ ├── KG_only_qa_dataset.ipynb
+│ ├── Ablation_2_kg_only_analysis_report.json
+│ └── Ablation_2_kg_only_qa_dataset.json
+│
+├── Evaluation/
+│ ├── chunks_only_Evaluation/
+│ │ ├── DeepSeek-R1-Distill-Llama-70B/
+│ │ ├── Gemma-2 Instruct (27B)/
+│ │ ├── Llama 3.3 70B/
+│ │ ├── mixtral-8x22b-instruct-v0.1/
+│ │ └── Qwen3-32B/
+│ │
+│ └── KG_only_Evaluation/
+│  ├── DeepSeek-R1-Distill-Llama-70B/
+│  ├── Gemma-2 Instruct (27B)/
+│  ├── Llama 3.3 70B/
+│  ├── mixtral-8x22b-instruct-v0.1/
+│  └── Qwen3-32B/
+│
+└── Results Analysis/
+├── Chunks Only/
+│ └── Chunks Only Evaluation Analysis.ipynb
+└── KG Only/
+ └── KG Only Evaluation Analysis.ipynb
 
 ├── fine_tuning/                       # Fine-tuning experiments on QA datasets
 │   ├── README.md 
