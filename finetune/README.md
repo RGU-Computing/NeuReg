@@ -68,4 +68,4 @@ This highlights the effectiveness of combining instruction tuning with domain-sp
 
 -----
 
-Note: Due to the large size of fine-tuned models such as T5 / FLAN-T5 variants, we have not included model checkpoints in this repository. Only the evaluation results and scripts are provided. For reproducibility, users may re-run fine-tuning locally if desired using the provided notebooks.
+### Note: Due to the large size of fine-tuned models (T5 / FLAN-T5 variants), model checkpoints are not included in this repository. Detailed evaluation results for each model are available in their respective folders, along with analysis scripts. Users may re-run fine-tuning locally for reproducibility using the provided notebooks.
