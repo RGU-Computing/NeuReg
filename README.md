@@ -259,7 +259,10 @@ jupyter notebook t5_small_few.ipynb    # Few-shot dataset
 ---
 
 ### 📖 Citation
-Arshad et al., “NeuReg: Neuro-Symbolic QA Generation from Regulatory Compliance,” submitted to International Conference on Knowledge Capture 2025.
+
+
+Arshad, U., Corsar, D., & Nkisi-Orji, I. (2025). *NeuReg: Neuro-Symbolic QA Generation from Regulatory Compliance*. In Proceedings of the 13th Knowledge Capture Conference (K-CAP ’25), 232–235. https://doi.org/10.1145/3731443.3771375
+
 GitHub Repository: https://github.com/RGU-Computing/NeuReg
 
 ---
